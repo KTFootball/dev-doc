@@ -1,19 +1,33 @@
 # 视频 qiniu
 
+## 服务简介
+
+SERVICE_NAME:  
+
+`bucky` prod模式使用的服务  
+`bucky-stg` stg模式使用的服务  
+
+所有的API请求通过`https://watchman.ktfootball.com/<SERVICE_NAME>`访问。
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+
+```shell
+curl "https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"
+  
+```
+
 ## 获取上传凭证 uptoken
 
 ```shell
-curl "https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken?app_key=APPKEY"
+curl "https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken"
   
 ```
 
 ### HTTP Request
 
-	`GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken?app_key=APPKEY`
-
-<aside class="success">
-请求请带上app_key
-</aside>
+	`GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken`
 
 > 返回内容
 
