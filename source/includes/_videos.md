@@ -48,3 +48,29 @@ curl "https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken"
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 x:uid|1|true|上传的用户的uid
+
+## 获取视频信息
+
+```shell
+curl "https://watchman.ktfootball.com/bucky-stg/api/v1/videos/<KEY>"
+  
+```
+
+### HTTP Request
+
+	`GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+KEY|视频key
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "url": "http://oqe9ssuil.bkt.clouddn.com/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk?e=1495618095&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:ZOALZZf0Gh3qnnCmBPLiXaJmbgE="
+  }
+}
+```
