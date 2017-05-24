@@ -1,0 +1,1 @@
+rsync -vzr --delete build/ root@120.27.200.114:/var/www/dev-doc
