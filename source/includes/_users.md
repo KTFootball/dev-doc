@@ -23,8 +23,10 @@ curl "https://watchman.ktfootball.com/bucky-stg/api/v1?a
 
 ```shell
 curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signin" -d "username=USERNAME&password=PASSWORD"
+```
 
 ### FormData
+
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 username|apple|true|用户名
@@ -49,8 +51,10 @@ password|apple|true|密码
 
 ```shell
 curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signin" -d "mobile=MOBILE&password=PASSWORD"
+```
 
 ### FormData
+
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 mobile|18651206017|true|邮箱
@@ -59,7 +63,6 @@ password|apple|true|密码
 ### HTTP Request
 
 	`POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin`
-
 
 > 返回内容
 
@@ -76,8 +79,9 @@ password|apple|true|密码
 
 ```shell
 curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signin" -d "email=EMAIL&password=PASSWORD"
-
+```
 ### FormData
+
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 email|apple@apple.com|true|邮箱
