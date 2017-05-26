@@ -580,74 +580,127 @@
 
 </span><span class="sb">```</span>shell
 curl -X POST <span class="s2">"https://watchman.ktfootball.com/bucky/api/v1/users/signin"</span> -d <span class="s2">"username=USERNAME&amp;password=PASSWORD"</span>
+</code></pre>
+<h3 id="formdata">FormData</h3>
 
-<span class="c">### FormData</span>
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
-username|apple|true|用户名
-password|apple|true|密码
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>apple</td>
+<td>true</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td>password</td>
+<td>apple</td>
+<td>true</td>
+<td>密码</td>
+</tr>
+</tbody></table>
 
-<span class="c">### HTTP Request</span>
+<h3 id="http-request">HTTP Request</h3>
 
-    <span class="sb">`</span><span class="s2">POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin</span><span class="sb">`</span>
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin</code></p>
 
-<span class="gp">&gt; </span>返回内容
-
-<span class="sb">```</span><span class="s2">json
-{
-  "</span>data<span class="s2">": {
-    "</span>uid<span class="s2">": 10,
-    "</span>tk<span class="s2">": "</span>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo<span class="s2">"
-  }
-}
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-c4a84bf401be315b">使用手机号登录</h2>
 <pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/bucky/api/v1/users/signin"</span> -d <span class="s2">"mobile=MOBILE&amp;password=PASSWORD"</span>
-
-<span class="c">### FormData</span>
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
-mobile|18651206017|true|邮箱
-password|apple|true|密码
-
-<span class="c">### HTTP Request</span>
-
-    <span class="sb">`</span>POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin<span class="sb">`</span>
-
-
-<span class="gp">&gt; </span>返回内容
-
-<span class="sb">```</span>json
-<span class="o">{</span>
-  <span class="s2">"data"</span>: <span class="o">{</span>
-    <span class="s2">"uid"</span>: 10,
-    <span class="s2">"tk"</span>: <span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span>
-  <span class="o">}</span>
-<span class="o">}</span>
 </code></pre>
+<h3 id="formdata">FormData</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mobile</td>
+<td>18651206017</td>
+<td>true</td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td>password</td>
+<td>apple</td>
+<td>true</td>
+<td>密码</td>
+</tr>
+</tbody></table>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 <h2 id="part-947905bdb3b68579">使用邮箱登录</h2>
 <pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/bucky/api/v1/users/signin"</span> -d <span class="s2">"email=EMAIL&amp;password=PASSWORD"</span>
-
-<span class="c">### FormData</span>
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
-email|apple@apple.com|true|邮箱
-password|apple|true|密码
-
-<span class="c">### HTTP Request</span>
-
-    <span class="sb">`</span>POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin<span class="sb">`</span>
-
-<span class="gp">&gt; </span>返回内容
-
-<span class="sb">```</span>json
-<span class="o">{</span>
-  <span class="s2">"data"</span>: <span class="o">{</span>
-    <span class="s2">"uid"</span>: 10,
-    <span class="s2">"tk"</span>: <span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span>
-  <span class="o">}</span>
-<span class="o">}</span>
 </code></pre>
+<h3 id="formdata">FormData</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>apple@apple.com</td>
+<td>true</td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td>password</td>
+<td>apple</td>
+<td>true</td>
+<td>密码</td>
+</tr>
+</tbody></table>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
