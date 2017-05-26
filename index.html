@@ -487,11 +487,9 @@
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"</span>
-
 </code></pre>
 <h2 id="uptoken">获取上传凭证 uptoken</h2>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken"</span>
-
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
@@ -559,6 +557,97 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <h1 id="part-6542d8cdced">用户</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>这个用户系统是用户系统集合，所有下属APP都会统一从这里登录获取到必要的tk。   </p>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务  </p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1?a
+···
+
+## 使用用户名登录
+
+</span><span class="sb">```</span>shell
+curl -X POST <span class="s2">"https://watchman.ktfootball.com/bucky/api/v1/users/signin"</span> -d <span class="s2">"username=USERNAME&amp;password=PASSWORD"</span>
+
+<span class="c">### FormData</span>
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+username|apple|true|用户名
+password|apple|true|密码
+
+<span class="c">### HTTP Request</span>
+
+    <span class="sb">`</span><span class="s2">POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin</span><span class="sb">`</span>
+
+<span class="gp">&gt; </span>返回内容
+
+<span class="sb">```</span><span class="s2">json
+{
+  "</span>data<span class="s2">": {
+    "</span>uid<span class="s2">": 10,
+    "</span>tk<span class="s2">": "</span>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo<span class="s2">"
+  }
+}
+</span></code></pre>
+<h2 id="part-c4a84bf401be315b">使用手机号登录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/bucky/api/v1/users/signin"</span> -d <span class="s2">"mobile=MOBILE&amp;password=PASSWORD"</span>
+
+<span class="c">### FormData</span>
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+mobile|18651206017|true|邮箱
+password|apple|true|密码
+
+<span class="c">### HTTP Request</span>
+
+    <span class="sb">`</span>POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin<span class="sb">`</span>
+
+
+<span class="gp">&gt; </span>返回内容
+
+<span class="sb">```</span>json
+<span class="o">{</span>
+  <span class="s2">"data"</span>: <span class="o">{</span>
+    <span class="s2">"uid"</span>: 10,
+    <span class="s2">"tk"</span>: <span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+<h2 id="part-947905bdb3b68579">使用邮箱登录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/bucky/api/v1/users/signin"</span> -d <span class="s2">"email=EMAIL&amp;password=PASSWORD"</span>
+
+<span class="c">### FormData</span>
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+email|apple@apple.com|true|邮箱
+password|apple|true|密码
+
+<span class="c">### HTTP Request</span>
+
+    <span class="sb">`</span>POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin<span class="sb">`</span>
+
+<span class="gp">&gt; </span>返回内容
+
+<span class="sb">```</span>json
+<span class="o">{</span>
+  <span class="s2">"data"</span>: <span class="o">{</span>
+    <span class="s2">"uid"</span>: 10,
+    <span class="s2">"tk"</span>: <span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
