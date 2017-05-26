@@ -16,8 +16,8 @@ SERVICE_NAME:
 </aside>
 
 ```shell
-curl "https://watchman.ktfootball.com/bucky-stg/api/v1?a
-···
+curl "https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"
+```
 
 ## 使用用户名登录
 
