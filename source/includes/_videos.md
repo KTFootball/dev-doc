@@ -15,14 +15,12 @@ SERVICE_NAME:
 
 ```shell
 curl "https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"
-  
 ```
 
 ## 获取上传凭证 uptoken
 
 ```shell
 curl "https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken"
-  
 ```
 
 ### HTTP Request
