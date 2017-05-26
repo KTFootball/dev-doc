@@ -14,6 +14,7 @@ toc_footers:
 includes:
   - watchman
   - videos
+  - users
   - errors
 
 search: true
