@@ -16,13 +16,13 @@ SERVICE_NAME:
 </aside>
 
 ```shell
-curl "https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1?app_key=APPKEY"
 ```
 
 ## 使用用户名登录
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signin" -d "username=USERNAME&password=PASSWORD"
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin" -d "username=USERNAME&password=PASSWORD"
 ```
 
 ### FormData
@@ -34,7 +34,7 @@ password|apple|true|密码
 
 ### HTTP Request
 
-	`POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin`
+	`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin`
 
 > 返回内容
 
@@ -50,7 +50,7 @@ password|apple|true|密码
 ## 使用手机号登录
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signin" -d "mobile=MOBILE&password=PASSWORD"
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin" -d "mobile=MOBILE&password=PASSWORD"
 ```
 
 ### FormData
@@ -62,7 +62,7 @@ password|apple|true|密码
 
 ### HTTP Request
 
-	`POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin`
+	`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin`
 
 > 返回内容
 
@@ -78,7 +78,7 @@ password|apple|true|密码
 ## 使用邮箱登录
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signin" -d "email=EMAIL&password=PASSWORD"
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin" -d "email=EMAIL&password=PASSWORD"
 ```
 ### FormData
 
@@ -89,7 +89,7 @@ password|apple|true|密码
 
 ### HTTP Request
 
-	`POST https://watchman.ktfootball.com/bucky-stg/api/v1/users/signin`
+	`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin`
 
 > 返回内容
 
@@ -109,7 +109,7 @@ password|apple|true|密码
 </aside>
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signup/mobile/sms" -d "mobile=MOBILE"
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/mobile/sms" -d "mobile=MOBILE"
 ```
 ### FormData
 
@@ -119,7 +119,7 @@ mobile|18651206017|true|手机号码
 
 ### HTTP Request
 
-  `POST https://watchman.ktfootball.com/bucky/api/v1/users/signup/mobile/sms`
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/mobile/sms`
 
 > 返回内容
 
@@ -135,7 +135,7 @@ mobile|18651206017|true|手机号码
   使用手机验证码注册时，并不需要传入密码 password，云端也会默认使用空密码，代表不可以用密码来登录。如果需要设置密码，则传入密码字段就可以了。
 </aside>
 ```shell
-curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signup/mobile/verify" -d "mobile=MOBILE&code=CODE"
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/mobile/verify" -d "mobile=MOBILE&code=CODE"
 ```
 ### FormData
 
@@ -147,7 +147,7 @@ password|123456|false|密码
 
 ### HTTP Request
 
-  `POST https://watchman.ktfootball.com/bucky/api/v1/users/signup/mobile/verify`
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/mobile/verify`
 
 > 返回内容
 
@@ -174,11 +174,8 @@ password|123456|false|密码
 
 ## 使用邮箱注册
 
-<aside class="info">
-  
-</aside>
 ```shell
-curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signup/email" -d "email=MOBILE&password=PASSWORD"
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/email" -d "email=MOBILE&password=PASSWORD"
 ```
 ### FormData
 
@@ -189,7 +186,7 @@ password|123456|true|密码
 
 ### HTTP Request
 
-  `POST https://watchman.ktfootball.com/bucky/api/v1/users/signup/email`
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/email`
 
 > 返回内容
 
