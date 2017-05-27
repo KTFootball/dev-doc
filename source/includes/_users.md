@@ -172,3 +172,32 @@ password|123456|false|密码
   参见 根据手机号获取短信验证码 验证手机号码以及验证码
 </aside>
 
+## 使用邮箱注册
+
+<aside class="info">
+  
+</aside>
+```shell
+curl -X POST "https://watchman.ktfootball.com/bucky/api/v1/users/signup/email" -d "email=MOBILE&password=PASSWORD"
+```
+### FormData
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+email|banana@eurus.cn|true|邮箱账户
+password|123456|true|密码
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/bucky/api/v1/users/signup/email`
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "uid": 11,
+    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM"
+  }
+}
+```
