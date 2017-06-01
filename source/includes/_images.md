@@ -61,7 +61,7 @@ curl "https://watchman.ktfootball.com/bucky-stg/api/v1/images/<KEY>"
 ### Query Parameters
 Parameter | Description
 --------- | -----------
-KEY|视频key
+KEY|图片key
 
 > 返回内容
 
