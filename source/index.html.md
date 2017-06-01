@@ -16,6 +16,7 @@ includes:
   - images
   - videos
   - users
+  - schools
   - errors
 
 search: true
