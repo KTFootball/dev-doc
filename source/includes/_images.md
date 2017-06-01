@@ -37,7 +37,7 @@ curl "https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken"
 }
 ```
 
-## 视频上传
+## 图片上传
 
 ### SDK Request
 
@@ -47,7 +47,7 @@ Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 x:uid|1|true|上传的用户的uid
 
-## 获取视频信息
+## 获取图片信息
 
 ```shell
 curl "https://watchman.ktfootball.com/bucky-stg/api/v1/images/<KEY>"
