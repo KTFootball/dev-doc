@@ -472,6 +472,91 @@
 </span></code></pre>
 <h2 id="part-654297ff228">使用</h2>
 
+          <h1 id="qiniu">图片 qiniu</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务  </p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"</span>
+</code></pre>
+<h2 id="uptoken">获取上传凭证 uptoken</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"uptoken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:FUEG0LOXWtD34hkvFINjmFKbNAM=:eyJzY29wZSI6Imt0LXZpZGVvLXN0ZyIsImNhbGxiYWNrVXJsIjoiaHR0cDovL2J1Y2t5LXN0Zy5rdGZvb3RiYWxsLmNvbS9hcGkvdjEvdmlkZW9zIiwiY2FsbGJhY2tCb2R5Ijoia2V5PSQoa2V5KSZleHQ9JChleHQpJmluZm89JChhdmluZm8pJnVpZD0kKHg6dWlkKSIsImRlYWRsaW5lIjoxNDk1NjM5ODg5fQ=="</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-2e5028ff1402eddc">视频上传</h2>
+
+<h3 id="sdk-request">SDK Request</h3>
+
+<p>获取到以上的上传凭证，使用七牛SDK上传。</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>x:uid</td>
+<td>1</td>
+<td>true</td>
+<td>上传的用户的uid</td>
+</tr>
+</tbody></table>
+
+<h2 id="part-1b3ab9f0b6f01547">获取视频信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/images/&lt;KEY&gt;"</span>
+
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky-stg/api/v1/images/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>KEY</td>
+<td>图片key</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk?e=1495618095&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:ZOALZZf0Gh3qnnCmBPLiXaJmbgE="</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="qiniu">视频 qiniu</h1>
 
 <h2 id="part-2cae504bf1357d03">服务简介</h2>
