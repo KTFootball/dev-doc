@@ -13,6 +13,7 @@ toc_footers:
 
 includes:
   - watchman
+  - images
   - videos
   - users
   - errors
