@@ -74,3 +74,38 @@ address|blah blah|true|学校地址
 }
 
 ```
+
+## 更新学校
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID> -d "name=xxxx&address=xxxx""
+```
+
+### HTTP Request
+
+	`PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+### FormData
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+name|test school|true|学校名字
+address|blah blah|true|学校地址
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "name": "hello",
+    "address": "lorem ispm",
+    "ecard": 0
+  }
+}
+
+```
