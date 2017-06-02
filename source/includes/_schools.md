@@ -109,3 +109,105 @@ address|blah blah|true|学校地址
 }
 
 ```
+
+## 创建班级
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms -d "grade=1&cls=1""
+```
+
+### HTTP Request
+
+	`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+### FormData
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+grade|1|true|年级
+cls|blah blah|true|班级
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 5,
+    "school": 1,
+    "grade": "1",
+    "cls": "4"
+  }
+}
+```
+
+## 获取班级
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms -d "grade=1&cls=1""
+```
+
+### HTTP Request
+
+	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+
+> 返回内容
+
+```json
+{
+  "data": [
+    {
+      "id": 2,
+      "school": 1,
+      "grade": "1",
+      "cls": "2"
+    },
+    {
+      "id": 3,
+      "school": 1,
+      "grade": "1",
+      "cls": "3"
+    },
+    {
+      "id": 5,
+      "school": 1,
+      "grade": "1",
+      "cls": "4"
+    }
+  ]
+}
+```
+
+## 删除班级
+
+```shell
+curl -X DELETE "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms/<CID>"
+```
+
+### HTTP Request
+
+	`DELETE https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms/<CID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|学校ID
+CID|班级ID
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
