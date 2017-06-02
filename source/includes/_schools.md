@@ -316,3 +316,41 @@ PID|资料ID
   "data": "success"
 }
 ```
+
+## 查询学员信息
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<UID>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<UID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+UID|用户ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 2,
+    "user_id": 1,
+    "realname": "布拿拿",
+    "gender": 0,
+    "point": 0,
+    "ce": 0,
+    "avatar": null,
+    "birthday": "1992-07-28",
+    "classroom": {
+      "id": 2,
+      "school": 1,
+      "grade": "1",
+      "cls": "2"
+    }
+  }
+}
+```
