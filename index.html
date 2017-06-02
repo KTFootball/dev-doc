@@ -1130,7 +1130,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-2dd02f69fe366be7">获取班级</h2>
-<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms -d "</span><span class="nv">grade</span><span class="o">=</span>1&amp;cls<span class="o">=</span>1<span class="s2">""</span>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms"</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
@@ -1198,6 +1198,161 @@
 <tr>
 <td>CID</td>
 <td>班级ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-1a81e7d6255489e7">创建学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>uid</td>
+<td>1</td>
+<td>true</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-e655b63e240fdf86">更新学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt; -d """</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PID</td>
+<td>资料ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>avatar_key</td>
+<td>xxxxxxxxxxxx</td>
+<td>false</td>
+<td>头像key</td>
+</tr>
+<tr>
+<td>classroom_id</td>
+<td>1</td>
+<td>false</td>
+<td>班级id</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>0</td>
+<td>false</td>
+<td>性别 0 男 1 女</td>
+</tr>
+<tr>
+<td>realname</td>
+<td>布拿拿</td>
+<td>false</td>
+<td>姓名</td>
+</tr>
+<tr>
+<td>birthday</td>
+<td>1992-07-28</td>
+<td>false</td>
+<td>生日</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"布拿拿"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1992-07-28"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"grade"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cls"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-1469e64075f8fc4">删除学生信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PID</td>
+<td>资料ID</td>
 </tr>
 </tbody></table>
 
