@@ -55,7 +55,7 @@ curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools -d "
 
 	`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools`
 
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -90,7 +90,7 @@ Parameter | Description
 --------- | -----------
 ID|学校ID
 
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -125,7 +125,7 @@ Parameter | Description
 --------- | -----------
 ID|学校ID
 
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------

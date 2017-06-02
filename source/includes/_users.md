@@ -25,7 +25,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1?app_key=APPKEY"
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin" -d "username=USERNAME&password=PASSWORD"
 ```
 
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -53,7 +53,7 @@ password|apple|true|密码
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin" -d "mobile=MOBILE&password=PASSWORD"
 ```
 
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -80,7 +80,7 @@ password|apple|true|密码
 ```shell
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signin" -d "email=EMAIL&password=PASSWORD"
 ```
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -111,7 +111,7 @@ password|apple|true|密码
 ```shell
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/mobile/sms" -d "mobile=MOBILE"
 ```
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -137,7 +137,7 @@ mobile|18651206017|true|手机号码
 ```shell
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/mobile/verify" -d "mobile=MOBILE&code=CODE"
 ```
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
@@ -177,7 +177,7 @@ password|123456|false|密码
 ```shell
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/email" -d "email=MOBILE&password=PASSWORD"
 ```
-### FormData
+### FormData(x-www-form-urlencoded)
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
