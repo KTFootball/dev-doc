@@ -148,7 +148,7 @@ cls|blah blah|true|班级
 ## 获取班级
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms -d "grade=1&cls=1""
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/classrooms"
 ```
 
 ### HTTP Request
@@ -203,6 +203,111 @@ Parameter | Description
 --------- | -----------
 ID|学校ID
 CID|班级ID
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
+
+## 创建学员信息
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles -d "uid=1""
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+uid|1|true|用户ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 3,
+    "user_id": 2,
+    "realname": null,
+    "gender": null,
+    "point": 0,
+    "ce": 0,
+    "avatar": null,
+    "birthday": null,
+    "classroom": null
+  }
+}
+```
+
+## 更新学员信息
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<PID> -d """
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<PID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+PID|资料ID
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+avatar_key|xxxxxxxxxxxx|false|头像key
+classroom_id|1|false|班级id
+gender|0|false|性别 0 男 1 女
+realname|布拿拿|false|姓名
+birthday|1992-07-28|false|生日
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 2,
+    "user_id": 1,
+    "realname": "布拿拿",
+    "gender": 0,
+    "point": 0,
+    "ce": 0,
+    "avatar": null,
+    "birthday": "1992-07-28",
+    "classroom": {
+      "id": 2,
+      "school": 1,
+      "grade": "1",
+      "cls": "2"
+    }
+  }
+}
+```
+
+## 删除学生信息
+
+```shell
+curl -X DELETE "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<PID>"
+```
+
+### HTTP Request
+
+  `DELETE https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<PID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+PID|资料ID
 
 > 返回内容
 
