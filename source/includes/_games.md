@@ -230,3 +230,68 @@ LNG|经度
 ```
 
 ## 获取学校的赛事
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/games"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/games`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 7,
+            "name": "测试名",
+            "address": "测试地址",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.1972083123,
+            "lng": 121.3146636935
+        },
+        {
+            "id": 9,
+            "name": "测试名",
+            "address": "虹桥万科中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.1972083123,
+            "lng": 121.3146636935
+        },
+        {
+            "id": 8,
+            "name": "测试名",
+            "address": "上海国际展览中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.2028366437,
+            "lng": 121.404022186
+        },
+        {
+            "id": 10,
+            "name": "测试名",
+            "address": "测试地址",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 120.01,
+            "lng": 38.39
+        },
+        {
+            "id": 11,
+            "name": "测试名",
+            "address": "测试地址",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 120.01,
+            "lng": 38.39
+        }
+    ]
+}
