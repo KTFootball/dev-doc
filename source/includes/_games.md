@@ -157,5 +157,76 @@ sid|1|true|学校ID
 
 ## 附近的赛事
 
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/nearest/<LAT>/<LNG>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/nearest/<LAT>/<LNG>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+LAT|纬度
+LNG|经度
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 7,
+            "name": "测试名",
+            "address": "测试地址",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.1972083123,
+            "lng": 121.3146636935,
+            "distance": 0
+        },
+        {
+            "id": 9,
+            "name": "测试名",
+            "address": "虹桥万科中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.1972083123,
+            "lng": 121.3146636935,
+            "distance": 0
+        },
+        {
+            "id": 8,
+            "name": "测试名",
+            "address": "上海国际展览中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.2028366437,
+            "lng": 121.404022186,
+            "distance": 8531.635484519893
+        },
+        {
+            "id": 10,
+            "name": "测试名",
+            "address": "测试地址",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 120.01,
+            "lng": 38.39,
+            "distance": 7422920.872981764
+        },
+        {
+            "id": 11,
+            "name": "测试名",
+            "address": "测试地址",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 120.01,
+            "lng": 38.39,
+            "distance": 7422920.872981764
+        }
+    ]
+}
+```
 
 ## 获取学校的赛事
