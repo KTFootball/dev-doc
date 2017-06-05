@@ -354,3 +354,150 @@ UID|用户ID
   }
 }
 ```
+
+## 创建教师信息
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers -d "uid=1""
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+uid|1|true|用户ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 2,
+    "user": {
+      "username": "banana@eurus.cn"
+    },
+    "school": null
+  }
+}
+```
+
+## 获取教师信息
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|教师ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 1,
+    "user": {
+      "username": "ufozhengli@163.com"
+    },
+    "school": {
+      "id": 1,
+      "name": "测试学校",
+      "address": "测试地址",
+      "ecard": 0
+    }
+  }
+}
+```
+
+## 更改或者绑定学校
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID> -d "sid=1""
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|教师ID
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+sid|1|true|学校ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 1,
+    "user": {
+      "username": "ufozhengli@163.com"
+    },
+    "school": {
+      "id": 1,
+      "name": "测试学校",
+      "address": "测试地址",
+      "ecard": 0
+    },
+    "contribution": 0
+  }
+}
+```
+
+## 增加教师的贡献值
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID> -d "contribution=1""
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|教师ID
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+contribution|1|true|贡献值
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 1,
+    "user": {
+      "username": "ufozhengli@163.com"
+    },
+    "school": {
+      "id": 1,
+      "name": "测试学校",
+      "address": "测试地址",
+      "ecard": 0
+    },
+    "contribution": 1
+  }
+}
+```
+
