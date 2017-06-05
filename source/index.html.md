@@ -17,6 +17,7 @@ includes:
   - videos
   - users
   - schools
+  - games
   - errors
 
 search: true
