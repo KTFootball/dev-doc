@@ -302,10 +302,6 @@ SID|学校
 curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds"
 ```
 
-<aside class="info">
-video_key和image_keys稍后更新
-</aside>
-
 ### HTTP Request
 
   `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds`
@@ -361,12 +357,14 @@ image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
       }
     ],
     "image_keys": null,
-    "video_key": null,
+    "video_key": "lnJ7uPnve2-PkslliGinskv9mogi",
     "duration": null,
     "scores": {
       "side_a": 5,
       "side_b": 8
-    }
+    },
+    "video_url": "http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw=",
+    "images_url": null
   }
 }
 ```
@@ -375,10 +373,7 @@ image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
 
 ```shell
 curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>"
-```
-<aside class="info">
-video_key和image_keys稍后更新
-</aside>
+``
 
 ### HTTP Request
 
@@ -425,12 +420,14 @@ ID|单个比赛的ID
       }
     ],
     "image_keys": null,
-    "video_key": null,
+    "video_key": "lnJ7uPnve2-PkslliGinskv9mogi",
     "duration": null,
     "scores": {
       "side_a": 5,
       "side_b": 8
-    }
+    },
+    "video_url": "http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw=",
+    "images_url": null
   }
 }
 ```
@@ -440,10 +437,6 @@ ID|单个比赛的ID
 ```shell
 curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID> -d "video_key=xxxx""
 ```
-
-<aside class="info">
-video_key和image_keys稍后更新
-</aside>
 
 ### HTTP Request
 
@@ -496,12 +489,14 @@ video_key|xxxx|true|视频key，七牛上传后返回
       }
     ],
     "image_keys": null,
-    "video_key": null,
+    "video_key": "lnJ7uPnve2-PkslliGinskv9mogi",
     "duration": null,
     "scores": {
       "side_a": 5,
       "side_b": 8
-    }
+    },
+    "video_url": "http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw=",
+    "images_url": null
   }
 }
 ```
