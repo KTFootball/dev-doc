@@ -321,6 +321,7 @@ side_a|1,2|true|左右两边的用户ID用英文逗号隔开
 side_b|1,2|true|左右两边的用户ID用英文逗号隔开
 duration|30|false|赛事持续时间，单位秒
 image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
+kt|1|false|KT用户的ID
 
 
 > 返回内容
