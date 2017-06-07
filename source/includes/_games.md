@@ -243,6 +243,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/games"
 Parameter | Description
 --------- | -----------
 SID|学校
+
 > 返回内容
 
 ```json
@@ -295,6 +296,7 @@ SID|学校
         }
     ]
 }
+```
 
 ## 提交比赛结果
 
