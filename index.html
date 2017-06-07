@@ -2001,6 +2001,302 @@
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+
+</span><span class="err">##</span><span class="w"> </span><span class="err">提交比赛结果</span><span class="w">
+
+</span><span class="err">```shell</span><span class="w">
+</span><span class="err">curl</span><span class="w"> </span><span class="err">-X</span><span class="w"> </span><span class="err">POST</span><span class="w"> </span><span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds"</span><span class="w">
+</span></code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>1</td>
+<td>true</td>
+<td>赛事类型 0，1，2对应1v1,2v2,3v3</td>
+</tr>
+<tr>
+<td>gid</td>
+<td>7</td>
+<td>true</td>
+<td>Game ID</td>
+</tr>
+<tr>
+<td>cross</td>
+<td>1,2</td>
+<td>true</td>
+<td>穿裆左右总数用英文逗号隔开</td>
+</tr>
+<tr>
+<td>foul</td>
+<td>0,0</td>
+<td>true</td>
+<td>犯规左右总数用英文逗号隔开</td>
+</tr>
+<tr>
+<td>goal</td>
+<td>2,3</td>
+<td>true</td>
+<td>进球左右总数用英文逗号隔开</td>
+</tr>
+<tr>
+<td>side_a</td>
+<td>1,2</td>
+<td>true</td>
+<td>左右两边的用户ID用英文逗号隔开</td>
+</tr>
+<tr>
+<td>side_b</td>
+<td>1,2</td>
+<td>true</td>
+<td>左右两边的用户ID用英文逗号隔开</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>30</td>
+<td>false</td>
+<td>赛事持续时间，单位秒</td>
+</tr>
+<tr>
+<td>image_keys</td>
+<td>fxbx,fdes,fegst</td>
+<td>false</td>
+<td>赛事图片的image keys 七牛上传返回</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Round2v2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"game_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cross"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1,2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"goal"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2,3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"foul"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0,0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"video_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lnJ7uPnve2-PkslliGinskv9mogi"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"scores"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw="</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-4c773c7b99bc2e55">获取单个比赛详情</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
+<span class="sb">``</span>
+
+<span class="c">### HTTP Request</span>
+
+  <span class="sb">`</span>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;<span class="sb">`</span>
+
+<span class="c">### Query Parameters</span>
+Parameter | Description
+--------- | -----------
+ID|单个比赛的ID
+
+<span class="gp">&gt; </span>返回内容
+
+<span class="sb">```</span>json
+<span class="o">{</span>
+  <span class="s2">"data"</span>: <span class="o">{</span>
+    <span class="s2">"id"</span>: 8,
+    <span class="s2">"type"</span>: <span class="s2">"Round2v2"</span>,
+    <span class="s2">"game_id"</span>: 7,
+    <span class="s2">"cross"</span>: <span class="s2">"1,2"</span>,
+    <span class="s2">"goal"</span>: <span class="s2">"2,3"</span>,
+    <span class="s2">"foul"</span>: <span class="s2">"0,0"</span>,
+    <span class="s2">"side_a"</span>: <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s2">"id"</span>: 27,
+        <span class="s2">"user_id"</span>: 1,
+        <span class="s2">"kt"</span>: <span class="nb">false</span>
+      <span class="o">}</span>,
+      <span class="o">{</span>
+        <span class="s2">"id"</span>: 28,
+        <span class="s2">"user_id"</span>: 3,
+        <span class="s2">"kt"</span>: <span class="nb">false</span>
+      <span class="o">}</span>
+    <span class="o">]</span>,
+    <span class="s2">"side_b"</span>: <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s2">"id"</span>: 29,
+        <span class="s2">"user_id"</span>: 2,
+        <span class="s2">"kt"</span>: <span class="nb">false</span>
+      <span class="o">}</span>,
+      <span class="o">{</span>
+        <span class="s2">"id"</span>: 30,
+        <span class="s2">"user_id"</span>: 4,
+        <span class="s2">"kt"</span>: <span class="nb">false</span>
+      <span class="o">}</span>
+    <span class="o">]</span>,
+    <span class="s2">"image_keys"</span>: null,
+    <span class="s2">"video_key"</span>: <span class="s2">"lnJ7uPnve2-PkslliGinskv9mogi"</span>,
+    <span class="s2">"duration"</span>: null,
+    <span class="s2">"scores"</span>: <span class="o">{</span>
+      <span class="s2">"side_a"</span>: 5,
+      <span class="s2">"side_b"</span>: 8
+    <span class="o">}</span>,
+    <span class="s2">"video_url"</span>: <span class="s2">"http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw="</span>,
+    <span class="s2">"images_url"</span>: null
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+<h2 id="part-f9cf38806f2ab382">更新上传的视频</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt; -d "</span><span class="nv">video_key</span><span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>单个比赛ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>video_key</td>
+<td>xxxx</td>
+<td>true</td>
+<td>视频key，七牛上传后返回</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Round2v2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"game_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cross"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1,2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"goal"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2,3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"foul"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0,0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kt"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"video_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lnJ7uPnve2-PkslliGinskv9mogi"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"scores"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw="</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-95af8f452434c6">删除单个比赛</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>单场比赛ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
