@@ -375,7 +375,7 @@ image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
 
 ```shell
 curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>"
-``
+```
 
 ### HTTP Request
 
