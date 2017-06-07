@@ -295,3 +295,236 @@ SID|学校
         }
     ]
 }
+
+## 提交比赛结果
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds"
+```
+
+<aside class="info">
+video_key和image_keys稍后更新
+</aside>
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+type|1|true|赛事类型 0，1，2对应1v1,2v2,3v3
+gid|7|true|Game ID
+cross|1,2|true|穿裆左右总数用英文逗号隔开
+foul|0,0|true|犯规左右总数用英文逗号隔开
+goal|2,3|true|进球左右总数用英文逗号隔开
+side_a|1,2|true|左右两边的用户ID用英文逗号隔开
+side_b|1,2|true|左右两边的用户ID用英文逗号隔开
+duration|30|false|赛事持续时间，单位秒
+image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
+
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 8,
+    "type": "Round2v2",
+    "game_id": 7,
+    "cross": "1,2",
+    "goal": "2,3",
+    "foul": "0,0",
+    "side_a": [
+      {
+        "id": 27,
+        "user_id": 1,
+        "kt": false
+      },
+      {
+        "id": 28,
+        "user_id": 3,
+        "kt": false
+      }
+    ],
+    "side_b": [
+      {
+        "id": 29,
+        "user_id": 2,
+        "kt": false
+      },
+      {
+        "id": 30,
+        "user_id": 4,
+        "kt": false
+      }
+    ],
+    "image_keys": null,
+    "video_key": null,
+    "duration": null,
+    "scores": {
+      "side_a": 5,
+      "side_b": 8
+    }
+  }
+}
+```
+
+## 获取单个比赛详情
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>"
+```
+<aside class="info">
+video_key和image_keys稍后更新
+</aside>
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|单个比赛的ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 8,
+    "type": "Round2v2",
+    "game_id": 7,
+    "cross": "1,2",
+    "goal": "2,3",
+    "foul": "0,0",
+    "side_a": [
+      {
+        "id": 27,
+        "user_id": 1,
+        "kt": false
+      },
+      {
+        "id": 28,
+        "user_id": 3,
+        "kt": false
+      }
+    ],
+    "side_b": [
+      {
+        "id": 29,
+        "user_id": 2,
+        "kt": false
+      },
+      {
+        "id": 30,
+        "user_id": 4,
+        "kt": false
+      }
+    ],
+    "image_keys": null,
+    "video_key": null,
+    "duration": null,
+    "scores": {
+      "side_a": 5,
+      "side_b": 8
+    }
+  }
+}
+```
+
+## 更新上传的视频
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID> -d "video_key=xxxx""
+```
+
+<aside class="info">
+video_key和image_keys稍后更新
+</aside>
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|单个比赛ID
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+video_key|xxxx|true|视频key，七牛上传后返回
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 8,
+    "type": "Round2v2",
+    "game_id": 7,
+    "cross": "1,2",
+    "goal": "2,3",
+    "foul": "0,0",
+    "side_a": [
+      {
+        "id": 27,
+        "user_id": 1,
+        "kt": false
+      },
+      {
+        "id": 28,
+        "user_id": 3,
+        "kt": false
+      }
+    ],
+    "side_b": [
+      {
+        "id": 29,
+        "user_id": 2,
+        "kt": false
+      },
+      {
+        "id": 30,
+        "user_id": 4,
+        "kt": false
+      }
+    ],
+    "image_keys": null,
+    "video_key": null,
+    "duration": null,
+    "scores": {
+      "side_a": 5,
+      "side_b": 8
+    }
+  }
+}
+```
+
+## 删除单个比赛
+
+```shell
+curl -X DELETE "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>"
+```
+
+### HTTP Request
+
+  `DELETE https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|单场比赛ID
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
