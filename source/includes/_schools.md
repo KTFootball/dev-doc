@@ -501,3 +501,40 @@ contribution|1|true|贡献值
 }
 ```
 
+## 快速参赛
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/quickgame"
+```
+
+### HTTP Request
+
+`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/quickgame`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 50,
+    "user_id": 57,
+    "user": {
+      "id": 57,
+      "username": "k1t00017"
+    },
+    "realname": null,
+    "gender": null,
+    "point": 0,
+    "ce": 0,
+    "avatar": null,
+    "birthday": null,
+    "classroom": null
+  }
+}
+```
