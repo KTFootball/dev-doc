@@ -33,7 +33,7 @@ Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 name|test name|true|赛事名字
 address|blah blah|true|赛事地址
-sid|1|true|学校地址
+sid|1|true|学校ID
 lat|31.0|false|纬度
 lng|120.0|false|经度
 start_at|2017-06-06|false|开始时间
