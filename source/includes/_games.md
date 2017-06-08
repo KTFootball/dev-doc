@@ -38,6 +38,7 @@ lat|31.0|false|纬度
 lng|120.0|false|经度
 start_at|2017-06-06|false|开始时间
 end_at|2017-06-07|false|结束时间
+image_key|xxxxx|false|七牛上传图片key
 
 > 返回内容
 
