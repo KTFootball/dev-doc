@@ -526,3 +526,44 @@ ID|单场比赛ID
   "data": "success"
 }
 ```
+
+## 创建赛事排名
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/ranks -d "gid=1&uid=1""
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/ranks`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+gid|1|true|赛事ID
+uid|1|true|用户ID
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "id": 1,
+    "user": {
+      "id": 1,
+      "username": "ufozhengli@163.com"
+    },
+    "game": {
+      "id": 7,
+      "name": "测试名",
+      "address": "测试地址",
+      "start_at": "2017-06-06 00:00:00 +0800",
+      "end_at": "2017-06-07 00:00:00 +0800",
+      "lat": 31.1972083123,
+      "lng": 121.3146636935
+    },
+    "ce": 1000
+  }
+}
+```
