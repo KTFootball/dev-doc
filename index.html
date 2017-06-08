@@ -1209,7 +1209,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-1a81e7d6255489e7">创建学员信息</h2>
-<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1&amp;sid<span class="o">=</span>1<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
@@ -1231,6 +1231,12 @@
 <td>true</td>
 <td>用户ID</td>
 </tr>
+<tr>
+<td>sid</td>
+<td>1</td>
+<td>true</td>
+<td>学校ID</td>
+</tr>
 </tbody></table>
 
 <blockquote>
@@ -1240,6 +1246,7 @@
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
     </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
