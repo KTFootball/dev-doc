@@ -215,7 +215,7 @@ CID|班级ID
 ## 创建学员信息
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles -d "uid=1""
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles -d "uid=1&sid=1""
 ```
 
 ### HTTP Request
@@ -227,6 +227,7 @@ curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles -d 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 uid|1|true|用户ID
+sid|1|true|学校ID
 
 > 返回内容
 
@@ -235,6 +236,7 @@ uid|1|true|用户ID
   "data": {
     "id": 3,
     "user_id": 2,
+    "school_id": 1,
     "realname": null,
     "gender": null,
     "point": 0,
