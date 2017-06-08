@@ -42,7 +42,36 @@ ID|学校ID
     "ecard": 0
   }
 }
+```
 
+## 查找学校
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/query?name=<NAME>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/query`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+name|学校名称
+
+> 返回内容
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "测试学校",
+      "address": "测试地址",
+      "ecard": 80
+    }
+  ]
+}
 ```
 
 ## 创建学校
