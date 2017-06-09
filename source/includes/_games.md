@@ -86,6 +86,307 @@ ID|赛事ID
   }
 }
 ```
+## 赛事排行榜
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>/ranks?type=0"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>/ranks`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|赛事ID
+
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
+
+> 返回内容（0）
+
+```json
+{
+  "data": [
+    {
+      "id": 58,
+      "user_id": 65,
+      "school_id": 1,
+      "user": {
+        "id": 65,
+        "username": "k1t00005"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 1016,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    },
+    {
+      "id": 59,
+      "user_id": 66,
+      "school_id": 1,
+      "user": {
+        "id": 66,
+        "username": "k1t00006"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 1016,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    },
+    {
+      "id": 60,
+      "user_id": 67,
+      "school_id": 1,
+      "user": {
+        "id": 67,
+        "username": "k1t00007"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 1000,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    },
+    {
+      "id": 56,
+      "user_id": 63,
+      "school_id": 1,
+      "user": {
+        "id": 63,
+        "username": "k1t00003"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 984,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    },
+    {
+      "id": 57,
+      "user_id": 64,
+      "school_id": 1,
+      "user": {
+        "id": 64,
+        "username": "k1t00004"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 920,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    },
+    {
+      "id": 54,
+      "user_id": 61,
+      "school_id": 1,
+      "user": {
+        "id": 61,
+        "username": "k1t00001"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 856,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    },
+    {
+      "id": 55,
+      "user_id": 62,
+      "school_id": 1,
+      "user": {
+        "id": 62,
+        "username": "k1t00002"
+      },
+      "realname": null,
+      "gender": null,
+      "point": 0,
+      "ce": 856,
+      "avatar": null,
+      "birthday": null,
+      "classroom": null
+    }
+  ]
+}
+```
+
+> 返回内容（1，2，3）
+
+```json
+{
+  "data": [
+    {
+      "users": [
+        {
+          "id": 58,
+          "user_id": 65,
+          "school_id": 1,
+          "user": {
+            "id": 65,
+            "username": "k1t00005"
+          },
+          "realname": null,
+          "gender": null,
+          "point": 0,
+          "ce": 1016,
+          "avatar": null,
+          "birthday": null,
+          "classroom": null
+        },
+        {
+          "id": 59,
+          "user_id": 66,
+          "school_id": 1,
+          "user": {
+            "id": 66,
+            "username": "k1t00006"
+          },
+          "realname": null,
+          "gender": null,
+          "point": 0,
+          "ce": 1016,
+          "avatar": null,
+          "birthday": null,
+          "classroom": null
+        }
+      ],
+      "ranks": [
+        {
+          "id": 6,
+          "user": {
+            "id": 65,
+            "username": "k1t00005"
+          },
+          "game": {
+            "id": 8,
+            "name": "测试名",
+            "address": "上海国际展览中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.2028366437,
+            "lng": 121.404022186,
+            "image": null
+          },
+          "ce": 1016
+        },
+        {
+          "id": 7,
+          "user": {
+            "id": 66,
+            "username": "k1t00006"
+          },
+          "game": {
+            "id": 8,
+            "name": "测试名",
+            "address": "上海国际展览中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.2028366437,
+            "lng": 121.404022186,
+            "image": null
+          },
+          "ce": 1016
+        }
+      ],
+      "score": 2032
+    },
+    {
+      "users": [
+        {
+          "id": 54,
+          "user_id": 61,
+          "school_id": 1,
+          "user": {
+            "id": 61,
+            "username": "k1t00001"
+          },
+          "realname": null,
+          "gender": null,
+          "point": 0,
+          "ce": 856,
+          "avatar": null,
+          "birthday": null,
+          "classroom": null
+        },
+        {
+          "id": 55,
+          "user_id": 62,
+          "school_id": 1,
+          "user": {
+            "id": 62,
+            "username": "k1t00002"
+          },
+          "realname": null,
+          "gender": null,
+          "point": 0,
+          "ce": 856,
+          "avatar": null,
+          "birthday": null,
+          "classroom": null
+        }
+      ],
+      "ranks": [
+        {
+          "id": 2,
+          "user": {
+            "id": 61,
+            "username": "k1t00001"
+          },
+          "game": {
+            "id": 8,
+            "name": "测试名",
+            "address": "上海国际展览中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.2028366437,
+            "lng": 121.404022186,
+            "image": null
+          },
+          "ce": 856
+        },
+        {
+          "id": 3,
+          "user": {
+            "id": 62,
+            "username": "k1t00002"
+          },
+          "game": {
+            "id": 8,
+            "name": "测试名",
+            "address": "上海国际展览中心",
+            "start_at": "2017-06-06 00:00:00 +0800",
+            "end_at": "2017-06-07 00:00:00 +0800",
+            "lat": 31.2028366437,
+            "lng": 121.404022186,
+            "image": null
+          },
+          "ce": 856
+        }
+      ],
+      "score": 1712
+    }
+  ]
+}
+```
 
 ## 修改赛事
 
