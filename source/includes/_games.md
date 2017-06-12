@@ -412,7 +412,8 @@ name|test school|false|赛事名字
 address|blah blah|false|赛事地址
 start_at|2017-07-28|false|开始时间
 end_at|2017-08-01|false|结束时间
-
+image_key|xxxx|false|赛事封面
+image_keys|xxxxx,xxxxx,xxxxx|false|赛事照片（多个）
 > 返回内容
 
 ```json
