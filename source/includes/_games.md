@@ -622,6 +622,7 @@ goal|2,3|true|进球左右总数用英文逗号隔开
 side_a|1,2|true|左右两边的用户ID用英文逗号隔开
 side_b|1,2|true|左右两边的用户ID用英文逗号隔开
 duration|30|false|赛事持续时间，单位秒
+video_key|xxxx|false|赛事视频的key
 image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
 kt|1|false|KT用户的ID
 
