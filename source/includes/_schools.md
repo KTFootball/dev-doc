@@ -241,6 +241,49 @@ CID|班级ID
 }
 ```
 
+## 获取邀请码
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/invite"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/invite`
+
+
+> 返回内容
+
+```json
+{
+  "data": "123456"
+}
+```
+
+## 验证邀请码
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/invite -d "code=123456""
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/invite`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+code|123456|true|邀请码
+
+> 返回内容
+
+```json
+{
+  "data": true
+}
+```
+
 ## 创建学员信息
 
 ```shell
