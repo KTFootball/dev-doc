@@ -196,6 +196,7 @@ Parameter | Default | Required | Description
 uids|1,2,3|true|用户ID用逗号隔开
 counts|10|true|技能数量用逗号隔开
 skid|1|true|技能ID
+video_key|xxxxx|false|视频Key
 
 
 > 返回内容
@@ -206,7 +207,7 @@ skid|1|true|技能ID
 }
 ```
 
-## 更新测评记录
+## 更新测评记录个数
 
 ```shell
 curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessmetns/<ID> -d "count=10""
@@ -236,6 +237,43 @@ count|10|true|技能数量
             "level": 1,
             "gif_url": "http://public.ktfootball.com/download/still/踩球过人.gif"
         },
+        "video": "",
+        "created_at": "2017-06-14 11:33:45 +0800"
+    }
+}
+```
+
+## 更新测评视频key
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessmetns/<ID> -d "key=<KEY>""
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/<ID>`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+key|xxxx|true|七牛上传视频Key
+
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "id": 1,
+        "count": 20,
+        "skill": {
+            "id": 23,
+            "category": "控球类",
+            "level": 1,
+            "gif_url": "http://public.ktfootball.com/download/still/踩球过人.gif"
+        },
+        "video": "",
         "created_at": "2017-06-14 11:33:45 +0800"
     }
 }
