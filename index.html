@@ -1745,7 +1745,7 @@
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
 </code></pre>
 <h2 id="part-1934cec34a431a09">获取技能列表</h2>
-<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessmetns/skills"</span>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/skills"</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
@@ -1916,7 +1916,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-1b5c909925d90825">创建测评记录</h2>
-<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessmetns -d "</span><span class="nv">skid</span><span class="o">=</span>&lt;SID&gt;&amp;uids<span class="o">=</span>1,2,3&amp;counts<span class="o">=</span>10,20,30<span class="s2">""</span>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments -d "</span><span class="nv">skid</span><span class="o">=</span>&lt;SID&gt;&amp;uids<span class="o">=</span>1,2,3&amp;counts<span class="o">=</span>10,20,30<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
@@ -1966,7 +1966,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-bfb5a92b3c778b95">更新测评记录个数</h2>
-<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessmetns/&lt;ID&gt; -d "</span><span class="nv">count</span><span class="o">=</span>10<span class="s2">""</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt; -d "</span><span class="nv">count</span><span class="o">=</span>10<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
@@ -2009,7 +2009,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="key">更新测评视频key</h2>
-<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessmetns/&lt;ID&gt; -d "</span><span class="nv">key</span><span class="o">=</span>&lt;KEY&gt;<span class="s2">""</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt; -d "</span><span class="nv">key</span><span class="o">=</span>&lt;KEY&gt;<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
