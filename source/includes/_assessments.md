@@ -20,7 +20,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1?app_key=APPKEY"
 ## 获取技能列表
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessmetns/skills"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/skills"
 ```
 ### HTTP Request
 
@@ -182,7 +182,7 @@ category|控球类|false|技能类型（控球类，传球类两种）
 ## 创建测评记录
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessmetns -d "skid=<SID>&uids=1,2,3&counts=10,20,30""
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments -d "skid=<SID>&uids=1,2,3&counts=10,20,30""
 ```
 
 ### HTTP Request
@@ -210,7 +210,7 @@ video_key|xxxxx|false|视频Key
 ## 更新测评记录个数
 
 ```shell
-curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessmetns/<ID> -d "count=10""
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/<ID> -d "count=10""
 ```
 
 ### HTTP Request
@@ -246,7 +246,7 @@ count|10|true|技能数量
 ## 更新测评视频key
 
 ```shell
-curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessmetns/<ID> -d "key=<KEY>""
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/<ID> -d "key=<KEY>""
 ```
 
 ### HTTP Request
