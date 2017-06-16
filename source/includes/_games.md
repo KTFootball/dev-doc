@@ -667,10 +667,7 @@ kt|1|false|KT用户的ID
     "image_keys": null,
     "video_key": "lnJ7uPnve2-PkslliGinskv9mogi",
     "duration": null,
-    "scores": {
-      "side_a": 5,
-      "side_b": 8
-    },
+    "scores": "5,8",
     "video_url": "http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw=",
     "images_url": null
   }
@@ -730,10 +727,7 @@ ID|单个比赛的ID
     "image_keys": null,
     "video_key": "lnJ7uPnve2-PkslliGinskv9mogi",
     "duration": null,
-    "scores": {
-      "side_a": 5,
-      "side_b": 8
-    },
+    "scores": "5,8",
     "video_url": "http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw=",
     "images_url": null
   }
@@ -799,10 +793,7 @@ video_key|xxxx|true|视频key，七牛上传后返回
     "image_keys": null,
     "video_key": "lnJ7uPnve2-PkslliGinskv9mogi",
     "duration": null,
-    "scores": {
-      "side_a": 5,
-      "side_b": 8
-    },
+    "scores": "5,8",
     "video_url": "http://oqe9ssuil.bkt.clouddn.com/lnJ7uPnve2-PkslliGinskv9mogi?e=1496828309&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:OeFZIaj8q5Off3d9piV9np6g-fw=",
     "images_url": null
   }
