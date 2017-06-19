@@ -429,15 +429,15 @@ UID|用户ID
 }
 ```
 
-## 创建教师信息
+## 创建经理信息
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers -d "uid=1""
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers -d "uid=1""
 ```
 
 ### HTTP Request
 
-  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers`
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers`
 
 ### FormData(x-www-form-urlencoded)
 
@@ -459,20 +459,20 @@ uid|1|true|用户ID
 }
 ```
 
-## 获取教师信息
+## 获取经理信息
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers/<ID>"
 ```
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers/<ID>`
 
 ### Query Parameters
 Parameter | Description
 --------- | -----------
-ID|教师ID
+ID|经理ID
 
 > 返回内容
 
@@ -496,17 +496,17 @@ ID|教师ID
 ## 更改或者绑定俱乐部
 
 ```shell
-curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID> -d "cid=1""
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers/<ID> -d "cid=1""
 ```
 
 ### HTTP Request
 
-  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>`
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers/<ID>`
 
 ### Query Parameters
 Parameter | Description
 --------- | -----------
-ID|教师ID
+ID|经理ID
 
 ### FormData(x-www-form-urlencoded)
 
@@ -534,20 +534,20 @@ cid|1|true|俱乐部ID
 }
 ```
 
-## 增加教师的贡献值
+## 增加经理的贡献值
 
 ```shell
-curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID> -d "contribution=1""
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers/<ID> -d "contribution=1""
 ```
 
 ### HTTP Request
 
-  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/teachers/<ID>`
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/managers/<ID>`
 
 ### Query Parameters
 Parameter | Description
 --------- | -----------
-ID|教师ID
+ID|经理ID
 
 ### FormData(x-www-form-urlencoded)
 
