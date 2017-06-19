@@ -3724,12 +3724,12 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<h2 id="part-1ab0bd40cf712cba">创建教师信息</h2>
-<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
+<h2 id="part-1c316c850878ebcf">创建经理信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers</code></p>
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers</code></p>
 
 <h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
 
@@ -3762,12 +3762,12 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<h2 id="part-1974c6c90837c5ef">获取教师信息</h2>
-<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;"</span>
+<h2 id="part-1af5760d413f8504">获取经理信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;"</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -3779,7 +3779,7 @@
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>教师ID</td>
+<td>经理ID</td>
 </tr>
 </tbody></table>
 
@@ -3802,11 +3802,11 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-cab9a76c22b03793">更改或者绑定俱乐部</h2>
-<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt; -d "</span><span class="nv">cid</span><span class="o">=</span>1<span class="s2">""</span>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt; -d "</span><span class="nv">cid</span><span class="o">=</span>1<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -3818,7 +3818,7 @@
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>教师ID</td>
+<td>经理ID</td>
 </tr>
 </tbody></table>
 
@@ -3859,12 +3859,12 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<h2 id="part-fdb3f5513503d2f6">增加教师的贡献值</h2>
-<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt; -d "</span><span class="nv">contribution</span><span class="o">=</span>1<span class="s2">""</span>
+<h2 id="part-b25a1368db25cdcb">增加经理的贡献值</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt; -d "</span><span class="nv">contribution</span><span class="o">=</span>1<span class="s2">""</span>
 </code></pre>
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -3876,7 +3876,7 @@
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>教师ID</td>
+<td>经理ID</td>
 </tr>
 </tbody></table>
 
