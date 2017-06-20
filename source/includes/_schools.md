@@ -44,6 +44,110 @@ ID|学校ID
 }
 ```
 
+## 获取学校所有学员信息
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/users"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/users`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 1,
+            "user_id": 80,
+            "club_id": 1,
+            "user": {
+                "id": 80,
+                "username": "k1t00008"
+            },
+            "realname": null,
+            "gender": null,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": null,
+            "course": null
+        },
+        {
+            "id": 2,
+            "user_id": 81,
+            "club_id": 1,
+            "user": {
+                "id": 81,
+                "username": "k1t00009"
+            },
+            "realname": null,
+            "gender": null,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": null,
+            "course": null
+        },
+        {
+            "id": 3,
+            "user_id": 82,
+            "club_id": 1,
+            "user": {
+                "id": 82,
+                "username": "k1t00010"
+            },
+            "realname": null,
+            "gender": null,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": null,
+            "course": null
+        },
+        {
+            "id": 4,
+            "user_id": 83,
+            "club_id": 1,
+            "user": {
+                "id": 83,
+                "username": "k1t00011"
+            },
+            "realname": null,
+            "gender": null,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": null,
+            "course": null
+        },
+        {
+            "id": 5,
+            "user_id": 84,
+            "club_id": 1,
+            "user": {
+                "id": 84,
+                "username": "k1t00012"
+            },
+            "realname": null,
+            "gender": null,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": null,
+            "course": null
+        }
+    ]
+}
+```
+
 ## 获取气场信息
 
 ```shell
