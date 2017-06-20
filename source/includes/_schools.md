@@ -44,6 +44,33 @@ ID|学校ID
 }
 ```
 
+## 获取气场信息
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/bags/<CODE>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/bags/<CODE>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+CODE|气场二维码
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "source_type": null,
+    "source_id": null,
+    "code": "KT-CP-QC-140617-001"
+  }
+}
+```
+
 ## 查找学校
 
 ```shell
