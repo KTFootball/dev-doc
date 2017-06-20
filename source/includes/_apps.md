@@ -31,12 +31,12 @@ curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind"
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
-kind|null|true|app种类以及手机系统
+kind|null|true|kind=app种类*2+手机系统种类（校园版：0，个人版：1，俱乐部：2，IOS：0，Android：1）
 
 > 返回内容
 
 ```json
 {
-  "data": [{"_id":"5940e9579672e626c4d63658","key":"o_1biiouvdki6s138f1bcavhmru5o.png","kind":0,"display":0,"__v":0}]
+  data: [{_id: "5940e9579672e626c4d63658", key: "o_1biiouvdki6s138f1bcavhmru5o.png", kind: 0, display: 0}...]
 }
 ```
