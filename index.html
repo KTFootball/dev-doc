@@ -2368,6 +2368,137 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+<h2 id="geo-location">查询Geo Location</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ok"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">190</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"花苑村玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.150061</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419891</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市桂江路"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e93761f699328b0d223bf2dc"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e93761f699328b0d223bf2dc"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.224641</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.477503</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市黄浦区重庆南路南昌路路口"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2fd2beab56fad7537bdbd296"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2fd2beab56fad7537bdbd296"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-北门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.151337</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419625</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄1～62号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f3c2373cf0d86d2fd22dd60d"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f3c2373cf0d86d2fd22dd60d"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-西门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.149726</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.418947</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄1-62号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4255122a2e5cd19246e27455"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4255122a2e5cd19246e27455"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-西2门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.148618</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419592</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路1-1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0c13dfeacc8e62760c0e6b9d"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0c13dfeacc8e62760c0e6b9d"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-东南门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.111293</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.384142</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市闵行区"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a0db3935c0c33b48b54f5406"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a0db3935c0c33b48b54f5406"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路玉兰园77弄20幢47-49号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.150439</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.420345</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄附近"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"266091fe85b3352b41024521"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"266091fe85b3352b41024521"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路玉兰园77弄1幢34-36号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.148876</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419749</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"沪闵路8081号附近"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6ff84d837491e96b21022064"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6ff84d837491e96b21022064"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路玉兰园77弄15幢39号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.149505</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.420279</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"沪闵路8081号附近"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a65c6e03a7f7351ddc1e523f"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a65c6e03a7f7351ddc1e523f"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市徐汇区康健新村街道玉兰园-社区居民委员会"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.150229</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.41966</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄62号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4bc4245747ff006b1e1d1196"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(021)54191935"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4bc4245747ff006b1e1d1196"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 <h2 id="part-df06e7547c717ff6">查询单个赛事</h2>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
 </code></pre>
@@ -4868,6 +4999,137 @@
     </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.1972083123</span><span class="p">,</span><span class="w">
     </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.3146636935</span><span class="w">
   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="geo-location">查询Geo Location</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ok"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">190</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"花苑村玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.150061</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419891</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市桂江路"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e93761f699328b0d223bf2dc"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"e93761f699328b0d223bf2dc"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.224641</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.477503</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市黄浦区重庆南路南昌路路口"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2fd2beab56fad7537bdbd296"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2fd2beab56fad7537bdbd296"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-北门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.151337</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419625</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄1～62号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f3c2373cf0d86d2fd22dd60d"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f3c2373cf0d86d2fd22dd60d"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-西门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.149726</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.418947</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄1-62号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4255122a2e5cd19246e27455"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4255122a2e5cd19246e27455"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-西2门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.148618</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419592</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路1-1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0c13dfeacc8e62760c0e6b9d"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0c13dfeacc8e62760c0e6b9d"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园-东南门"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.111293</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.384142</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市闵行区"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a0db3935c0c33b48b54f5406"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a0db3935c0c33b48b54f5406"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路玉兰园77弄20幢47-49号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.150439</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.420345</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄附近"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"266091fe85b3352b41024521"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"266091fe85b3352b41024521"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路玉兰园77弄1幢34-36号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.148876</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.419749</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"沪闵路8081号附近"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6ff84d837491e96b21022064"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6ff84d837491e96b21022064"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路玉兰园77弄15幢39号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.149505</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.420279</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"沪闵路8081号附近"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a65c6e03a7f7351ddc1e523f"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a65c6e03a7f7351ddc1e523f"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"上海市徐汇区康健新村街道玉兰园-社区居民委员会"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="mf">31.150229</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.41966</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"桂江路77弄62号"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"street_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4bc4245747ff006b1e1d1196"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"telephone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(021)54191935"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"detail"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4bc4245747ff006b1e1d1196"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-d4d01ae4396d45d2">查询单个赛事下所有回合</h2>
