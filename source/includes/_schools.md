@@ -54,10 +54,16 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/users"
 
   `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<ID>/users`
 
-### Query Parameters
+### Url Parameters
 Parameter | Description
 --------- | -----------
 ID|学校ID
+
+### Query Parameters
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+page|0|true|第几页
+limit|10|true|每页返回数量
 
 > 返回内容
 
@@ -509,7 +515,7 @@ curl -X DELETE "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<
 
   `DELETE https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/profiles/<PID>`
 
-### Query Parameters
+### Url Parameters
 Parameter | Description
 --------- | -----------
 PID|资料ID

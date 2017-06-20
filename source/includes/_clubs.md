@@ -53,10 +53,16 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/users"
 
   `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/users`
 
-### Query Parameters
+### Url Parameters
 Parameter | Description
 --------- | -----------
 ID|俱乐部ID
+
+### Query Parameters
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+page|0|true|第几页
+limit|10|true|每页返回数量
 
 > 返回内容
 
@@ -157,7 +163,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/bags/<CODE>"
 
   `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/bags/<CODE>`
 
-### Query Parameters
+### Url Parameters
 Parameter | Description
 --------- | -----------
 CODE|气场二维码

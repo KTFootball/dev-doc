@@ -20,14 +20,14 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>?app_key=APPKEY"
 ## 查询app启动页面
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/<KIND>"
 ```
 
 ### HTTP Request
 
-	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind`
+	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/screens/<KIND>`
 
-### JSON
+### Query Parameters
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
