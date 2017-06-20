@@ -87,6 +87,368 @@ ID|赛事ID
   }
 }
 ```
+## 查询单个赛事下所有回合
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>/rounds"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>/rounds`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|赛事ID
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+type|0,1,2,3|true|赛事类型（0是全部，1是1v1，2是2v2，3是3v3）
+page|0|true|返回页数
+limit|10|true|每页返回的数量
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 21,
+            "type": "Round2v2",
+            "game_id": 8,
+            "cross": "3,3",
+            "goal": "4,5",
+            "foul": "0,1",
+            "side_a": [
+                {
+                    "id": 101,
+                    "user_id": 61,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 102,
+                    "user_id": 62,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 103,
+                    "user_id": 65,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 104,
+                    "user_id": 66,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": null,
+            "duration": null,
+            "scores": {
+                "side_a": 11,
+                "side_b": 13
+            },
+            "video_url": null,
+            "images_url": null
+        },
+        {
+            "id": 20,
+            "type": "Round3v3",
+            "game_id": 8,
+            "cross": "3,3",
+            "goal": "4,5",
+            "foul": "0,1",
+            "side_a": [
+                {
+                    "id": 95,
+                    "user_id": 61,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 96,
+                    "user_id": 62,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 97,
+                    "user_id": 63,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 98,
+                    "user_id": 64,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 99,
+                    "user_id": 65,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 100,
+                    "user_id": 66,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": null,
+            "duration": null,
+            "scores": {
+                "side_a": 11,
+                "side_b": 13
+            },
+            "video_url": null,
+            "images_url": null
+        },
+        {
+            "id": 19,
+            "type": "Round3v3",
+            "game_id": 8,
+            "cross": "3,3",
+            "goal": "4,4",
+            "foul": "0,1",
+            "side_a": [
+                {
+                    "id": 89,
+                    "user_id": 61,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 90,
+                    "user_id": 62,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 91,
+                    "user_id": 63,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 92,
+                    "user_id": 64,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 93,
+                    "user_id": 65,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 94,
+                    "user_id": 66,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": null,
+            "duration": null,
+            "scores": {
+                "side_a": 11,
+                "side_b": 11
+            },
+            "video_url": null,
+            "images_url": null
+        },
+        {
+            "id": 18,
+            "type": "Round3v3",
+            "game_id": 8,
+            "cross": "3,3",
+            "goal": "4,4",
+            "foul": "0,1",
+            "side_a": [
+                {
+                    "id": 83,
+                    "user_id": 61,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 84,
+                    "user_id": 62,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 85,
+                    "user_id": 63,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 86,
+                    "user_id": 64,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 87,
+                    "user_id": 65,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 88,
+                    "user_id": 66,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": null,
+            "duration": null,
+            "scores": {
+                "side_a": 11,
+                "side_b": 11
+            },
+            "video_url": null,
+            "images_url": null
+        },
+        {
+            "id": 17,
+            "type": "Round3v3",
+            "game_id": 8,
+            "cross": "1,3",
+            "goal": "3,4",
+            "foul": "0,1",
+            "side_a": [
+                {
+                    "id": 77,
+                    "user_id": 61,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 78,
+                    "user_id": 62,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 79,
+                    "user_id": 63,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 80,
+                    "user_id": 64,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 81,
+                    "user_id": 65,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 82,
+                    "user_id": 66,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": null,
+            "duration": null,
+            "scores": {
+                "side_a": 7,
+                "side_b": 11
+            },
+            "video_url": null,
+            "images_url": null
+        },
+        {
+            "id": 16,
+            "type": "Round3v3",
+            "game_id": 8,
+            "cross": "1,3",
+            "goal": "3,2",
+            "foul": "0,1",
+            "side_a": [
+                {
+                    "id": 71,
+                    "user_id": 61,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 72,
+                    "user_id": 62,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 73,
+                    "user_id": 63,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 74,
+                    "user_id": 64,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 75,
+                    "user_id": 65,
+                    "profile": null,
+                    "kt": false
+                },
+                {
+                    "id": 76,
+                    "user_id": 66,
+                    "profile": null,
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": null,
+            "duration": null,
+            "scores": {
+                "side_a": 7,
+                "side_b": 7
+            },
+            "video_url": null,
+            "images_url": null
+        }
+    ]
+}
+```
+
 ## 赛事排行榜
 
 ```shell
