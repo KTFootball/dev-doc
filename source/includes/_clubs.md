@@ -37,9 +37,13 @@ ID|俱乐部ID
 ```json
 {
   "data": {
-    "name": "hello",
-    "address": "lorem ispm",
-    "ecard": 0
+    "id": 1,
+    "name": "blah",
+    "address": "blah",
+    "ecard": 930,
+    "users": 170,
+    "games": 4,
+    "participants": 34
   }
 }
 ```
