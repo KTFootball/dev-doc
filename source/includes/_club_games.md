@@ -1,11 +1,11 @@
-# 校园赛事
+# 俱乐部赛事
 
 ## 服务简介
 
 SERVICE_NAME:  
 
-`kt-school` prod模式使用的服务  
-`kt-school-stg` stg模式使用的服务  
+`kt-club` prod模式使用的服务  
+`kt-club-stg` stg模式使用的服务  
 
 所有的API请求通过`https://watchman.ktfootball.com/<SERVICE_NAME>`访问。
 
@@ -20,12 +20,12 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1?app_key=APPKEY"
 ## 创建赛事
 
 ```shell
-curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games -d "sid=<SID>&address=xxxx&name=xxx&start_at=2017-06-06""
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games -d "cid=<CID>&address=xxxx&name=xxx&start_at=2017-06-06""
 ```
 
 ### HTTP Request
 
-	`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games`
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games`
 
 ### FormData(x-www-form-urlencoded)
 
@@ -33,7 +33,7 @@ Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 name|test name|true|赛事名字
 address|blah blah|true|赛事地址
-sid|1|true|学校ID
+cid|1|true|俱乐部ID
 lat|31.0|false|纬度
 lng|120.0|false|经度
 start_at|2017-06-06|false|开始时间
@@ -65,7 +65,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>"
 
 ### HTTP Request
 
-	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/<ID>`
 
 ### Query Parameters
 Parameter | Description
@@ -87,6 +87,7 @@ ID|赛事ID
   }
 }
 ```
+
 ## 查询单个赛事下所有回合
 
 ```shell
@@ -479,7 +480,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 58,
       "user_id": 65,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 65,
         "username": "k1t00005"
@@ -495,7 +496,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 59,
       "user_id": 66,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 66,
         "username": "k1t00006"
@@ -511,7 +512,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 60,
       "user_id": 67,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 67,
         "username": "k1t00007"
@@ -527,7 +528,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 56,
       "user_id": 63,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 63,
         "username": "k1t00003"
@@ -543,7 +544,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 57,
       "user_id": 64,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 64,
         "username": "k1t00004"
@@ -559,7 +560,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 54,
       "user_id": 61,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 61,
         "username": "k1t00001"
@@ -575,7 +576,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
     {
       "id": 55,
       "user_id": 62,
-      "school_id": 1,
+      "club_id": 1,
       "user": {
         "id": 62,
         "username": "k1t00002"
@@ -602,7 +603,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
         {
           "id": 58,
           "user_id": 65,
-          "school_id": 1,
+          "club_id": 1,
           "user": {
             "id": 65,
             "username": "k1t00005"
@@ -618,7 +619,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
         {
           "id": 59,
           "user_id": 66,
-          "school_id": 1,
+          "club_id": 1,
           "user": {
             "id": 66,
             "username": "k1t00006"
@@ -677,7 +678,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
         {
           "id": 54,
           "user_id": 61,
-          "school_id": 1,
+          "club_id": 1,
           "user": {
             "id": 61,
             "username": "k1t00001"
@@ -693,7 +694,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
         {
           "id": 55,
           "user_id": 62,
-          "school_id": 1,
+          "club_id": 1,
           "user": {
             "id": 62,
             "username": "k1t00002"
@@ -770,7 +771,7 @@ ID|赛事ID
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
-name|test school|false|赛事名字
+name|test club|false|赛事名字
 address|blah blah|false|赛事地址
 start_at|2017-07-28|false|开始时间
 end_at|2017-08-01|false|结束时间
@@ -811,7 +812,7 @@ ID|赛事ID
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
-sid|1|true|学校ID
+cid|1|true|俱乐部ID
 
 > 返回内容
 
@@ -895,20 +896,20 @@ LNG|经度
 }
 ```
 
-## 获取学校的赛事
+## 获取俱乐部的赛事
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/games"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<SID>/games"
 ```
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/games`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<SID>/games`
 
 ### Query Parameters
 Parameter | Description
 --------- | -----------
-SID|学校
+SID|俱乐部
 
 > 返回内容
 

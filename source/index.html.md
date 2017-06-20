@@ -17,7 +17,10 @@ includes:
   - videos
   - users
   - schools
+  - assessments
   - games
+  - clubs
+  - club_games
   - errors
 
 search: true
