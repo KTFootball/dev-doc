@@ -14,18 +14,18 @@ SERVICE_NAME:
 </aside>
 
 ```shell
-curl "https://kt-admin.ktfootball.com/<SERVICE_NAME>/?app_key=APPKEY"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/?app_key=APPKEY"
 ```
 
 ## 查询app启动页面
 
 ```shell
-curl -X GET "https://kt-admin.ktfootball.com/<SERVICE_NAME>/screens/:kind -d "sid=<SID>&address=xxxx&name=xxx&start_at=2017-06-06""
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind"
 ```
 
 ### HTTP Request
 
-	`GET https://kt-admin.ktfootball.com/<SERVICE_NAME>/screens/:kind`
+	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind`
 
 ### JSON
 

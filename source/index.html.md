@@ -15,6 +15,7 @@ includes:
   - watchman
   - images
   - videos
+  - apps
   - users
   - schools
   - assessments
