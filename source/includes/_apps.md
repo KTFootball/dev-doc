@@ -4,30 +4,30 @@
 
 SERVICE_NAME:  
 
-`kt-admin` prod模式使用的服务  
-`kt-admin-stg` stg模式使用的服务  
+`kt-app` prod模式使用的服务  
+`kt-app-stg` stg模式使用的服务  
 
-所有的API请求通过`http://kt-admin.ktfootball.com/<SERVICE_NAME>`访问。
+所有的API请求通过`http://watchman.ktfootball.com/<SERVICE_NAME>`访问。
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/?app_key=APPKEY"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>?app_key=APPKEY"
 ```
 
 ## 查询app启动页面
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/<KIND>"
 ```
 
 ### HTTP Request
 
-	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/screens/:kind`
+	`GET https://watchman.ktfootball.com/<SERVICE_NAME>/screens/<KIND>`
 
-### JSON
+### Query Parameters
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
