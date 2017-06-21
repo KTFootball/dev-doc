@@ -43,7 +43,8 @@ ID|俱乐部ID
     "ecard": 930,
     "users": 170,
     "games": 4,
-    "participants": 34
+    "participants": 34,
+    "rounds": 10
   }
 }
 ```
