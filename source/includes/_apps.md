@@ -31,7 +31,8 @@ curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/screens/<KIND>"
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
-kind|null|true|kind=app种类*2+手机系统种类（校园版：0，个人版：1，俱乐部：2，IOS：0，Android：1）
+app|null|true|app种类（校园版：0，个人版：1，俱乐部：2）
+phone|null|true|手机系统种类（IOS：0，Android：1）
 
 > 返回内容
 
