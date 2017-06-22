@@ -198,3 +198,86 @@ password|123456|true|密码
   }
 }
 ```
+
+## 使用第三方注册
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/oauth" -d "openid=OPENID&source=SOURCE"
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/signup/oauth`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+openid|YOUR_OPEN_ID|true|社交账户openid
+source|wechat|true|微信或者其他登录的source
+unionid|YOUR_OPEN_ID|true|社交账户unionid
+
+
+> 返回内容
+
+```json
+{
+  "data": {
+    "uid": 11,
+    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM"
+  }
+}
+```
+
+## 使用第三方绑定手机号（发送验证码）
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/oauth/bind" -d "mobile=MOBILE"
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/oauth/bind`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+mobile|18651206017|true|手机号码
+
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
+
+## 使用第三方绑定手机号（验证验证码）
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/oauth/verify" -d "mobile=MOBILE&code=CODE&openid=OPENID"
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/oauth/verify`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+mobile|18651206017|true|手机号码
+code|123456|true|短信验证码
+openid|OPENID|true|社交账户openid
+
+
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
