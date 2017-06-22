@@ -38,6 +38,11 @@ phone|null|true|手机系统种类（IOS：0，Android：1）
 
 ```json
 {
-  data: [{_id: "5940e9579672e626c4d63658", key: "o_1biiouvdki6s138f1bcavhmru5o.png", kind: 0, display: 0}...]
+  data: [{
+          display:0,
+          downloadUrl:"http://resource-image.ktfootball.com/o_1bj76pgr81c61g30cmi133ns6o9.png?e=1498115676&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:VYf85A4gpQrA8JlSc7ZnqKqTE8o=",
+          key:"o_1bj76pgr81c61g30cmi133ns6o9.png",
+          kind:0
+          }...]
 }
 ```
