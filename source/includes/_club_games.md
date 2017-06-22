@@ -87,6 +87,140 @@ ID|赛事ID
   }
 }
 ```
+## 查询Geo Location
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/location"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/games/location`
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "status": 0,
+        "message": "ok",
+        "total": 190,
+        "results": [
+            {
+                "name": "花苑村玉兰园",
+                "location": {
+                    "lat": 31.150061,
+                    "lng": 121.419891
+                },
+                "address": "上海市桂江路",
+                "street_id": "e93761f699328b0d223bf2dc",
+                "detail": 1,
+                "uid": "e93761f699328b0d223bf2dc"
+            },
+            {
+                "name": "玉兰园",
+                "location": {
+                    "lat": 31.224641,
+                    "lng": 121.477503
+                },
+                "address": "上海市黄浦区重庆南路南昌路路口",
+                "street_id": "2fd2beab56fad7537bdbd296",
+                "detail": 1,
+                "uid": "2fd2beab56fad7537bdbd296"
+            },
+            {
+                "name": "玉兰园-北门",
+                "location": {
+                    "lat": 31.151337,
+                    "lng": 121.419625
+                },
+                "address": "桂江路77弄1～62号",
+                "street_id": "f3c2373cf0d86d2fd22dd60d",
+                "detail": 1,
+                "uid": "f3c2373cf0d86d2fd22dd60d"
+            },
+            {
+                "name": "玉兰园-西门",
+                "location": {
+                    "lat": 31.149726,
+                    "lng": 121.418947
+                },
+                "address": "桂江路77弄1-62号",
+                "street_id": "4255122a2e5cd19246e27455",
+                "detail": 1,
+                "uid": "4255122a2e5cd19246e27455"
+            },
+            {
+                "name": "玉兰园-西2门",
+                "location": {
+                    "lat": 31.148618,
+                    "lng": 121.419592
+                },
+                "address": "桂江路1-1",
+                "street_id": "0c13dfeacc8e62760c0e6b9d",
+                "detail": 1,
+                "uid": "0c13dfeacc8e62760c0e6b9d"
+            },
+            {
+                "name": "玉兰园-东南门",
+                "location": {
+                    "lat": 31.111293,
+                    "lng": 121.384142
+                },
+                "address": "上海市闵行区",
+                "street_id": "a0db3935c0c33b48b54f5406",
+                "detail": 1,
+                "uid": "a0db3935c0c33b48b54f5406"
+            },
+            {
+                "name": "桂江路玉兰园77弄20幢47-49号",
+                "location": {
+                    "lat": 31.150439,
+                    "lng": 121.420345
+                },
+                "address": "桂江路77弄附近",
+                "street_id": "266091fe85b3352b41024521",
+                "detail": 1,
+                "uid": "266091fe85b3352b41024521"
+            },
+            {
+                "name": "桂江路玉兰园77弄1幢34-36号",
+                "location": {
+                    "lat": 31.148876,
+                    "lng": 121.419749
+                },
+                "address": "沪闵路8081号附近",
+                "street_id": "6ff84d837491e96b21022064",
+                "detail": 1,
+                "uid": "6ff84d837491e96b21022064"
+            },
+            {
+                "name": "桂江路玉兰园77弄15幢39号",
+                "location": {
+                    "lat": 31.149505,
+                    "lng": 121.420279
+                },
+                "address": "沪闵路8081号附近",
+                "street_id": "a65c6e03a7f7351ddc1e523f",
+                "detail": 1,
+                "uid": "a65c6e03a7f7351ddc1e523f"
+            },
+            {
+                "name": "上海市徐汇区康健新村街道玉兰园-社区居民委员会",
+                "location": {
+                    "lat": 31.150229,
+                    "lng": 121.41966
+                },
+                "address": "桂江路77弄62号",
+                "street_id": "4bc4245747ff006b1e1d1196",
+                "telephone": "(021)54191935",
+                "detail": 1,
+                "uid": "4bc4245747ff006b1e1d1196"
+            }
+        ]
+    }
+}
+```
 
 ## 查询单个赛事下所有回合
 
@@ -650,6 +784,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
             "lng": 121.404022186,
             "image": null
           },
+          "rounds": 0,
           "ce": 1016
         },
         {
@@ -668,6 +803,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
             "lng": 121.404022186,
             "image": null
           },
+          "rounds": 0,
           "ce": 1016
         }
       ],
@@ -725,6 +861,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
             "lng": 121.404022186,
             "image": null
           },
+          "rounds": 0,
           "ce": 856
         },
         {
@@ -743,6 +880,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
             "lng": 121.404022186,
             "image": null
           },
+          "rounds": 0,
           "ce": 856
         }
       ],
