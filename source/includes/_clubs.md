@@ -456,7 +456,7 @@ cid|1|true|俱乐部ID
     "ce": 0,
     "avatar": null,
     "birthday": null,
-    "classroom": null
+    "course": null
   }
 }
 ```
@@ -481,7 +481,7 @@ PID|资料ID
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 avatar_key|xxxxxxxxxxxx|false|头像key
-classroom_id|1|false|班级id
+course_id|1|false|班级id
 gender|0|false|性别 0 男 1 女
 realname|布拿拿|false|姓名
 birthday|1992-07-28|false|生日
@@ -499,7 +499,7 @@ birthday|1992-07-28|false|生日
     "ce": 0,
     "avatar": null,
     "birthday": "1992-07-28",
-    "classroom": {
+    "course": {
       "id": 2,
       "club": 1,
       "grade": "1",
@@ -560,7 +560,7 @@ UID|用户ID
     "ce": 0,
     "avatar": null,
     "birthday": "1992-07-28",
-    "classroom": {
+    "course": {
       "id": 2,
       "club": 1,
       "grade": "1",
@@ -749,7 +749,7 @@ ID|俱乐部ID
     "ce": 0,
     "avatar": null,
     "birthday": null,
-    "classroom": null
+    "course": null
   }
 }
 ```

@@ -625,7 +625,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 1016,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     },
     {
       "id": 59,
@@ -641,7 +641,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 1016,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     },
     {
       "id": 60,
@@ -657,7 +657,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 1000,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     },
     {
       "id": 56,
@@ -673,7 +673,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 984,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     },
     {
       "id": 57,
@@ -689,7 +689,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 920,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     },
     {
       "id": 54,
@@ -705,7 +705,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 856,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     },
     {
       "id": 55,
@@ -721,7 +721,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
       "ce": 856,
       "avatar": null,
       "birthday": null,
-      "classroom": null
+      "course": null
     }
   ]
 }
@@ -748,7 +748,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
           "ce": 1016,
           "avatar": null,
           "birthday": null,
-          "classroom": null
+          "course": null
         },
         {
           "id": 59,
@@ -764,7 +764,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
           "ce": 1016,
           "avatar": null,
           "birthday": null,
-          "classroom": null
+          "course": null
         }
       ],
       "ranks": [
@@ -825,7 +825,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
           "ce": 856,
           "avatar": null,
           "birthday": null,
-          "classroom": null
+          "course": null
         },
         {
           "id": 55,
@@ -841,7 +841,7 @@ type|0,1,2,3|true|赛事类型（0是总榜单，1是1v1，2是2v2，3是3v3）
           "ce": 856,
           "avatar": null,
           "birthday": null,
-          "classroom": null
+          "course": null
         }
       ],
       "ranks": [
