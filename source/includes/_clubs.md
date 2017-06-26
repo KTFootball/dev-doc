@@ -185,6 +185,31 @@ CODE|气场二维码
 }
 ```
 
+## 俱乐部列表
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs`
+
+
+> 返回内容
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "测试俱乐部",
+      "address": "测试地址",
+      "ecard": 80
+    }
+  ]
+}
+
 ## 查找俱乐部
 
 ```shell
