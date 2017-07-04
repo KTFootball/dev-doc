@@ -778,3 +778,212 @@ ID|俱乐部ID
   }
 }
 ```
+
+## 俱乐部商品
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/merchandises"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/merchandises`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|俱乐部ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "address": "blah blah\u0006",
+            "intro": "blah blah",
+            "profit": "blah blah\u0006",
+            "crowd": "blah blah",
+            "notice": "blan blah",
+            "days": "1,3,5,7",
+            "time_slot": "10:00 - 18:00",
+            "club": {
+                "id": 1,
+                "name": "blah",
+                "address": "blah",
+                "ecard": 52,
+                "users": 1035,
+                "games": 6,
+                "participants": 228,
+                "rounds": 97
+            },
+            "target": null,
+            "target_id": null,
+            "amount": 1000,
+            "discount_amount": 500,
+            "created_at": "2017-07-04 13:18:53 +0800"
+        }
+    ]
+}
+```
+
+## 俱乐部商品详情
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/<ID>"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/<ID>`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|商品ID
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "address": "blah blah\u0006",
+        "intro": "blah blah",
+        "profit": "blah blah\u0006",
+        "crowd": "blah blah",
+        "notice": "blan blah",
+        "days": "1,3,5,7",
+        "time_slot": "10:00 - 18:00",
+        "club": {
+            "id": 1,
+            "name": "blah",
+            "address": "blah",
+            "ecard": 52,
+            "users": 1035,
+            "games": 6,
+            "participants": 228,
+            "rounds": 97
+        },
+        "target": "ClubCard",
+        "target_id": 2,
+        "amount": 1000,
+        "discount_amount": 500,
+        "created_at": "2017-07-04 13:18:53 +0800"
+    }
+}
+```
+
+## 用户订单
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/orders"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/orders?status=-1`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|商品ID
+
+> 返回内容
+
+```json
+
+```
+
+## 用户参赛卡
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/cards"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/cards`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|商品ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 2,
+            "type": 0,
+            "count": 1,
+            "scheduled_at": "2017-07-04 13:21:43 +0800",
+            "user": {
+                "id": 1,
+                "username": "ufozhengli@163.com"
+            },
+            "club": {
+                "id": 1,
+                "name": "blah",
+                "address": "blah",
+                "ecard": 52,
+                "users": 1035,
+                "games": 6,
+                "participants": 228,
+                "rounds": 97
+            }
+        }
+    ]
+}
+```
+
+## 用户参赛卡详情
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/cards/<ID>"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/cards/<ID>`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|参赛卡ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 2,
+            "type": 0,
+            "count": 1,
+            "scheduled_at": "2017-07-04 13:21:43 +0800",
+            "user": {
+                "id": 1,
+                "username": "ufozhengli@163.com"
+            },
+            "club": {
+                "id": 1,
+                "name": "blah",
+                "address": "blah",
+                "ecard": 52,
+                "users": 1035,
+                "games": 6,
+                "participants": 228,
+                "rounds": 97
+            }
+        }
+    ]
+}
+```
+
