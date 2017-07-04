@@ -70,7 +70,10 @@ password|apple|true|密码
 {
   "data": {
     "uid": 10,
-    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"
+    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo",
+    "mobile": "18651206017",
+    "mobile_verified": true,
+    "kt_coin": 0
   }
 }
 ```
@@ -97,7 +100,9 @@ password|apple|true|密码
 {
   "data": {
     "uid": 10,
-    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"
+    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo",
+    "mobile": "18651206017",
+    "mobile_verified": true
   }
 }
 ```
@@ -155,7 +160,9 @@ password|123456|false|密码
 {
   "data": {
     "uid": 11,
-    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM"
+    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM",
+    "mobile": "18651206017",
+    "mobile_verified": true
   }
 }
 ```
@@ -194,7 +201,9 @@ password|123456|true|密码
 {
   "data": {
     "uid": 11,
-    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM"
+    "tk": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM",
+    "mobile": "18651206017",
+    "mobile_verified": true
   }
 }
 ```
