@@ -22,6 +22,7 @@ includes:
   - games
   - clubs
   - club_games
+  - club_queues
   - errors
 
 search: true
