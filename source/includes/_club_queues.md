@@ -79,6 +79,7 @@ CID|俱乐部ID
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 uid|542|true|用户ID
+cbid|2|true|畅玩卡ID
 
 > 返回内容
 
