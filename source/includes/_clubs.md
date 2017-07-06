@@ -897,21 +897,27 @@ ID|商品ID
 
 ```
 
-## 用户参赛卡
+## 俱乐部参赛卡
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/cards"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/cards"
 ```
 
 ### HTTP Request
 
-`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/cards`
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/cards`
 
 ### Query Parameters
 
 Parameter | Description
 --------- | -----------
-ID|商品ID
+ID|俱乐部ID
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|俱乐部ID
+
 
 > 返回内容
 
@@ -941,6 +947,52 @@ ID|商品ID
     ]
 }
 ```
+
+## 用户参赛卡
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/cards"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/cards`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|用户ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 2,
+            "type": 0,
+            "count": 1,
+            "scheduled_at": "2017-07-04 13:21:43 +0800",
+            "user": {
+                "id": 1,
+                "username": "ufozhengli@163.com"
+            },
+            "club": {
+                "id": 1,
+                "name": "blah",
+                "address": "blah",
+                "ecard": 52,
+                "users": 1035,
+                "games": 6,
+                "participants": 228,
+                "rounds": 97
+            }
+        }
+    ]
+}
+```
+
 
 ## 用户参赛卡详情
 
