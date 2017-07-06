@@ -913,10 +913,10 @@ Parameter | Description
 --------- | -----------
 ID|俱乐部ID
 
-### Query Parameters
+### Uul Parameters
 Parameter | Description
 --------- | -----------
-ID|俱乐部ID
+type|0或者1 0代表没用的卡，1是有用的
 
 
 > 返回内容
@@ -963,6 +963,11 @@ curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/<ID>/ca
 Parameter | Description
 --------- | -----------
 ID|用户ID
+
+### Uul Parameters
+Parameter | Description
+--------- | -----------
+type|0或者1 0代表没用的卡，1是有用的
 
 > 返回内容
 
