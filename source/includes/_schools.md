@@ -301,7 +301,7 @@ ID|学校ID
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 grade|1|true|年级
-cls|blah blah|true|班级
+cls|blah blah|false|班级
 
 > 返回内容
 
