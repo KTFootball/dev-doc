@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -208,8 +207,8 @@
         <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
-    <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="Logo" />
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="ruby">ruby</a>
@@ -220,439 +219,7 @@
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
         <ul class="search-results"></ul>
-      <div id="toc" class="toc-list-h1">
-          <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
-          </li>
-          <li>
-            <a href="#kt-api" class="toc-h1 toc-link" data-title="KT足球API文档">KT足球API文档</a>
-          </li>
-          <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Kittens">Get All Kittens</a>
-                  </li>
-                  <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Kittens">Get a Specific Kitten</a>
-                  </li>
-                  <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Kittens">Delete a Specific Kitten</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#watchman" class="toc-h1 toc-link" data-title="守望者 watchman">守望者 watchman</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#api" class="toc-h2 toc-link" data-title="守望者 watchman">API节点</a>
-                  </li>
-                  <li>
-                    <a href="#" class="toc-h2 toc-link" data-title="守望者 watchman">获取凭证</a>
-                  </li>
-                  <li>
-                    <a href="#-2" class="toc-h2 toc-link" data-title="守望者 watchman">获取所有服务</a>
-                  </li>
-                  <li>
-                    <a href="#-3" class="toc-h2 toc-link" data-title="守望者 watchman">获取指定服务</a>
-                  </li>
-                  <li>
-                    <a href="#-4" class="toc-h2 toc-link" data-title="守望者 watchman">注册服务</a>
-                  </li>
-                  <li>
-                    <a href="#-5" class="toc-h2 toc-link" data-title="守望者 watchman">删除服务</a>
-                  </li>
-                  <li>
-                    <a href="#-6" class="toc-h2 toc-link" data-title="守望者 watchman">使用</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#qiniu" class="toc-h1 toc-link" data-title="图片 qiniu">图片 qiniu</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-7" class="toc-h2 toc-link" data-title="图片 qiniu">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#uptoken" class="toc-h2 toc-link" data-title="图片 qiniu">获取上传凭证 uptoken</a>
-                  </li>
-                  <li>
-                    <a href="#-8" class="toc-h2 toc-link" data-title="图片 qiniu">图片上传</a>
-                  </li>
-                  <li>
-                    <a href="#-9" class="toc-h2 toc-link" data-title="图片 qiniu">获取图片信息</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#qiniu-2" class="toc-h1 toc-link" data-title="视频 qiniu">视频 qiniu</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-10" class="toc-h2 toc-link" data-title="视频 qiniu">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#uptoken-2" class="toc-h2 toc-link" data-title="视频 qiniu">获取上传凭证 uptoken</a>
-                  </li>
-                  <li>
-                    <a href="#-11" class="toc-h2 toc-link" data-title="视频 qiniu">视频上传</a>
-                  </li>
-                  <li>
-                    <a href="#-12" class="toc-h2 toc-link" data-title="视频 qiniu">获取视频信息</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#app" class="toc-h1 toc-link" data-title="App模块">App模块</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-13" class="toc-h2 toc-link" data-title="App模块">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#app-2" class="toc-h2 toc-link" data-title="App模块">查询app启动页面</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-14" class="toc-h1 toc-link" data-title="用户">用户</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-15" class="toc-h2 toc-link" data-title="用户">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-16" class="toc-h2 toc-link" data-title="用户">使用用户名登录</a>
-                  </li>
-                  <li>
-                    <a href="#-17" class="toc-h2 toc-link" data-title="用户">使用手机号登录</a>
-                  </li>
-                  <li>
-                    <a href="#-18" class="toc-h2 toc-link" data-title="用户">使用邮箱登录</a>
-                  </li>
-                  <li>
-                    <a href="#-19" class="toc-h2 toc-link" data-title="用户">根据手机号获取短信验证码</a>
-                  </li>
-                  <li>
-                    <a href="#-20" class="toc-h2 toc-link" data-title="用户">验证手机号码以及验证码</a>
-                  </li>
-                  <li>
-                    <a href="#-21" class="toc-h2 toc-link" data-title="用户">使用手机号码登录</a>
-                  </li>
-                  <li>
-                    <a href="#-22" class="toc-h2 toc-link" data-title="用户">请求重置密码</a>
-                  </li>
-                  <li>
-                    <a href="#-23" class="toc-h2 toc-link" data-title="用户">使用邮箱注册</a>
-                  </li>
-                  <li>
-                    <a href="#-24" class="toc-h2 toc-link" data-title="用户">使用第三方注册</a>
-                  </li>
-                  <li>
-                    <a href="#-25" class="toc-h2 toc-link" data-title="用户">使用第三方绑定手机号（发送验证码）</a>
-                  </li>
-                  <li>
-                    <a href="#-26" class="toc-h2 toc-link" data-title="用户">使用第三方绑定手机号（验证验证码）</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-27" class="toc-h1 toc-link" data-title="校园">校园</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-28" class="toc-h2 toc-link" data-title="校园">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-29" class="toc-h2 toc-link" data-title="校园">获取学校信息</a>
-                  </li>
-                  <li>
-                    <a href="#-30" class="toc-h2 toc-link" data-title="校园">获取学校所有学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-31" class="toc-h2 toc-link" data-title="校园">获取气场信息</a>
-                  </li>
-                  <li>
-                    <a href="#-32" class="toc-h2 toc-link" data-title="校园">查找学校</a>
-                  </li>
-                  <li>
-                    <a href="#-33" class="toc-h2 toc-link" data-title="校园">创建学校</a>
-                  </li>
-                  <li>
-                    <a href="#-34" class="toc-h2 toc-link" data-title="校园">更新学校</a>
-                  </li>
-                  <li>
-                    <a href="#-35" class="toc-h2 toc-link" data-title="校园">创建班级</a>
-                  </li>
-                  <li>
-                    <a href="#-36" class="toc-h2 toc-link" data-title="校园">获取班级</a>
-                  </li>
-                  <li>
-                    <a href="#-37" class="toc-h2 toc-link" data-title="校园">删除班级</a>
-                  </li>
-                  <li>
-                    <a href="#-38" class="toc-h2 toc-link" data-title="校园">获取邀请码</a>
-                  </li>
-                  <li>
-                    <a href="#-39" class="toc-h2 toc-link" data-title="校园">验证邀请码</a>
-                  </li>
-                  <li>
-                    <a href="#-40" class="toc-h2 toc-link" data-title="校园">创建学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-41" class="toc-h2 toc-link" data-title="校园">更新学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-42" class="toc-h2 toc-link" data-title="校园">删除学生信息</a>
-                  </li>
-                  <li>
-                    <a href="#-43" class="toc-h2 toc-link" data-title="校园">查询学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-44" class="toc-h2 toc-link" data-title="校园">创建教师信息</a>
-                  </li>
-                  <li>
-                    <a href="#-45" class="toc-h2 toc-link" data-title="校园">获取教师信息</a>
-                  </li>
-                  <li>
-                    <a href="#-46" class="toc-h2 toc-link" data-title="校园">更改或者绑定学校</a>
-                  </li>
-                  <li>
-                    <a href="#-47" class="toc-h2 toc-link" data-title="校园">增加教师的贡献值</a>
-                  </li>
-                  <li>
-                    <a href="#-48" class="toc-h2 toc-link" data-title="校园">快速参赛</a>
-                  </li>
-                  <li>
-                    <a href="#-49" class="toc-h2 toc-link" data-title="校园">查看班级下所有学生</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-50" class="toc-h1 toc-link" data-title="测评">测评</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-51" class="toc-h2 toc-link" data-title="测评">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-52" class="toc-h2 toc-link" data-title="测评">获取技能列表</a>
-                  </li>
-                  <li>
-                    <a href="#-53" class="toc-h2 toc-link" data-title="测评">创建测评记录</a>
-                  </li>
-                  <li>
-                    <a href="#-54" class="toc-h2 toc-link" data-title="测评">更新测评记录个数</a>
-                  </li>
-                  <li>
-                    <a href="#key" class="toc-h2 toc-link" data-title="测评">更新测评视频key</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-55" class="toc-h1 toc-link" data-title="校园赛事">校园赛事</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-56" class="toc-h2 toc-link" data-title="校园赛事">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-57" class="toc-h2 toc-link" data-title="校园赛事">创建赛事</a>
-                  </li>
-                  <li>
-                    <a href="#geo-location" class="toc-h2 toc-link" data-title="校园赛事">查询Geo Location</a>
-                  </li>
-                  <li>
-                    <a href="#-58" class="toc-h2 toc-link" data-title="校园赛事">查询单个赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-59" class="toc-h2 toc-link" data-title="校园赛事">查询单个赛事下所有回合</a>
-                  </li>
-                  <li>
-                    <a href="#-60" class="toc-h2 toc-link" data-title="校园赛事">赛事排行榜</a>
-                  </li>
-                  <li>
-                    <a href="#-61" class="toc-h2 toc-link" data-title="校园赛事">修改赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-62" class="toc-h2 toc-link" data-title="校园赛事">删除赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-63" class="toc-h2 toc-link" data-title="校园赛事">附近的赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-64" class="toc-h2 toc-link" data-title="校园赛事">获取学校的赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-65" class="toc-h2 toc-link" data-title="校园赛事">提交比赛结果</a>
-                  </li>
-                  <li>
-                    <a href="#-66" class="toc-h2 toc-link" data-title="校园赛事">获取单个比赛详情</a>
-                  </li>
-                  <li>
-                    <a href="#-67" class="toc-h2 toc-link" data-title="校园赛事">更新上传的视频</a>
-                  </li>
-                  <li>
-                    <a href="#-68" class="toc-h2 toc-link" data-title="校园赛事">删除单个比赛</a>
-                  </li>
-                  <li>
-                    <a href="#-69" class="toc-h2 toc-link" data-title="校园赛事">创建赛事排名</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-70" class="toc-h1 toc-link" data-title="俱乐部">俱乐部</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-71" class="toc-h2 toc-link" data-title="俱乐部">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-72" class="toc-h2 toc-link" data-title="俱乐部">获取俱乐部信息</a>
-                  </li>
-                  <li>
-                    <a href="#-73" class="toc-h2 toc-link" data-title="俱乐部">获取俱乐部所有学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-74" class="toc-h2 toc-link" data-title="俱乐部">获取气场信息</a>
-                  </li>
-                  <li>
-                    <a href="#-75" class="toc-h2 toc-link" data-title="俱乐部">俱乐部列表</a>
-                  </li>
-                  <li>
-                    <a href="#-76" class="toc-h2 toc-link" data-title="俱乐部">创建俱乐部</a>
-                  </li>
-                  <li>
-                    <a href="#-77" class="toc-h2 toc-link" data-title="俱乐部">更新俱乐部</a>
-                  </li>
-                  <li>
-                    <a href="#-78" class="toc-h2 toc-link" data-title="俱乐部">创建班级</a>
-                  </li>
-                  <li>
-                    <a href="#-79" class="toc-h2 toc-link" data-title="俱乐部">获取班级</a>
-                  </li>
-                  <li>
-                    <a href="#-80" class="toc-h2 toc-link" data-title="俱乐部">删除班级</a>
-                  </li>
-                  <li>
-                    <a href="#-81" class="toc-h2 toc-link" data-title="俱乐部">获取邀请码</a>
-                  </li>
-                  <li>
-                    <a href="#-82" class="toc-h2 toc-link" data-title="俱乐部">验证邀请码</a>
-                  </li>
-                  <li>
-                    <a href="#-83" class="toc-h2 toc-link" data-title="俱乐部">创建学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-84" class="toc-h2 toc-link" data-title="俱乐部">更新学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-85" class="toc-h2 toc-link" data-title="俱乐部">删除学生信息</a>
-                  </li>
-                  <li>
-                    <a href="#-86" class="toc-h2 toc-link" data-title="俱乐部">查询学员信息</a>
-                  </li>
-                  <li>
-                    <a href="#-87" class="toc-h2 toc-link" data-title="俱乐部">创建经理信息</a>
-                  </li>
-                  <li>
-                    <a href="#-88" class="toc-h2 toc-link" data-title="俱乐部">获取经理信息</a>
-                  </li>
-                  <li>
-                    <a href="#-89" class="toc-h2 toc-link" data-title="俱乐部">更改或者绑定俱乐部</a>
-                  </li>
-                  <li>
-                    <a href="#-90" class="toc-h2 toc-link" data-title="俱乐部">增加经理的贡献值</a>
-                  </li>
-                  <li>
-                    <a href="#-91" class="toc-h2 toc-link" data-title="俱乐部">快速参赛</a>
-                  </li>
-                  <li>
-                    <a href="#-92" class="toc-h2 toc-link" data-title="俱乐部">俱乐部商品</a>
-                  </li>
-                  <li>
-                    <a href="#-93" class="toc-h2 toc-link" data-title="俱乐部">俱乐部商品详情</a>
-                  </li>
-                  <li>
-                    <a href="#-94" class="toc-h2 toc-link" data-title="俱乐部">用户订单</a>
-                  </li>
-                  <li>
-                    <a href="#-95" class="toc-h2 toc-link" data-title="俱乐部">俱乐部参赛卡</a>
-                  </li>
-                  <li>
-                    <a href="#-96" class="toc-h2 toc-link" data-title="俱乐部">用户参赛卡</a>
-                  </li>
-                  <li>
-                    <a href="#-97" class="toc-h2 toc-link" data-title="俱乐部">用户参赛卡详情</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-98" class="toc-h1 toc-link" data-title="俱乐部赛事">俱乐部赛事</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-99" class="toc-h2 toc-link" data-title="俱乐部赛事">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-100" class="toc-h2 toc-link" data-title="俱乐部赛事">创建赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-101" class="toc-h2 toc-link" data-title="俱乐部赛事">查询单个赛事</a>
-                  </li>
-                  <li>
-                    <a href="#geo-location-2" class="toc-h2 toc-link" data-title="俱乐部赛事">查询Geo Location</a>
-                  </li>
-                  <li>
-                    <a href="#-102" class="toc-h2 toc-link" data-title="俱乐部赛事">查询单个赛事下所有回合</a>
-                  </li>
-                  <li>
-                    <a href="#-103" class="toc-h2 toc-link" data-title="俱乐部赛事">赛事排行榜</a>
-                  </li>
-                  <li>
-                    <a href="#-104" class="toc-h2 toc-link" data-title="俱乐部赛事">修改赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-105" class="toc-h2 toc-link" data-title="俱乐部赛事">删除赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-106" class="toc-h2 toc-link" data-title="俱乐部赛事">附近的赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-107" class="toc-h2 toc-link" data-title="俱乐部赛事">获取俱乐部的赛事</a>
-                  </li>
-                  <li>
-                    <a href="#-108" class="toc-h2 toc-link" data-title="俱乐部赛事">提交比赛结果</a>
-                  </li>
-                  <li>
-                    <a href="#-109" class="toc-h2 toc-link" data-title="俱乐部赛事">获取单个比赛详情</a>
-                  </li>
-                  <li>
-                    <a href="#-110" class="toc-h2 toc-link" data-title="俱乐部赛事">更新上传的视频</a>
-                  </li>
-                  <li>
-                    <a href="#-111" class="toc-h2 toc-link" data-title="俱乐部赛事">删除单个比赛</a>
-                  </li>
-                  <li>
-                    <a href="#-112" class="toc-h2 toc-link" data-title="俱乐部赛事">创建赛事排名</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-113" class="toc-h1 toc-link" data-title="俱乐部队列">俱乐部队列</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#-114" class="toc-h2 toc-link" data-title="俱乐部队列">服务简介</a>
-                  </li>
-                  <li>
-                    <a href="#-115" class="toc-h2 toc-link" data-title="俱乐部队列">排队列表</a>
-                  </li>
-                  <li>
-                    <a href="#-116" class="toc-h2 toc-link" data-title="俱乐部队列">排队</a>
-                  </li>
-                  <li>
-                    <a href="#-117" class="toc-h2 toc-link" data-title="俱乐部队列">列表使用</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#-118" class="toc-h1 toc-link" data-title="错误信息">错误信息</a>
-          </li>
+      <div id="toc">
       </div>
         <ul class="toc-footer">
             <li><a href='http://www.ktfootball.com'>KTFootball</a></li>
@@ -662,206 +229,18 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h1 id='kt-api'>KT足球API文档</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id="introduction">Introduction</h1>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>KT足球API文档</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+          <h1 id="watchman">守望者 watchman</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<h2 id="api">API节点</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com"</span>
 </code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<h3 id="http-request">HTTP Request</h3>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>39aaa0fca567f56724b387fd109a37c8dfb7b59b</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id='watchman'>守望者 watchman</h1><h2 id='api'>API节点</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com"</span>
-</code></pre><h3 id='http-request-4'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com</code></p>
+<p><code class="prettyprint">GET https://watchman.ktfootball.com</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -869,10 +248,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Watching from the darkness. Forever in darkness."</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id=''>获取凭证</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/services/signin"</span> -d <span class="s2">"username=USERNAME&amp;password=PASSWORD"</span>
-</code></pre><h3 id='http-request-5'>HTTP Request</h3>
-<p><code>POST &quot;https://watchman.ktfootball.com/services/signin&quot;</code></p>
-<h3 id='formdata'>FormData</h3>
+</span></code></pre>
+<h2 id="part-2dd02f69f8fb594d">获取凭证</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/services/signin"</span> -d <span class="s2">"username=USERNAME&amp;password=PASSWORD"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST &quot;https://watchman.ktfootball.com/services/signin&quot;</code></p>
+
+<h3 id="formdata">FormData</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -907,10 +292,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0OTU2MTQ4Mzh9.L8XF5IQqKqTFJsX4JJ_nlsMQDUvgKRdCAZiynwAqUI0"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-2'>获取所有服务</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/services?auth_token=YOUR_AUTH_TOKEN"</span>
-</code></pre><h3 id='http-request-6'>HTTP Request</h3>
-<p><code>GET &quot;https://watchman.ktfootball.com/services&quot;</code></p>
-<h3 id='query-parameters-2'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-192f5c264f407cb5">获取所有服务</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/services?auth_token=YOUR_AUTH_TOKEN"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET &quot;https://watchman.ktfootball.com/services&quot;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -949,10 +340,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-3'>获取指定服务</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/services/www?auth_token=YOUR_AUTH_TOKEN"</span>
-</code></pre><h3 id='http-request-7'>HTTP Request</h3>
-<p><code>GET &quot;https://watchman.ktfootball.com/services/&lt;SERVICE_NAME&gt;&quot;</code></p>
-<h3 id='query-parameters-3'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-1940d5f440632401">获取指定服务</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/services/www?auth_token=YOUR_AUTH_TOKEN"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET &quot;https://watchman.ktfootball.com/services/&lt;SERVICE_NAME&gt;&quot;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -964,7 +361,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>服务名称</td>
 </tr>
 </tbody></table>
-<h3 id='query-parameters-4'>Query Parameters</h3>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -990,10 +389,16 @@ Remember — a happy kitten is an authenticated kitten!
   </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"alive"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"app_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9362d93a4278"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-4'>注册服务</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/services/signin"</span> -d <span class="s2">"service_name=apple&amp;service_addr=http://localhost:3000"</span>
-</code></pre><h3 id='http-request-8'>HTTP Request</h3>
-<p><code>POST &quot;https://watchman.ktfootball.com/services&quot;</code></p>
-<h3 id='formdata-2'>FormData</h3>
+</span></code></pre>
+<h2 id="part-2d2fe9f65485023c">注册服务</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/services/signin"</span> -d <span class="s2">"service_name=apple&amp;service_addr=http://localhost:3000"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST &quot;https://watchman.ktfootball.com/services&quot;</code></p>
+
+<h3 id="formdata">FormData</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1028,10 +433,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0OTU2MTQ4Mzh9.L8XF5IQqKqTFJsX4JJ_nlsMQDUvgKRdCAZiynwAqUI0"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-5'>删除服务</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/services"</span>
-</code></pre><h3 id='http-request-9'>HTTP Request</h3>
-<p><code>DELETE &quot;https://watchman.ktfootball.com/services&quot;</code></p>
-<h3 id='formdata-3'>FormData</h3>
+</span></code></pre>
+<h2 id="part-2b9114f82ef4ecb7">删除服务</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/services"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE &quot;https://watchman.ktfootball.com/services&quot;</code></p>
+
+<h3 id="formdata">FormData</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1058,21 +469,31 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service removed"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-6'>使用</h2><h1 id='qiniu'>图片 qiniu</h1><h2 id='-7'>服务简介</h2>
+</span></code></pre>
+<h2 id="part-654297ff228">使用</h2>
+
+          <h1 id="qiniu">图片 qiniu</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>bucky</code> prod模式使用的服务<br>
-<code>bucky-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='uptoken'>获取上传凭证 uptoken</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken"</span>
-</code></pre><h3 id='http-request-10'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken</code></p>
+</code></pre>
+<h2 id="uptoken">获取上传凭证 uptoken</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky-stg/api/v1/images/uptoken</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1082,7 +503,11 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"uptoken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:FUEG0LOXWtD34hkvFINjmFKbNAM=:eyJzY29wZSI6Imt0LXZpZGVvLXN0ZyIsImNhbGxiYWNrVXJsIjoiaHR0cDovL2J1Y2t5LXN0Zy5rdGZvb3RiYWxsLmNvbS9hcGkvdjEvdmlkZW9zIiwiY2FsbGJhY2tCb2R5Ijoia2V5PSQoa2V5KSZleHQ9JChleHQpJmluZm89JChhdmluZm8pJnVpZD0kKHg6dWlkKSIsImRlYWRsaW5lIjoxNDk1NjM5ODg5fQ=="</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-8'>图片上传</h2><h3 id='sdk-request'>SDK Request</h3>
+</span></code></pre>
+<h2 id="part-2bfd666225f30a60">图片上传</h2>
+
+<h3 id="sdk-request">SDK Request</h3>
+
 <p>获取到以上的上传凭证，使用七牛SDK上传。</p>
 
 <table><thead>
@@ -1100,11 +525,17 @@ Remember — a happy kitten is an authenticated kitten!
 <td>上传的用户的uid</td>
 </tr>
 </tbody></table>
-<h2 id='-9'>获取图片信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/images/&lt;KEY&gt;"</span>
 
-</code></pre><h3 id='http-request-11'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/bucky-stg/api/v1/images/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk</code></p>
-<h3 id='query-parameters-5'>Query Parameters</h3>
+<h2 id="part-18e7f753c8e031cb">获取图片信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/images/&lt;KEY&gt;"</span>
+
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky-stg/api/v1/images/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1125,21 +556,29 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk?e=1495618095&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:ZOALZZf0Gh3qnnCmBPLiXaJmbgE="</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='qiniu-2'>视频 qiniu</h1><h2 id='-10'>服务简介</h2>
+</span></code></pre>
+          <h1 id="qiniu">视频 qiniu</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>bucky</code> prod模式使用的服务<br>
-<code>bucky-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='uptoken-2'>获取上传凭证 uptoken</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken"</span>
-</code></pre><h3 id='http-request-12'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken</code></p>
+</code></pre>
+<h2 id="uptoken">获取上传凭证 uptoken</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/uptoken</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1149,7 +588,11 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"uptoken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:FUEG0LOXWtD34hkvFINjmFKbNAM=:eyJzY29wZSI6Imt0LXZpZGVvLXN0ZyIsImNhbGxiYWNrVXJsIjoiaHR0cDovL2J1Y2t5LXN0Zy5rdGZvb3RiYWxsLmNvbS9hcGkvdjEvdmlkZW9zIiwiY2FsbGJhY2tCb2R5Ijoia2V5PSQoa2V5KSZleHQ9JChleHQpJmluZm89JChhdmluZm8pJnVpZD0kKHg6dWlkKSIsImRlYWRsaW5lIjoxNDk1NjM5ODg5fQ=="</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-11'>视频上传</h2><h3 id='sdk-request-2'>SDK Request</h3>
+</span></code></pre>
+<h2 id="part-2e5028ff1402eddc">视频上传</h2>
+
+<h3 id="sdk-request">SDK Request</h3>
+
 <p>获取到以上的上传凭证，使用七牛SDK上传。</p>
 
 <table><thead>
@@ -1167,11 +610,17 @@ Remember — a happy kitten is an authenticated kitten!
 <td>上传的用户的uid</td>
 </tr>
 </tbody></table>
-<h2 id='-12'>获取视频信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/videos/&lt;KEY&gt;"</span>
 
-</code></pre><h3 id='http-request-13'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk</code></p>
-<h3 id='query-parameters-6'>Query Parameters</h3>
+<h2 id="part-1b3ab9f0b6f01547">获取视频信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/bucky-stg/api/v1/videos/&lt;KEY&gt;"</span>
+
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky-stg/api/v1/videos/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1192,22 +641,32 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7pK9hSKRvpkWNSOFV7QnVOMWRk?e=1495618095&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:ZOALZZf0Gh3qnnCmBPLiXaJmbgE="</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='app'>App模块</h1><h2 id='-13'>服务简介</h2>
+</span></code></pre>
+          <h1 id="app">App模块</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-app</code> prod模式使用的服务<br>
-<code>kt-app-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-app</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-app-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>http://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">http://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;?app_key=APPKEY"</span>
-</code></pre><h2 id='app-2'>查询app启动页面</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/screens/&lt;KIND&gt;"</span>
-</code></pre><h3 id='http-request-14'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/screens/&lt;KIND&gt;</code></p>
-<h3 id='query-parameters-7'>Query Parameters</h3>
+</code></pre>
+<h2 id="app">查询app启动页面</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/screens/&lt;KIND&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/screens/&lt;KIND&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1241,22 +700,30 @@ Remember — a happy kitten is an authenticated kitten!
           </span><span class="err">kind</span><span class="p">:</span><span class="mi">0</span><span class="w">
           </span><span class="p">}</span><span class="err">...</span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-14'>用户</h1><h2 id='-15'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-6542d8cdced">用户</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>这个用户系统是用户系统集合，所有下属APP都会统一从这里登录获取到必要的tk。   </p>
 
 <p>SERVICE_NAME:  </p>
 
-<p><code>bucky</code> prod模式使用的服务<br>
-<code>bucky-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-16'>使用用户名登录</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin"</span> -d <span class="s2">"username=USERNAME&amp;password=PASSWORD"</span>
-</code></pre><h3 id='formdata-x-www-form-urlencoded'>FormData(x-www-form-urlencoded)</h3>
+</code></pre>
+<h2 id="part-ac5eacad02622d64">使用用户名登录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin"</span> -d <span class="s2">"username=USERNAME&amp;password=PASSWORD"</span>
+</code></pre>
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1278,8 +745,10 @@ Remember — a happy kitten is an authenticated kitten!
 <td>密码</td>
 </tr>
 </tbody></table>
-<h3 id='http-request-15'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin</code></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1290,8 +759,12 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMCwiZXhwIjoxNDk1Nzk2NDIwLCJhdWQiOjEwfQ.aAr2SB0qLgxvNYz506VESiZYAwMhrBiYEHJQ6llwrAo"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-17'>使用手机号登录</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin"</span> -d <span class="s2">"mobile=MOBILE&amp;password=PASSWORD"</span>
-</code></pre><h3 id='formdata-x-www-form-urlencoded-2'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-c4a84bf401be315b">使用手机号登录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin"</span> -d <span class="s2">"mobile=MOBILE&amp;password=PASSWORD"</span>
+</code></pre>
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1313,8 +786,10 @@ Remember — a happy kitten is an authenticated kitten!
 <td>密码</td>
 </tr>
 </tbody></table>
-<h3 id='http-request-16'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin</code></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1328,8 +803,12 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"kt_coin"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-18'>使用邮箱登录</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin"</span> -d <span class="s2">"email=EMAIL&amp;password=PASSWORD"</span>
-</code></pre><h3 id='formdata-x-www-form-urlencoded-3'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-947905bdb3b68579">使用邮箱登录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin"</span> -d <span class="s2">"email=EMAIL&amp;password=PASSWORD"</span>
+</code></pre>
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1351,8 +830,10 @@ Remember — a happy kitten is an authenticated kitten!
 <td>密码</td>
 </tr>
 </tbody></table>
-<h3 id='http-request-17'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin</code></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signin</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1365,12 +846,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-19'>根据手机号获取短信验证码</h2>
+</span></code></pre>
+<h2 id="part-7518a26429d10893">根据手机号获取短信验证码</h2>
+
 <aside class="info">
 关于注册的流程的一些解释，用户直接输入手机号码来注册账户，如果手机号码已存在则可以使用下面verify接口进行验证登录，同时会标记用户手机号码是验证过的。
 </aside>
 <pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/mobile/sms"</span> -d <span class="s2">"mobile=MOBILE"</span>
-</code></pre><h3 id='formdata-x-www-form-urlencoded-4'>FormData(x-www-form-urlencoded)</h3>
+</code></pre>
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1386,8 +871,10 @@ Remember — a happy kitten is an authenticated kitten!
 <td>手机号码</td>
 </tr>
 </tbody></table>
-<h3 id='http-request-18'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/mobile/sms</code></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/mobile/sms</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1395,12 +882,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-20'>验证手机号码以及验证码</h2>
+</span></code></pre>
+<h2 id="part-9a4555101e2f5c6">验证手机号码以及验证码</h2>
+
 <aside class="info">
   使用手机验证码注册时，并不需要传入密码 password，云端也会默认使用空密码，代表不可以用密码来登录。如果需要设置密码，则传入密码字段就可以了。
 </aside>
 <pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/mobile/verify"</span> -d <span class="s2">"mobile=MOBILE&amp;code=CODE"</span>
-</code></pre><h3 id='formdata-x-www-form-urlencoded-5'>FormData(x-www-form-urlencoded)</h3>
+</code></pre>
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1428,8 +919,10 @@ Remember — a happy kitten is an authenticated kitten!
 <td>密码</td>
 </tr>
 </tbody></table>
-<h3 id='http-request-19'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/mobile/verify</code></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/mobile/verify</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1442,16 +935,24 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-21'>使用手机号码登录</h2>
+</span></code></pre>
+<h2 id="part-8d4e389cb3612283">使用手机号码登录</h2>
+
 <aside class="info">
   参见 根据手机号获取短信验证码 验证手机号码以及验证码
 </aside>
-<h2 id='-22'>请求重置密码</h2>
+
+<h2 id="part-5d9e36385085899d">请求重置密码</h2>
+
 <aside class="info">
   参见 根据手机号获取短信验证码 验证手机号码以及验证码
 </aside>
-<h2 id='-23'>使用邮箱注册</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/email"</span> -d <span class="s2">"email=MOBILE&amp;password=PASSWORD"</span>
-</code></pre><h3 id='formdata-x-www-form-urlencoded-6'>FormData(x-www-form-urlencoded)</h3>
+
+<h2 id="part-947905bdb32d679f">使用邮箱注册</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/email"</span> -d <span class="s2">"email=MOBILE&amp;password=PASSWORD"</span>
+</code></pre>
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1473,8 +974,10 @@ Remember — a happy kitten is an authenticated kitten!
 <td>密码</td>
 </tr>
 </tbody></table>
-<h3 id='http-request-20'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/email</code></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/email</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -1487,10 +990,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-24'>使用第三方注册</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/oauth"</span> -d <span class="s2">"openid=OPENID&amp;source=SOURCE"</span>
-</code></pre><h3 id='http-request-21'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/oauth</code></p>
-<h3 id='formdata-x-www-form-urlencoded-7'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-a4aa2215ebf9a999">使用第三方注册</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/oauth"</span> -d <span class="s2">"openid=OPENID&amp;source=SOURCE"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/signup/oauth</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1528,10 +1037,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoxMSwiZXhwIjoxNDk1ODU2ODg5LCJhdWQiOjExfQ.xL_T7z7l8-pNsVkIT6qyD7z_CzH7nzYjK9z0GcHMKiM"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-25'>使用第三方绑定手机号（发送验证码）</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/bind"</span> -d <span class="s2">"mobile=MOBILE"</span>
-</code></pre><h3 id='http-request-22'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/bind</code></p>
-<h3 id='formdata-x-www-form-urlencoded-8'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-84f9cf3f2f84e2d7">使用第三方绑定手机号（发送验证码）</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/bind"</span> -d <span class="s2">"mobile=MOBILE"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/bind</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1554,10 +1069,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-26'>使用第三方绑定手机号（验证验证码）</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/verify"</span> -d <span class="s2">"mobile=MOBILE&amp;code=CODE&amp;openid=OPENID"</span>
-</code></pre><h3 id='http-request-23'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/verify</code></p>
-<h3 id='formdata-x-www-form-urlencoded-9'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-d607180c6551aadf">使用第三方绑定手机号（验证验证码）</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/verify"</span> -d <span class="s2">"mobile=MOBILE&amp;code=CODE&amp;openid=OPENID"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/oauth/verify</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1592,22 +1113,32 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-27'>校园</h1><h2 id='-28'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-6542c0d01d9">校园</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-school</code> prod模式使用的服务<br>
-<code>kt-school-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-29'>获取学校信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-24'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-8'>Query Parameters</h3>
+</code></pre>
+<h2 id="part-1945f33d5f3f3015">获取学校信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1635,10 +1166,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-30'>获取学校所有学员信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/users"</span>
-</code></pre><h3 id='http-request-25'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/users</code></p>
-<h3 id='url-parameters-3'>Url Parameters</h3>
+</span></code></pre>
+<h2 id="part-a7c3d5c3b470d8d5">获取学校所有学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/users"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/users</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1650,7 +1187,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>学校ID</td>
 </tr>
 </tbody></table>
-<h3 id='query-parameters-9'>Query Parameters</h3>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1760,10 +1299,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-31'>获取气场信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;"</span>
-</code></pre><h3 id='http-request-26'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;</code></p>
-<h3 id='query-parameters-10'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-1a06dcb43676a33b">获取气场信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1786,10 +1331,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"KT-CP-QC-140617-001"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-32'>查找学校</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/query?name=&lt;NAME&gt;"</span>
-</code></pre><h3 id='http-request-27'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/query</code></p>
-<h3 id='query-parameters-11'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2cc299861e35279b">查找学校</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/query?name=&lt;NAME&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/query</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1815,10 +1366,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-33'>创建学校</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-28'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools</code></p>
-<h3 id='formdata-x-www-form-urlencoded-10'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-2b903e2445fa0606">创建学校</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1852,10 +1409,16 @@ Remember — a happy kitten is an authenticated kitten!
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
-</span></code></pre><h2 id='-34'>更新学校</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-29'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-12'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2caf4f530f095065">更新学校</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1867,7 +1430,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>学校ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-11'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1901,10 +1466,16 @@ Remember — a happy kitten is an authenticated kitten!
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
-</span></code></pre><h2 id='-35'>创建班级</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms -d "</span><span class="nv">grade</span><span class="o">=</span>1&amp;cls<span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-30'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms</code></p>
-<h3 id='query-parameters-13'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b903e2448895672">创建班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms -d "</span><span class="nv">grade</span><span class="o">=</span>1&amp;cls<span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1916,7 +1487,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>学校ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-12'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1950,10 +1523,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"cls"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-36'>获取班级</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms"</span>
-</code></pre><h3 id='http-request-31'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms</code></p>
-<h3 id='query-parameters-14'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2dd02f69fe366be7">获取班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -1991,10 +1570,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-37'>删除班级</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms/&lt;CID&gt;"</span>
-</code></pre><h3 id='http-request-32'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms/&lt;CID&gt;</code></p>
-<h3 id='query-parameters-15'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b9114f8307071a3">删除班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms/&lt;CID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/classrooms/&lt;CID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2017,9 +1602,13 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-38'>获取邀请码</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite"</span>
-</code></pre><h3 id='http-request-33'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
+</span></code></pre>
+<h2 id="part-35cff02f78e0681d">获取邀请码</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -2027,10 +1616,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-39'>验证邀请码</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite -d "</span><span class="nv">code</span><span class="o">=</span>123456<span class="s2">""</span>
-</code></pre><h3 id='http-request-34'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
-<h3 id='formdata-x-www-form-urlencoded-13'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-576b0d942bca635d">验证邀请码</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite -d "</span><span class="nv">code</span><span class="o">=</span>123456<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2053,10 +1648,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-40'>创建学员信息</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1&amp;sid<span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-35'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles</code></p>
-<h3 id='formdata-x-www-form-urlencoded-14'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1a81e7d6255489e7">创建学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1&amp;sid<span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2096,10 +1697,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-41'>更新学员信息</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt; -d """</span>
-</code></pre><h3 id='http-request-36'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
-<h3 id='query-parameters-16'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-e655b63e240fdf86">更新学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt; -d """</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2111,7 +1718,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>资料ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-15'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2173,10 +1782,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-42'>删除学生信息</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;"</span>
-</code></pre><h3 id='http-request-37'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
-<h3 id='url-parameters-4'>Url Parameters</h3>
+</span></code></pre>
+<h2 id="part-1469e64075f8fc4">删除学生信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2195,10 +1810,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-43'>查询学员信息</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;"</span>
-</code></pre><h3 id='http-request-38'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;</code></p>
-<h3 id='query-parameters-17'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-dfb7d37a70fc2688">查询学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2232,10 +1853,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-44'>创建教师信息</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-39'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers</code></p>
-<h3 id='formdata-x-www-form-urlencoded-16'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1ab0bd40cf712cba">创建教师信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2264,10 +1891,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-45'>获取教师信息</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-40'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-18'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-1974c6c90837c5ef">获取教师信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2297,10 +1930,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-46'>更改或者绑定学校</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt; -d "</span><span class="nv">sid</span><span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-41'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-19'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-5e76dadcc27507fd">更改或者绑定学校</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt; -d "</span><span class="nv">sid</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2312,7 +1951,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>教师ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-17'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2347,10 +1988,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"contribution"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-47'>增加教师的贡献值</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt; -d "</span><span class="nv">contribution</span><span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-42'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-20'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-fdb3f5513503d2f6">增加教师的贡献值</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt; -d "</span><span class="nv">contribution</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/teachers/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2362,7 +2009,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>教师ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-18'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2397,10 +2046,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"contribution"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-48'>快速参赛</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/quickgame"</span>
-</code></pre><h3 id='http-request-43'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/quickgame</code></p>
-<h3 id='query-parameters-21'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2cbe29476bbcc34a">快速参赛</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/quickgame"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;ID&gt;/quickgame</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2433,10 +2088,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-49'>查看班级下所有学生</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/classrooms/&lt;CID&gt;/users"</span>
-</code></pre><h3 id='http-request-44'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/classrooms/&lt;CID&gt;/users</code></p>
-<h3 id='query-parameters-22'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-d909939a0a0173ff">查询班级所有学生</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/classrooms/&lt;CID&gt;/users"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/classrooms/&lt;CID&gt;/users</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2481,22 +2142,32 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-50'>测评</h1><h2 id='-51'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-6542d7d0346">测评</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-school</code> prod模式使用的服务<br>
-<code>kt-school-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-52'>获取技能列表</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/skills"</span>
-</code></pre><h3 id='http-request-45'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/skills</code></p>
-<h3 id='query-parameters-23'>Query Parameters</h3>
+</code></pre>
+<h2 id="part-1934cec34a431a09">获取技能列表</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/skills"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/skills</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2658,10 +2329,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-53'>创建测评记录</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments -d "</span><span class="nv">skid</span><span class="o">=</span>&lt;SID&gt;&amp;uids<span class="o">=</span>1,2,3&amp;counts<span class="o">=</span>10,20,30<span class="s2">""</span>
-</code></pre><h3 id='http-request-46'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments</code></p>
-<h3 id='formdata-x-www-form-urlencoded-19'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1b5c909925d90825">创建测评记录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments -d "</span><span class="nv">skid</span><span class="o">=</span>&lt;SID&gt;&amp;uids<span class="o">=</span>1,2,3&amp;counts<span class="o">=</span>10,20,30<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2702,10 +2379,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-54'>更新测评记录个数</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt; -d "</span><span class="nv">count</span><span class="o">=</span>10<span class="s2">""</span>
-</code></pre><h3 id='http-request-47'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;</code></p>
-<h3 id='formdata-x-www-form-urlencoded-20'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-bfb5a92b3c778b95">更新测评记录个数</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt; -d "</span><span class="nv">count</span><span class="o">=</span>10<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2739,10 +2422,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-06-14 11:33:45 +0800"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='key'>更新测评视频key</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt; -d "</span><span class="nv">key</span><span class="o">=</span>&lt;KEY&gt;<span class="s2">""</span>
-</code></pre><h3 id='http-request-48'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;</code></p>
-<h3 id='formdata-x-www-form-urlencoded-21'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="key">更新测评视频key</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt; -d "</span><span class="nv">key</span><span class="o">=</span>&lt;KEY&gt;<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2776,22 +2465,32 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-06-14 11:33:45 +0800"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-55'>校园赛事</h1><h2 id='-56'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-2cc7610aa67846da">校园赛事</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-school</code> prod模式使用的服务<br>
-<code>kt-school-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-57'>创建赛事</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games -d "</span><span class="nv">sid</span><span class="o">=</span>&lt;SID&gt;&amp;address<span class="o">=</span>xxxx&amp;name<span class="o">=</span>xxx&amp;start_at<span class="o">=</span>2017-06-06<span class="s2">""</span>
-</code></pre><h3 id='http-request-49'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games</code></p>
-<h3 id='formdata-x-www-form-urlencoded-22'>FormData(x-www-form-urlencoded)</h3>
+</code></pre>
+<h2 id="part-2b903e244d843688">创建赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games -d "</span><span class="nv">sid</span><span class="o">=</span>&lt;SID&gt;&amp;address<span class="o">=</span>xxxx&amp;name<span class="o">=</span>xxx&amp;start_at<span class="o">=</span>2017-06-06<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -2870,9 +2569,13 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">38.39</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='geo-location'>查询Geo Location</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location"</span>
-</code></pre><h3 id='http-request-50'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location</code></p>
+</span></code></pre>
+<h2 id="geo-location">查询Geo Location</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -2997,10 +2700,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-58'>查询单个赛事</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-51'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-24'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-df06e7547c717ff6">查询单个赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3027,10 +2736,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.3146636935</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-59'>查询单个赛事下所有回合</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds"</span>
-</code></pre><h3 id='http-request-52'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds</code></p>
-<h3 id='query-parameters-25'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-d4d01ae4396d45d2">查询单个赛事下所有回合</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3042,7 +2757,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='url-parameters-5'>Url Parameters</h3>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3408,10 +3125,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-60'>赛事排行榜</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks?type=0"</span>
-</code></pre><h3 id='http-request-53'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks</code></p>
-<h3 id='query-parameters-26'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-b9bb279f892fc09">赛事排行榜</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks?type=0"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3423,7 +3146,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='url-parameters-6'>Url Parameters</h3>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3721,10 +3446,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-61'>修改赛事</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-54'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-27'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2c0b151a39bf558a">修改赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3736,7 +3467,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-23'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3797,10 +3530,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">38.39</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-62'>删除赛事</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-55'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-28'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b9114f8356b51b9">删除赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3812,7 +3551,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-24'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3835,10 +3576,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-63'>附近的赛事</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;"</span>
-</code></pre><h3 id='http-request-56'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;</code></p>
-<h3 id='query-parameters-29'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-e557f587c97bdee9">附近的赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3912,10 +3659,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-64'>获取学校的赛事</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/games"</span>
-</code></pre><h3 id='http-request-57'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/games</code></p>
-<h3 id='query-parameters-30'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-d486bcb62d2596e1">获取学校的赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/games"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/games</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -3980,10 +3733,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-65'>提交比赛结果</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds"</span>
-</code></pre><h3 id='http-request-58'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds</code></p>
-<h3 id='formdata-x-www-form-urlencoded-25'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1c636ee557a8bba2">提交比赛结果</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4103,10 +3862,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-66'>获取单个比赛详情</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-59'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-31'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-4c773c7b99bc2e55">获取单个比赛详情</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4162,10 +3927,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-67'>更新上传的视频</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt; -d "</span><span class="nv">video_key</span><span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-60'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-32'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-f9cf38806f2ab382">更新上传的视频</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt; -d "</span><span class="nv">video_key</span><span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4177,7 +3948,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>单个比赛ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-26'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4237,10 +4010,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-68'>删除单个比赛</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-61'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-33'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-95af8f452434c6">删除单个比赛</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4259,10 +4038,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-69'>创建赛事排名</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks -d "</span><span class="nv">gid</span><span class="o">=</span>1&amp;uid<span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-62'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks</code></p>
-<h3 id='formdata-x-www-form-urlencoded-27'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1cc64ed931250550">创建赛事排名</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks -d "</span><span class="nv">gid</span><span class="o">=</span>1&amp;uid<span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4307,22 +4092,32 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-70'>俱乐部</h1><h2 id='-71'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-3786ca55051d0ba">俱乐部</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-club</code> prod模式使用的服务<br>
-<code>kt-club-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-club</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-club-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-72'>获取俱乐部信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-63'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-34'>Query Parameters</h3>
+</code></pre>
+<h2 id="part-10ae71aff68ddf6b">获取俱乐部信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4350,10 +4145,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-73'>获取俱乐部所有学员信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/users"</span>
-</code></pre><h3 id='http-request-64'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/users</code></p>
-<h3 id='url-parameters-7'>Url Parameters</h3>
+</span></code></pre>
+<h2 id="part-67d53040522b392b">获取俱乐部所有学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/users"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/users</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4365,7 +4166,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>俱乐部ID</td>
 </tr>
 </tbody></table>
-<h3 id='query-parameters-35'>Query Parameters</h3>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4475,10 +4278,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-74'>获取气场信息</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;"</span>
-</code></pre><h3 id='http-request-65'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;</code></p>
-<h3 id='url-parameters-8'>Url Parameters</h3>
+</span></code></pre>
+<h2 id="part-1a06dcb43676a33b">获取气场信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/bags/&lt;CODE&gt;</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4501,9 +4310,13 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"KT-CP-QC-140617-001"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-75'>俱乐部列表</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs"</span>
-</code></pre><h3 id='http-request-66'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs</code></p>
+</span></code></pre>
+<h2 id="part-4896153e85f0e4f">俱乐部列表</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -4523,9 +4336,13 @@ Remember — a happy kitten is an authenticated kitten!
 
 </span><span class="err">```shell</span><span class="w">
 </span><span class="err">curl</span><span class="w"> </span><span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/query?name=&lt;NAME&gt;"</span><span class="w">
-</span></code></pre><h3 id='http-request-67'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/query</code></p>
-<h3 id='query-parameters-36'>Query Parameters</h3>
+</span></code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/query</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4551,10 +4368,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-76'>创建俱乐部</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-68'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs</code></p>
-<h3 id='formdata-x-www-form-urlencoded-28'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-63a36171b30164fc">创建俱乐部</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4588,10 +4411,16 @@ Remember — a happy kitten is an authenticated kitten!
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
-</span></code></pre><h2 id='-77'>更新俱乐部</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-69'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-37'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-cdce7a203e7886fb">更新俱乐部</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4603,7 +4432,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>俱乐部ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-29'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4637,10 +4468,16 @@ Remember — a happy kitten is an authenticated kitten!
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
-</span></code></pre><h2 id='-78'>创建班级</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses -d "</span><span class="nv">grade</span><span class="o">=</span>1&amp;cls<span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-70'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses</code></p>
-<h3 id='query-parameters-38'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b903e2448895672">创建班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses -d "</span><span class="nv">grade</span><span class="o">=</span>1&amp;cls<span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4652,7 +4489,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>俱乐部ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-30'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4686,10 +4525,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"cls"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-79'>获取班级</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses"</span>
-</code></pre><h3 id='http-request-71'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses</code></p>
-<h3 id='query-parameters-39'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2dd02f69fe366be7">获取班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4727,10 +4572,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-80'>删除班级</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses/&lt;CID&gt;"</span>
-</code></pre><h3 id='http-request-72'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses/&lt;CID&gt;</code></p>
-<h3 id='query-parameters-40'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b9114f8307071a3">删除班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses/&lt;CID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/courses/&lt;CID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4753,9 +4604,13 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-81'>获取邀请码</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite"</span>
-</code></pre><h3 id='http-request-73'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
+</span></code></pre>
+<h2 id="part-35cff02f78e0681d">获取邀请码</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -4763,10 +4618,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-82'>验证邀请码</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite -d "</span><span class="nv">code</span><span class="o">=</span>123456<span class="s2">""</span>
-</code></pre><h3 id='http-request-74'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
-<h3 id='formdata-x-www-form-urlencoded-31'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-576b0d942bca635d">验证邀请码</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite -d "</span><span class="nv">code</span><span class="o">=</span>123456<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/invite</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4789,10 +4650,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-83'>创建学员信息</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1&amp;cid<span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-75'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles</code></p>
-<h3 id='formdata-x-www-form-urlencoded-32'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1a81e7d6255489e7">创建学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles -d "</span><span class="nv">uid</span><span class="o">=</span>1&amp;cid<span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4832,10 +4699,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"course"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-84'>更新学员信息</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt; -d """</span>
-</code></pre><h3 id='http-request-76'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
-<h3 id='query-parameters-41'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-e655b63e240fdf86">更新学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt; -d """</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4847,7 +4720,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>资料ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-33'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4909,10 +4784,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-85'>删除学生信息</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;"</span>
-</code></pre><h3 id='http-request-77'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
-<h3 id='query-parameters-42'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-1469e64075f8fc4">删除学生信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;PID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4931,10 +4812,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-86'>查询学员信息</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;"</span>
-</code></pre><h3 id='http-request-78'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;</code></p>
-<h3 id='query-parameters-43'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-dfb7d37a70fc2688">查询学员信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/profiles/&lt;UID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -4968,10 +4855,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-87'>创建经理信息</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-79'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers</code></p>
-<h3 id='formdata-x-www-form-urlencoded-34'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1c316c850878ebcf">创建经理信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers -d "</span><span class="nv">uid</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5000,10 +4893,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"club"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-88'>获取经理信息</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-80'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-44'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-1af5760d413f8504">获取经理信息</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5033,10 +4932,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-89'>更改或者绑定俱乐部</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt; -d "</span><span class="nv">cid</span><span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-81'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-45'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-cab9a76c22b03793">更改或者绑定俱乐部</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt; -d "</span><span class="nv">cid</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5048,7 +4953,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>经理ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-35'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5083,10 +4990,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"contribution"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-90'>增加经理的贡献值</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt; -d "</span><span class="nv">contribution</span><span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-82'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-46'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-b25a1368db25cdcb">增加经理的贡献值</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt; -d "</span><span class="nv">contribution</span><span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/managers/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5098,7 +5011,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>经理ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-36'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5133,10 +5048,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"contribution"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-91'>快速参赛</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/quickgame"</span>
-</code></pre><h3 id='http-request-83'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/quickgame</code></p>
-<h3 id='query-parameters-47'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2cbe29476bbcc34a">快速参赛</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/quickgame"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/quickgame</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5169,10 +5090,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"course"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-92'>俱乐部商品</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/merchandises"</span>
-</code></pre><h3 id='http-request-84'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/merchandises</code></p>
-<h3 id='query-parameters-48'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-4896153e940ebb3">俱乐部商品</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/merchandises"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/merchandises</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5216,10 +5143,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-93'>俱乐部商品详情</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/merchandises/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-85'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/merchandises/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-49'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-93931a4f8be822be">俱乐部商品详情</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/merchandises/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/merchandises/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5261,10 +5194,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-04 13:18:53 +0800"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-94'>用户订单</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/orders"</span>
-</code></pre><h3 id='http-request-86'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/orders?status=-1</code></p>
-<h3 id='query-parameters-50'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2d3acd4ba0424a8c">用户订单</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/orders"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/orders?status=-1</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5281,10 +5220,16 @@ Remember — a happy kitten is an authenticated kitten!
 <p>返回内容</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="w">
-</span></code></pre><h2 id='-95'>俱乐部参赛卡</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/cards"</span>
-</code></pre><h3 id='http-request-87'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/cards</code></p>
-<h3 id='query-parameters-51'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-d947c41e2e84205b">俱乐部参赛卡</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/cards"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/cards</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5296,7 +5241,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>俱乐部ID</td>
 </tr>
 </tbody></table>
-<h3 id='uul-parameters'>Uul Parameters</h3>
+
+<h3 id="uul-parameters">Uul Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5336,10 +5283,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-96'>用户参赛卡</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/cards"</span>
-</code></pre><h3 id='http-request-88'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/cards</code></p>
-<h3 id='query-parameters-52'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-4b8d20386b0795ee">用户参赛卡</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/cards"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/users/&lt;ID&gt;/cards</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5351,7 +5304,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>用户ID</td>
 </tr>
 </tbody></table>
-<h3 id='uul-parameters-2'>Uul Parameters</h3>
+
+<h3 id="uul-parameters">Uul Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5391,10 +5346,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-97'>用户参赛卡详情</h2><pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/cards/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-89'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/cards/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-53'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-3fd1498bb4324d39">用户参赛卡详情</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/cards/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/cards/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5434,22 +5395,32 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-98'>俱乐部赛事</h1><h2 id='-99'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-4896153f28efa7b">俱乐部赛事</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-club</code> prod模式使用的服务<br>
-<code>kt-club-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-club</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-club-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-100'>创建赛事</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games -d "</span><span class="nv">cid</span><span class="o">=</span>&lt;CID&gt;&amp;address<span class="o">=</span>xxxx&amp;name<span class="o">=</span>xxx&amp;start_at<span class="o">=</span>2017-06-06<span class="s2">""</span>
-</code></pre><h3 id='http-request-90'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games</code></p>
-<h3 id='formdata-x-www-form-urlencoded-37'>FormData(x-www-form-urlencoded)</h3>
+</code></pre>
+<h2 id="part-2b903e244d843688">创建赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games -d "</span><span class="nv">cid</span><span class="o">=</span>&lt;CID&gt;&amp;address<span class="o">=</span>xxxx&amp;name<span class="o">=</span>xxx&amp;start_at<span class="o">=</span>2017-06-06<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5528,10 +5499,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">38.39</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-101'>查询单个赛事</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-91'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-54'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-df06e7547c717ff6">查询单个赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5558,9 +5535,13 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">121.3146636935</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='geo-location-2'>查询Geo Location</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location"</span>
-</code></pre><h3 id='http-request-92'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location</code></p>
+</span></code></pre>
+<h2 id="geo-location">查询Geo Location</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/location</code></p>
 
 <blockquote>
 <p>返回内容</p>
@@ -5685,10 +5666,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-102'>查询单个赛事下所有回合</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds"</span>
-</code></pre><h3 id='http-request-93'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds</code></p>
-<h3 id='query-parameters-55'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-d4d01ae4396d45d2">查询单个赛事下所有回合</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/rounds</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -5700,7 +5687,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='url-parameters-9'>Url Parameters</h3>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6066,10 +6055,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-103'>赛事排行榜</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks?type=0"</span>
-</code></pre><h3 id='http-request-94'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks</code></p>
-<h3 id='query-parameters-56'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-b9bb279f892fc09">赛事排行榜</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks?type=0"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;/ranks</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6081,7 +6076,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='url-parameters-10'>Url Parameters</h3>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6379,10 +6376,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-104'>修改赛事</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-95'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-57'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2c0b151a39bf558a">修改赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt; -d "</span><span class="nv">name</span><span class="o">=</span>xxxx&amp;address<span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6394,7 +6397,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-38'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6455,10 +6460,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="mf">38.39</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-105'>删除赛事</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-96'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-58'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b9114f8356b51b9">删除赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6470,7 +6481,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>赛事ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-39'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6493,10 +6506,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-106'>附近的赛事</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;"</span>
-</code></pre><h3 id='http-request-97'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;</code></p>
-<h3 id='query-parameters-59'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-e557f587c97bdee9">附近的赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/games/nearest/&lt;LAT&gt;/&lt;LNG&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6570,10 +6589,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-107'>获取俱乐部的赛事</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;SID&gt;/games"</span>
-</code></pre><h3 id='http-request-98'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;SID&gt;/games</code></p>
-<h3 id='query-parameters-60'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-b84550e089d90e77">获取俱乐部的赛事</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;SID&gt;/games"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;SID&gt;/games</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6638,10 +6663,16 @@ Remember — a happy kitten is an authenticated kitten!
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-108'>提交比赛结果</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds"</span>
-</code></pre><h3 id='http-request-99'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds</code></p>
-<h3 id='formdata-x-www-form-urlencoded-40'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1c636ee557a8bba2">提交比赛结果</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6761,10 +6792,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-109'>获取单个比赛详情</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-100'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-61'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-4c773c7b99bc2e55">获取单个比赛详情</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6820,10 +6857,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-110'>更新上传的视频</h2><pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt; -d "</span><span class="nv">video_key</span><span class="o">=</span>xxxx<span class="s2">""</span>
-</code></pre><h3 id='http-request-101'>HTTP Request</h3>
-<p><code>PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-62'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-f9cf38806f2ab382">更新上传的视频</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt; -d "</span><span class="nv">video_key</span><span class="o">=</span>xxxx<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6835,7 +6878,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>单个比赛ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-41'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6895,10 +6940,16 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"images_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-111'>删除单个比赛</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
-</code></pre><h3 id='http-request-102'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
-<h3 id='query-parameters-63'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-95af8f452434c6">删除单个比赛</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/rounds/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6917,10 +6968,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-112'>创建赛事排名</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks -d "</span><span class="nv">gid</span><span class="o">=</span>1&amp;uid<span class="o">=</span>1<span class="s2">""</span>
-</code></pre><h3 id='http-request-103'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks</code></p>
-<h3 id='formdata-x-www-form-urlencoded-42'>FormData(x-www-form-urlencoded)</h3>
+</span></code></pre>
+<h2 id="part-1cc64ed931250550">创建赛事排名</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks -d "</span><span class="nv">gid</span><span class="o">=</span>1&amp;uid<span class="o">=</span>1<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/ranks</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -6965,22 +7022,32 @@ Remember — a happy kitten is an authenticated kitten!
     </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-113'>俱乐部队列</h1><h2 id='-114'>服务简介</h2>
+</span></code></pre>
+          <h1 id="part-4896153f2d98bde">俱乐部队列</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
 <p>SERVICE_NAME:  </p>
 
-<p><code>kt-club</code> prod模式使用的服务<br>
-<code>kt-club-stg</code> stg模式使用的服务  </p>
+<p><code class="prettyprint">kt-club</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-club-stg</code> stg模式使用的服务  </p>
 
-<p>所有的API请求通过<code>https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
 
 <aside class="success">
 所有请求请带上app_key拼接在url中
 </aside>
 <pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
-</code></pre><h2 id='-115'>排队列表</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/queues"</span>
-</code></pre><h3 id='http-request-104'>HTTP Request</h3>
-<p><code>GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/queues</code></p>
-<h3 id='query-parameters-64'>Query Parameters</h3>
+</code></pre>
+<h2 id="part-2c62fb86d6a20e00">排队列表</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/queues"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/clubs/&lt;ID&gt;/queues</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -7018,10 +7085,16 @@ Remember — a happy kitten is an authenticated kitten!
       </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-116'>排队</h2><pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;"</span>
-</code></pre><h3 id='http-request-105'>HTTP Request</h3>
-<p><code>POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;</code></p>
-<h3 id='query-parameters-65'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-6542abf1fab">排队</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -7033,7 +7106,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>俱乐部ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-43'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -7062,10 +7137,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h2 id='-117'>列表使用</h2><pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;"</span>
-</code></pre><h3 id='http-request-106'>HTTP Request</h3>
-<p><code>DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;</code></p>
-<h3 id='query-parameters-66'>Query Parameters</h3>
+</span></code></pre>
+<h2 id="part-2b8f981b29d747bd">列表使用</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/queues/&lt;CID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -7077,7 +7158,9 @@ Remember — a happy kitten is an authenticated kitten!
 <td>俱乐部ID</td>
 </tr>
 </tbody></table>
-<h3 id='formdata-x-www-form-urlencoded-44'>FormData(x-www-form-urlencoded)</h3>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -7100,7 +7183,9 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h1 id='-118'>错误信息</h1>
+</span></code></pre>
+          <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
+
 <p>守望者使用下列的错误代码</p>
 
 <table><thead>
@@ -7111,47 +7196,47 @@ Remember — a happy kitten is an authenticated kitten!
 </thead><tbody>
 <tr>
 <td>400</td>
-<td>Bad Request -- Your request sucks</td>
+<td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
 <td>401</td>
-<td>Unauthorized -- Your API key is wrong</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
 <td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found</td>
+<td>Not Found &ndash; The specified kitten could not be found</td>
 </tr>
 <tr>
 <td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method</td>
+<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
 </tr>
 <tr>
 <td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
 <td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers</td>
+<td>Gone &ndash; The kitten requested has been removed from our servers</td>
 </tr>
 <tr>
 <td>418</td>
-<td>I&#39;m a teapot</td>
+<td>I&rsquo;m a teapot</td>
 </tr>
 <tr>
 <td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
 </tr>
 <tr>
 <td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
 </tr>
 <tr>
 <td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td>Service Unavailable &ndash; We&rsquo;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
 
