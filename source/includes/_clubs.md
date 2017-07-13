@@ -998,7 +998,6 @@ type|0或者1 0代表没用的卡，1是有用的
 }
 ```
 
-
 ## 用户参赛卡详情
 
 ```shell
@@ -1044,3 +1043,19 @@ ID|参赛卡ID
 }
 ```
 
+## 用户参赛卡详情
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/excited"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/excited`
+
+
+> 返回内容
+
+```json
+同Rounds其他接口
+```
