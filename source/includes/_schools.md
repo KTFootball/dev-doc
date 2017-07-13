@@ -754,3 +754,52 @@ ID|学校ID
   }
 }
 ```
+
+## 查询班级所有学生
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/classrooms/<CID>/users"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/classrooms/<CID>/users`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+SID|学校ID
+CID|教室ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id":61,
+            "user_id":1470,
+            "school_id":3,
+            "user": {
+                "id":1470,
+                "username":"k3t00001"
+            },
+            "realname":null,
+            "gender":1,
+            "point":0,
+            "ce":984,
+            "avatar":null,
+            "birthday":null,
+            "classroom": {
+                "id":7,
+                "school":3,
+                "grade":"0",
+                "cls":"涓€鐝�"
+            }
+        }
+    ]
+}
+```
+
+
