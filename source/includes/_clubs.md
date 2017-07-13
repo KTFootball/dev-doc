@@ -1043,7 +1043,7 @@ ID|参赛卡ID
 }
 ```
 
-## 用户参赛卡详情
+## 获取excited视频
 
 ```shell
 curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/excited"
