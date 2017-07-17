@@ -2377,7 +2377,137 @@
 <p>返回内容</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-1fab0a3cbbacf3dc">批量更新测评记录视频</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/batch -d "</span><span class="nv">ids</span><span class="o">=</span>10&amp;video_key<span class="o">=</span>oxedxadhgesa_d235da<span class="s2">""</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/batch</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ids</td>
+<td>oxedxadhgesa_d235da</td>
+<td>true</td>
+<td>技能ID</td>
+</tr>
+<tr>
+<td>video_key</td>
+<td>10</td>
+<td>true</td>
+<td>视频key</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">31</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">566</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">36</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">336</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284733&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:IjQ8c93zSlSaP7xBBPVblMJxALs="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">37</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">566</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284733&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:IjQ8c93zSlSaP7xBBPVblMJxALs="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-07-17 16:43:10 +0800"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <h2 id="part-bfb5a92b3c778b95">更新测评记录个数</h2>
