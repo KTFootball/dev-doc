@@ -198,12 +198,128 @@ counts|10|true|技能数量用逗号隔开
 skid|1|true|技能ID
 video_key|xxxxx|false|视频Key
 
+> 返回内容
+
+```json
+{
+  "data": [1,2,3]
+}
+```
+
+## 批量更新测评记录视频
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/batch -d "ids=10&video_key=oxedxadhgesa_d235da""
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/batch`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+ids|oxedxadhgesa_d235da|true|技能ID
+video_key|10|true|视频key
 
 > 返回内容
 
 ```json
 {
-  "data": "success"
+    "data": [
+        {
+            "id": 31,
+            "count": 3,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        },
+        {
+            "id": 32,
+            "count": 3,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        },
+        {
+            "id": 33,
+            "count": 6,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        },
+        {
+            "id": 34,
+            "count": 5,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        },
+        {
+            "id": 35,
+            "count": 566,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284732&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:p6emrHV-6J5Tf8nAvhWJXONgWa4=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        },
+        {
+            "id": 36,
+            "count": 336,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284733&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:IjQ8c93zSlSaP7xBBPVblMJxALs=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        },
+        {
+            "id": 37,
+            "count": 566,
+            "skill": {
+                "id": 3,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0,
+                "gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif"
+            },
+            "video": "http://oqe9ssuil.bkt.clouddn.com/Fq7EO2ZKZCNg67e_vb57pcWwRMpY?e=1500284733&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:IjQ8c93zSlSaP7xBBPVblMJxALs=",
+            "created_at": "2017-07-17 16:43:10 +0800"
+        }
+    ]
 }
 ```
 
