@@ -2596,6 +2596,213 @@
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <h1 id="part-3786cdde0cf57fe">大课间</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务  </p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
+</code></pre>
+<h2 id="part-12de3cf097b93f6a">获取大课间列表</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/recesses"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/recesses</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"幼儿园大课间"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/幼儿园大课间.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">113</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大课间第一套"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/大课间第一套.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">122</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大课间第二套"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/大课间第二套.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">127</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大课间第三套"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/大课间第三套.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">113</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大课间第四套"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/大课间第四套.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">119</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-1a511e6cfc4e64f6">创建大课间包</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/recesses""
+</span></code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/recesses</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>大课间第四套</td>
+<td>true</td>
+<td>大课间时间</td>
+</tr>
+<tr>
+<td>requirements</td>
+<td>整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范.</td>
+<td>true</td>
+<td>大课间要求</td>
+</tr>
+<tr>
+<td>video_url</td>
+<td>http://public.ktfootball.com/download/recess/大课间第四套.zip</td>
+<td>true</td>
+<td>视频下载zip地址</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>119</td>
+<td>true</td>
+<td>持续时间</td>
+</tr>
+<tr>
+<td>strength</td>
+<td>中强度</td>
+<td>true</td>
+<td>大课间强度</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大课间第四套"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/大课间第四套.zip"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">119</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-cdce7a58cef60e3f">更新大课间</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/recesses/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/recesses/&lt;ID&gt;</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>大课间第四套</td>
+<td>false</td>
+<td>大课间时间</td>
+</tr>
+<tr>
+<td>requirements</td>
+<td>整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范.</td>
+<td>false</td>
+<td>大课间要求</td>
+</tr>
+<tr>
+<td>video_url</td>
+<td>http://public.ktfootball.com/download/recess/大课间第四套.zip</td>
+<td>false</td>
+<td>视频下载zip地址</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>119</td>
+<td>false</td>
+<td>持续时间</td>
+</tr>
+<tr>
+<td>strength</td>
+<td>中强度</td>
+<td>false</td>
+<td>大课间强度</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大课间第四套"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"整齐,统一,学生1-2排横列,左右前后间隔2-3米,老师在前面示范."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/recess/大课间第四套.zip"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">119</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"中强度"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-d970aac784ef05d1">删除大课间</h2>
+<pre class="highlight shell tab-shell"><code>curl -X DELETE <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE &quot;https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;</code></p>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-2cc7610aa67846da">校园赛事</h1>
 
 <h2 id="part-2cae504bf1357d03">服务简介</h2>
