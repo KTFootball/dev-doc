@@ -19,6 +19,7 @@ includes:
   - users
   - schools
   - assessments
+  - recesses
   - games
   - clubs
   - club_games
