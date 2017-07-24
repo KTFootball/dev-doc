@@ -20,6 +20,7 @@ includes:
   - schools
   - assessments
   - recesses
+  - motions_and_skills
   - games
   - clubs
   - club_games
