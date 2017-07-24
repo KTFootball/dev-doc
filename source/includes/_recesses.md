@@ -173,7 +173,7 @@ curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/recesses/<ID
 
   `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/recesses/<ID>/records`
 
-## Query Parameters
+### Query Parameters
 Parameter | Description
 --------- | -----------
 ID|大课间ID
@@ -203,7 +203,7 @@ curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/recesses/reco
 
   `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/recesses/records/<RID>`
 
-## Query Parameters
+### Query Parameters
 Parameter | Description
 --------- | -----------
 RID|大课间测评ID
