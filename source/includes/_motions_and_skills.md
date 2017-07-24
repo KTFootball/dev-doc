@@ -472,7 +472,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skills/<ID>"
 ```
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skills`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skills/<ID>`
 
 ### Query Parameters
 Parameter | Description
@@ -586,7 +586,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/<ID>"
 ```
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/1`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/<ID>`
 
 ### Query Parameters
 Parameter | Description
