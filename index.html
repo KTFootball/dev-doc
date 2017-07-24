@@ -3170,6 +3170,660 @@
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <h1 id="part-6542d7d0346">测评</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务  </p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
+</code></pre>
+<h2 id="part-670a8e214585f549">技能列表获取</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/skills?category=运球游戏"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/skills</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category</td>
+<td>无</td>
+<td>false</td>
+<td>技能类型（控球类，传球类，素质教育）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">" 翩翩起舞"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚交替跳动触球，锻炼了的控球技术，提升球感</span><span class="se">\r\n</span><span class="s2">像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚背外侧运球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"行云流水"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"外脚背带球节奏显快，最具有观赏性，而且传球隐蔽，利于各方向传球、斜线带球、控制球护球、假动作和过人。</span><span class="se">\r\n</span><span class="s2">不要低头看球，注意速度的变化，不断变换方向和速度的曲线带球才是足球比赛中最重要的技能！"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/footlesson/脚背外侧运球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/footlesson/脚背外侧运球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/05/外脚背带球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/05/外脚背带球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/05/外脚背带球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/05/外脚背带球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/05/外脚背带球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚底踩球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"活蹦乱跳"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"在练习中逐渐熟悉了球性，并且对球的感觉也有了提高，双脚左右交替踩球的动作技术可以将自身的协调性和平衡能力得到提高</span><span class="se">\r\n</span><span class="s2">如果你可以熟练掌握，就不容易丢掉控球权。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚底踩球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚底踩球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/01/脚底踩球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/01/脚底踩球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/01/脚底踩球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/01/脚底踩球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/01/脚底踩球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"正脚背颠球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"无拘无束"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"颠球是提高足球基本功的重要方法!要学好它,务必要苦练,全身放松,集中注意力,坚持,坚持,再坚持!</span><span class="se">\r\n</span><span class="s2">颠球会培养你的球感，如果你变得很厉害，你就可以带球去任何地方"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/正脚背颠球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/正脚背颠球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/02/正脚背颠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/02/正脚背颠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/02/正脚背颠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/02/正脚背颠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/02/正脚背颠球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"踩单车"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"变幻莫测"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"踩单车更强调于良好节奏感，其中又包括控奏与变奏，前者支持你做出连续的踏板动作，后者建立在前者之上，用于支持球场上的突发情况和多次使用。</span><span class="se">\r\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩单车.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩单车.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/06/踩单车教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/06/踩单车漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/06/踩单车初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/06/踩单车中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/06/踩单车高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"内晃外拨"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"风云突变"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"内晃外拨，动作可以迷惑对手，是你更好的带球过人。</span><span class="se">\r\n</span><span class="s2">像雷一样进入，闪电一般改变方向！很快的突破变向有可能创造一个新的局面和机会"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/内晃外拨.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/内晃外拨.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/07/内晃外拨教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/07/内晃外拨漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/07/内晃外拨初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/07/内晃外拨中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/07/内晃外拨高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚内侧接球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"稳如泰山"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚内侧接球是经常使用的非常重要的基本技术，一定要学习好，这会让你的团队配合更流畅</span><span class="se">\r\n</span><span class="s2">停球脚在支撑脚侧面直接提起，看准触球点，大腿主动下压，脚从触球点向后下方切压球，达到缓冲阻拦球的目的"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">找一个小伙伴，找一个空地，一起练习足球吧！</span><span class="se">\r\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧接球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧接球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/08/脚内侧接球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/08/脚内侧接球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/08/脚内侧接球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/08/脚内侧接球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/08/脚内侧接球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚内侧颠球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"超然自得"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"颠球是足球的基本功，熟练控制球的关键在与信心，精力集中和正确的技术动作</span><span class="se">\r\n</span><span class="s2">如果掌握这个技术，你就会很潇洒，只需要一个足球可以非常健康的生活，而且也会非常开心"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧颠球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧颠球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/18/脚内侧颠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/18/脚内侧颠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/18/脚内侧颠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/18/脚内侧颠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/18/脚内侧颠球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大腿颠球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"步步高升"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"颠球是提高足球基本功的重要方法!要学好它,务必要苦练,全身放松,集中注意力,坚持,坚持,再坚持!</span><span class="se">\r\n</span><span class="s2">颠球会培养你的球感，如果你变得很厉害，你就可以带球去任何地方"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/大腿颠球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/大腿颠球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/09/大腿颠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/09/大腿颠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/09/大腿颠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/09/大腿颠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/09/大腿颠球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"内跨外拨"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"出其不意"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"带球过人的绝佳动作，骗过对手的假动作，是带球动作中不可替代的动作之一"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/内跨外拨.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/内跨外拨.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/12/内跨外拨教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/12/内跨外拨漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/12/内跨外拨初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/12/内跨外拨中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/12/内跨外拨高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"踩球变向"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一反常态"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"学会了这个动作，你就可以更好的晃过你的对手，突出重围</span><span class="se">\r\n</span><span class="s2">①向一侧运球；②踩球停住并越过球，重心移向运球一侧；③180度转身，外脚背快速启动"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩球变向.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩球变向.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/13/踩球变向教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/13/踩球变向漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/13/踩球变向初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/13/踩球变向中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/13/踩球变向高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚内侧身后扣球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"翻天覆地"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"这个动作可以让你更好地摆脱对手的防守，骗过对手的眼睛"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧身后扣球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧身后扣球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/16/脚内侧身后扣球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/16/脚内侧身后扣球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/16/脚内侧身后扣球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/16/脚内侧身后扣球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/16/脚内侧身后扣球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"靠球过人"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"惊天动地"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"本动作可以更好地训练带球的灵活性，让你在场地上更加的如鱼得水"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/靠球过人.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/靠球过人.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/17/靠球过人教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/17/靠球过人漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/17/靠球过人初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/17/靠球过人中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/17/靠球过人高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"起球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"无事生非"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"本动作加强了对球的掌控，对球的花式训练，可以给对手制造出其不意的麻烦"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/起球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/起球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/19/起球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/19/起球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/19/起球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/19/起球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/19/起球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚内侧扣球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"斗转星移"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"本动作可以让你加速摆脱防守队员，是带球过人动作中不可或缺的一个"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧扣球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧扣球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/20/脚内侧扣球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/20/脚内侧扣球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/20/脚内侧扣球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/20/脚内侧扣球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/20/脚内侧扣球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"外脚背停球变向"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大起大落"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"场上应用时，可以让你的对手像找自己尾巴的狗一样茫然无措，带球过人的升阶动作"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/外脚背停球变向.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/外脚背停球变向.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/23/外脚背停球变向教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/23/外脚背停球变向漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/23/外脚背停球变向初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/23/外脚背停球变向中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/23/外脚背停球变向高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"头颠球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"聚精会神"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"头颠球可以更好地锻炼你的注意力，让你更容易聚精会神，同时也是控球动作中不可或缺的一部分"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/头颠球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/头颠球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/24/头颠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/24/头颠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/24/头颠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/24/头颠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/24/头颠球高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"假踢过人"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"声东击西"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"用假动作带球过人，用自身动作骗过对手的眼睛"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/假踢过人.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/假踢过人.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/25/假踢过人教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/25/假踢过人漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/25/假踢过人初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/25/假踢过人中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/25/假踢过人高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"拉球摆脱"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"迷途知返"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球是为了在遇到对手时可以更好的摆脱对方。如果你在学习和比赛中遇到问题，试着改变一下方向"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/拉球摆脱.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/拉球摆脱.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/27/拉球摆脱教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/27/拉球摆脱漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/27/拉球摆脱初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/27/拉球摆脱中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/27/拉球摆脱高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"踩球过人"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脱颖而出"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"基础的假动作之一，如果你能掌握很多假动作招式，你的对手就会很难防守你"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明： 在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩球过人.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩球过人.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/28/踩球过人教学漫画.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/28/踩球过人漫画故事.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/28/踩球过人初级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/28/踩球过人中级难度.zip"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://public.ktfootball.com/download/px/28/踩球过人高级难度.zip"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-1934cec3540c7cbf">获取技能详情</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/skills/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/skills</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>技能ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">" 翩翩起舞"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚交替跳动触球，锻炼了的控球技术，提升球感</span><span class="se">\r\n</span><span class="s2">像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.mp4"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球高级难度.zip"</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-d3541f241f69493f">获取游戏（动作）列表</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/motions?category=幼儿游戏"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/motions</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>category</td>
+<td>无</td>
+<td>false</td>
+<td>技能类型（幼儿游戏，小学游戏）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">83</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"会跳的足球"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"尝试用多种方法让小足球跳动起来，体验玩球的乐趣。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"教师可以根据幼儿的能力适当提供帮助，引导幼儿体验足球的跳动。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"motion_effect"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"organization_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"足球、网兜若干</span><span class="se">\r\n</span><span class="s2">幼儿人手一球，自主探索玩球。尝试用多种方法让小足球跳动，玩法多者获胜。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/会跳的足球.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/02会跳的足球.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">84</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"和足球宝宝赛跑"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"在跑动中感受球的滚动，体验球滚动带来的乐趣。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"感受足球的速度，引导幼儿尽量跑到足球前面，"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"motion_effect"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"organization_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"足球若干。</span><span class="se">\r\n</span><span class="s2">幼儿持球进入场地，用身体的任意部位触碰足球，让足球滚动。球往哪个方向滚，幼儿就朝哪个方向追球，和足球比赛谁跑得快。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/和足球宝宝赛跑.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/01和足球宝宝赛跑.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"木头人"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"①在传统的儿歌情境中，按指令带球行进和停止。</span><span class="se">\r\n</span><span class="s2">②遵守游戏规则，感受游戏的乐趣。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"鼓励幼儿听到儿歌结束时必须停止踩球。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"motion_effect"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"organization_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"足球人手一只。</span><span class="se">\r\n</span><span class="s2">老师、幼儿持球自由地在场地运球行进，念儿歌：“山山山，山上有个木头人，不会说话不会动，动动就成小蜜蜂。”当儿歌念完时，幼儿要马上踩球保持一个姿势不动，等听到指令后再开始新一轮游戏。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/木头人.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/3木头人.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">86</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"炒黄豆"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"①通过游戏，学习原地双脚靠球，发展腿部协调能力。</span><span class="se">\r\n</span><span class="s2">②体验双脚靠球的快乐。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"尽量把足球控制在两腿之间，不要让球滚走。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"motion_effect"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"organization_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"足球、熟念儿歌</span><span class="se">\r\n</span><span class="s2">幼儿将球放在两腿之间，教师念儿歌：“炒黄豆，炒黄豆，炒完黄豆翻跟头。”幼儿双脚靠球。当念到“炒完黄豆翻跟头”时，幼儿绕足球走一圈后继续“炒黄豆”。最后看看哪组幼儿炒“黄豆”时间最长。"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/炒黄豆.gif"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/game/炒黄豆.mp4"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-d3541f242932abf5">获取游戏（动作）详情</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/motions/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/motions/1</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>游戏（动作）ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"运球游戏"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"每人一球，听教练口令。</span><span class="se">\r\n</span><span class="s2">教练先做示范动作，</span><span class="se">\r\n</span><span class="s2">小朋友们跟着一起练习。"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"motion_effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"</span><span class="se">\r\n</span><span class="s2">1.反应</span><span class="se">\r\n</span><span class="s2">2.球感</span><span class="se">\r\n</span><span class="s2">3.身体协调性"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"organization_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"教练喊口令小朋友做动作：</span><span class="se">\r\n</span><span class="s2">脚 — 脚踩球；</span><span class="se">\r\n</span><span class="s2">膝盖 — 膝盖碰球；</span><span class="se">\r\n</span><span class="s2">手 — 双手抱球；</span><span class="se">\r\n</span><span class="s2">头 — 蹲下头碰球。</span><span class="se">\r\n</span><span class="s2">没有限制怎么碰都可以，但是要把球控制住。</span><span class="se">\r\n</span><span class="s2">适当的给做的最标准和完成速度最快的同学一些鼓励。"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/footlesson/运球游戏.gif"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/footlesson/运球游戏.mp4"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-2cc7610aa67846da">校园赛事</h1>
 
 <h2 id="part-2cae504bf1357d03">服务简介</h2>
