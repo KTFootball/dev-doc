@@ -612,3 +612,1692 @@ ID|游戏（动作）ID
     }
 }
 ```
+
+
+## 获取足球课列表
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/sets"
+```
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/sets`
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "第一课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 2,
+            "name": "第二课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 3,
+            "name": "第三课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 4,
+            "name": "第四课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 5,
+            "name": "第五课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 6,
+            "name": "第六课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 7,
+            "name": "第七课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 8,
+            "name": "第八课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 9,
+            "name": "第九课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 10,
+            "name": "第十课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 11,
+            "name": "第十一课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 12,
+            "name": "第十二课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 13,
+            "name": "第十三课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 14,
+            "name": "第十四课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 15,
+            "name": "第十五课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 16,
+            "name": "第十六课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 17,
+            "name": "第十七课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 18,
+            "name": "第十八课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 19,
+            "name": "第十九课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 20,
+            "name": "第二十课",
+            "semester": "小学一年级第一学期"
+        },
+        {
+            "id": 21,
+            "name": "第一课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 22,
+            "name": "第二课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 23,
+            "name": "第三课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 24,
+            "name": "第四课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 25,
+            "name": "第五课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 26,
+            "name": "第六课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 27,
+            "name": "第七课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 28,
+            "name": "第九课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 29,
+            "name": "第十课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 30,
+            "name": "第十一课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 31,
+            "name": "第十二课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 32,
+            "name": "第十三课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 33,
+            "name": "第十四课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 34,
+            "name": "第十五课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 35,
+            "name": "第十六课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 36,
+            "name": "第十七课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 37,
+            "name": "第十八课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 38,
+            "name": "第十九课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 39,
+            "name": "第二十课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 40,
+            "name": "第八课",
+            "semester": "小学一年级第二学期"
+        },
+        {
+            "id": 41,
+            "name": "第一课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 42,
+            "name": "第二课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 43,
+            "name": "第一课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 44,
+            "name": "第一课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 45,
+            "name": "第二课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 46,
+            "name": "第三课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 47,
+            "name": "第四课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 48,
+            "name": "第一课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 49,
+            "name": "第一课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 50,
+            "name": "第一课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 51,
+            "name": "第一课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 52,
+            "name": "第一课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 53,
+            "name": "第二课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 54,
+            "name": "第二课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 55,
+            "name": "第二课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 56,
+            "name": "第三课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 57,
+            "name": "第三课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 58,
+            "name": "第四课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 59,
+            "name": "第三课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 60,
+            "name": "第四课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 61,
+            "name": "第四课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 62,
+            "name": "第二课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 63,
+            "name": "第三课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 64,
+            "name": "第四课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 65,
+            "name": "第三课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 66,
+            "name": "第二课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 67,
+            "name": "第三课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 68,
+            "name": "第二课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 69,
+            "name": "第三课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 70,
+            "name": "第五课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 71,
+            "name": "第六课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 72,
+            "name": "第七课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 73,
+            "name": "第八课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 74,
+            "name": "第四课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 75,
+            "name": "第五课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 76,
+            "name": "第四课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 77,
+            "name": "第五课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 78,
+            "name": "第六课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 79,
+            "name": "第七课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 80,
+            "name": "第五课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 81,
+            "name": "第六课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 82,
+            "name": "第七课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 83,
+            "name": "第八课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 84,
+            "name": "第九课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 85,
+            "name": "第十课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 86,
+            "name": "第十一课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 87,
+            "name": "第五课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 88,
+            "name": "第六课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 89,
+            "name": "第七课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 90,
+            "name": "第八课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 91,
+            "name": "第九课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 92,
+            "name": "第十课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 93,
+            "name": "第五课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 94,
+            "name": "第六课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 95,
+            "name": "第七课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 96,
+            "name": "第五课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 97,
+            "name": "第六课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 98,
+            "name": "第七课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 99,
+            "name": "第十二课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 100,
+            "name": "第十一课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 101,
+            "name": "第四课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 102,
+            "name": "第五课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 103,
+            "name": "第六课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 104,
+            "name": "第八课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 105,
+            "name": "第九课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 106,
+            "name": "第十课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 107,
+            "name": "第十一课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 108,
+            "name": "第十二课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 109,
+            "name": "第十三课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 110,
+            "name": "第十四课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 111,
+            "name": "第十五课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 112,
+            "name": "第一课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 113,
+            "name": "第二课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 114,
+            "name": "第三课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 115,
+            "name": "第四课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 116,
+            "name": "第五课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 117,
+            "name": "第六课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 118,
+            "name": "第十六课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 119,
+            "name": "第七课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 120,
+            "name": "第九课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 121,
+            "name": "第十课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 122,
+            "name": "第十一课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 123,
+            "name": "第十二课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 124,
+            "name": "第十三课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 125,
+            "name": "第十四课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 126,
+            "name": "第八课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 127,
+            "name": "第九课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 128,
+            "name": "第十课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 129,
+            "name": "第十一课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 130,
+            "name": "第一课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 131,
+            "name": "第二课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 132,
+            "name": "第十五课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 133,
+            "name": "第十六课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 134,
+            "name": "第三课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 135,
+            "name": "第四课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 136,
+            "name": "第五课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 137,
+            "name": "第六课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 138,
+            "name": "第七课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 139,
+            "name": "第八课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 140,
+            "name": "第九课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 141,
+            "name": "第十课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 142,
+            "name": "第十一课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 143,
+            "name": "第十二课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 144,
+            "name": "第十二课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 145,
+            "name": "第十三课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 146,
+            "name": "第十四课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 147,
+            "name": "第十五课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 148,
+            "name": "第十六课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 149,
+            "name": "第十七课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 150,
+            "name": "第十八课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 151,
+            "name": "第十九课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 152,
+            "name": "第二十课",
+            "semester": "小学二年级第二学期"
+        },
+        {
+            "id": 153,
+            "name": "第十三课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 154,
+            "name": "第十四课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 155,
+            "name": "第十五课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 156,
+            "name": "第十六课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 157,
+            "name": "第十七课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 158,
+            "name": "第十八课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 159,
+            "name": "第十九课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 160,
+            "name": "第二十课",
+            "semester": "小学三年级第二学期"
+        },
+        {
+            "id": 161,
+            "name": "第七课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 162,
+            "name": "第八课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 163,
+            "name": "第九课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 164,
+            "name": "第十课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 165,
+            "name": "第十一课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 166,
+            "name": "第十二课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 167,
+            "name": "第十三课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 168,
+            "name": "第十四课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 169,
+            "name": "第十五课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 170,
+            "name": "第八课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 171,
+            "name": "第九课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 172,
+            "name": "第十课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 173,
+            "name": "第十一课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 174,
+            "name": "第十二课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 175,
+            "name": "第十三课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 176,
+            "name": "第八课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 177,
+            "name": "第九课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 178,
+            "name": "第十课",
+            "semester": "幼儿园小班"
+        },
+        {
+            "id": 179,
+            "name": "第十四课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 180,
+            "name": "第十六课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 181,
+            "name": "第十七课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 182,
+            "name": "第十八课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 183,
+            "name": "第十五课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 184,
+            "name": "第十六课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 185,
+            "name": "第十七课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 186,
+            "name": "第十八课",
+            "semester": "幼儿园中班"
+        },
+        {
+            "id": 187,
+            "name": "第十九课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 188,
+            "name": "第二十课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 189,
+            "name": "第二十一课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 190,
+            "name": "第二十二课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 191,
+            "name": "第二十三课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 192,
+            "name": "第二十四课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 193,
+            "name": "第二十五课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 194,
+            "name": "第二十六课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 195,
+            "name": "第二十七课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 196,
+            "name": "第二十八课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 197,
+            "name": "第二十九课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 198,
+            "name": "第三十课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 199,
+            "name": "第三十一课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 200,
+            "name": "第三十二课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 201,
+            "name": "第三十三课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 202,
+            "name": "第三十四课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 203,
+            "name": "第三十五课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 204,
+            "name": "第三十六课",
+            "semester": "幼儿园大班"
+        },
+        {
+            "id": 205,
+            "name": "第十七课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 206,
+            "name": "第十八课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 207,
+            "name": "第十九课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 208,
+            "name": "第二十课",
+            "semester": "小学二年级第一学期"
+        },
+        {
+            "id": 209,
+            "name": "第十八课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 210,
+            "name": "第十五课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 211,
+            "name": "第十六课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 212,
+            "name": "第十七课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 213,
+            "name": "第五课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 214,
+            "name": "第六课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 215,
+            "name": "第七课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 216,
+            "name": "第八课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 217,
+            "name": "第九课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 218,
+            "name": "第十课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 219,
+            "name": "第十一课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 220,
+            "name": "第十二课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 221,
+            "name": "第十三课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 222,
+            "name": "第十七课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 223,
+            "name": "第十八课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 224,
+            "name": "第十九课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 225,
+            "name": "第二十课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 226,
+            "name": "第四课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 227,
+            "name": "第五课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 228,
+            "name": "第十四课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 229,
+            "name": "第十九课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 230,
+            "name": "第二十课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 231,
+            "name": "第十五课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 232,
+            "name": "第十七课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 233,
+            "name": "第十八课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 234,
+            "name": "第十九课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 235,
+            "name": "第二十课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 236,
+            "name": "第十二课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 237,
+            "name": "第十三课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 238,
+            "name": "第十四课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 239,
+            "name": "第十八课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 240,
+            "name": "第十九课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 241,
+            "name": "第二十课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 242,
+            "name": "第八课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 243,
+            "name": "第九课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 244,
+            "name": "第十六课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 245,
+            "name": "第十九课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 246,
+            "name": "第二十课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 247,
+            "name": "第十四课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 248,
+            "name": "第十五课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 249,
+            "name": "第十六课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 250,
+            "name": "第十七课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 251,
+            "name": "第十七课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 252,
+            "name": "第十八课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 253,
+            "name": "第十七课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 254,
+            "name": "第十八课",
+            "semester": "小学五年级第一学期"
+        },
+        {
+            "id": 255,
+            "name": "第六课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 256,
+            "name": "第七课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 257,
+            "name": "第十课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 258,
+            "name": "第十一课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 259,
+            "name": "第十二课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 260,
+            "name": "第十三课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 261,
+            "name": "第六课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 262,
+            "name": "第七课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 263,
+            "name": "第八课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 264,
+            "name": "第九课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 265,
+            "name": "第十课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 266,
+            "name": "第十一课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 267,
+            "name": "第十二课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 268,
+            "name": "第十三课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 269,
+            "name": "第十四课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 270,
+            "name": "第十五课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 271,
+            "name": "第十六课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 272,
+            "name": "第十七课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 273,
+            "name": "第十九课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 274,
+            "name": "第二十课",
+            "semester": "小学三年级第一学期"
+        },
+        {
+            "id": 275,
+            "name": "第十三课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 276,
+            "name": "第十四课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 277,
+            "name": "第十八课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 278,
+            "name": "第十九课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 279,
+            "name": "第二十课",
+            "semester": "小学四年级第一学期"
+        },
+        {
+            "id": 280,
+            "name": "第一课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 281,
+            "name": "第二课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 282,
+            "name": "第三课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 283,
+            "name": "第四课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 284,
+            "name": "第十四课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 285,
+            "name": "第十五课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 286,
+            "name": "第十六课",
+            "semester": "小学四年级第二学期"
+        },
+        {
+            "id": 287,
+            "name": "第一课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 288,
+            "name": "第二课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 289,
+            "name": "第三课",
+            "semester": "小学五年级第二学期"
+        },
+        {
+            "id": 290,
+            "name": "第九课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 291,
+            "name": "第十课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 292,
+            "name": "第十一课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 293,
+            "name": "第十二课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 294,
+            "name": "第十三课",
+            "semester": "小学六年级第一学期"
+        },
+        {
+            "id": 295,
+            "name": "第一课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 296,
+            "name": "第二课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 297,
+            "name": "第三课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 298,
+            "name": "第四课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 299,
+            "name": "第五课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 300,
+            "name": "第六课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 301,
+            "name": "第七课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 302,
+            "name": "第八课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 303,
+            "name": "第十五课",
+            "semester": "小学六年级第二学期"
+        },
+        {
+            "id": 304,
+            "name": "第十六课",
+            "semester": "小学六年级第二学期"
+        }
+    ]
+}
+```
+
+
+## 获取足球课详情
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/sets/<ID>"
+```
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/motions/sets/<ID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+ID|足球课ID
+
+### Url Parameters
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "id": 1,
+        "name": "第一课",
+        "semester": "小学一年级第一学期",
+        "index": 1,
+        "goal": "参与足球游戏和比赛，接触足球，培养球感；\r\n学习脚底踩球技能动作；",
+        "equipment": "足球：若干（每人一个）          \r\n KT足球气场：1个（可用小球门2个替代）",
+        "sets": [
+            {
+                "name": "足球游戏",
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "运球游戏",
+                        "intro": "每人一球，听教练口令。\r\n教练先做示范动作，\r\n小朋友们跟着一起练习。",
+                        "requirements": "",
+                        "motion_effect": "\r\n1.反应\r\n2.球感\r\n3.身体协调性",
+                        "organization_format": "教练喊口令小朋友做动作：\r\n脚 — 脚踩球；\r\n膝盖 — 膝盖碰球；\r\n手 — 双手抱球；\r\n头 — 蹲下头碰球。\r\n没有限制怎么碰都可以，但是要把球控制住。\r\n适当的给做的最标准和完成速度最快的同学一些鼓励。",
+                        "gif_url": "http://public.ktfootball.com/download/footlesson/运球游戏.gif",
+                        "video_url": "http://public.ktfootball.com/download/footlesson/运球游戏.mp4",
+                        "duration": 10,
+                        "step": 2
+                    }
+                ]
+            },
+            {
+                "name": "足球比赛",
+                "items": [
+                    {
+                        "id": 20,
+                        "name": "KT足球比赛 2vs2 ",
+                        "intro": "",
+                        "requirements": "在气场中央开球，每个队防守一个球门，同时要试图攻入对方的球门得分。\r\n交换控球权出现在防守者抢到球、球出界或射门得分后。",
+                        "motion_effect": "\r\n发展在2对2情况下个队员和队员之间一起进攻和防守战术的使用能力，提高传球、配合的技战术能力",
+                        "organization_format": "KT足球气场 两人一队；\r\n猜拳决定球权，并进行比赛；\r\n每局3分钟。\r\n如若没有KT足球气场，可用标志桶围出8m*10m的区域，在两端放置小球门替代。",
+                        "gif_url": "",
+                        "video_url": "",
+                        "duration": 15,
+                        "step": 4
+                    }
+                ]
+            },
+            {
+                "name": "足球技能",
+                "items": [
+                    {
+                        "id": 44,
+                        "name": "脚底踩球",
+                        "intro": "前脚掌触球，然后要有弹性的双脚交替跳动踩球。",
+                        "requirements": "双脚协调，踩球用力均匀；\r\n重心向上，不要屁股向下坐；",
+                        "motion_effect": "\r\n前脚掌触球，然后要有弹性的双脚交替跳动踩球",
+                        "organization_format": "1人1球，用标志桶圈出一个20米×30米的长方形区域。\r\n所有球员都持球在区域内。\r\n球员间前后均空出1m左右的距离。\r\n一人一球进行脚底踩球练习，30秒一组。",
+                        "gif_url": "http://public.ktfootball.com/download/still/脚底踩球.gif",
+                        "video_url": "http://public.ktfootball.com/download/still/脚底踩球.mp4",
+                        "duration": 10,
+                        "step": 3
+                    }
+                ]
+            },
+            {
+                "name": "放松活动",
+                "items": [
+                    {
+                        "id": 75,
+                        "name": "头部运动",
+                        "intro": "头部韧带伸拉 共四个方向 左后右前 每个动作停留4秒钟",
+                        "requirements": "前后左右拉伸保持4秒",
+                        "motion_effect": null,
+                        "organization_format": "",
+                        "gif_url": "http://public.ktfootball.com/download/footlesson/头部运动.gif",
+                        "video_url": "http://public.ktfootball.com/download/footlesson/头部运动.mp4",
+                        "duration": 5,
+                        "step": 6
+                    },
+                    {
+                        "id": 76,
+                        "name": "扩胸运动",
+                        "intro": "以胸部内侧的肌肉为中心展开的放松训练。",
+                        "requirements": "保持扩胸动作幅度",
+                        "motion_effect": null,
+                        "organization_format": "",
+                        "gif_url": "http://public.ktfootball.com/download/footlesson/扩胸运动.gif",
+                        "video_url": "http://public.ktfootball.com/download/footlesson/扩胸运动.mp4",
+                        "duration": 5,
+                        "step": 6
+                    },
+                    {
+                        "id": 77,
+                        "name": "弓步压腿",
+                        "intro": "左右各5次 双手扶着膝关节，后退伸直。",
+                        "requirements": "保持90度弯曲。",
+                        "motion_effect": null,
+                        "organization_format": "",
+                        "gif_url": "http://public.ktfootball.com/download/footlesson/弓步压腿.gif",
+                        "video_url": "http://public.ktfootball.com/download/footlesson/弓步压腿.mp4",
+                        "duration": 5,
+                        "step": 6
+                    },
+                    {
+                        "id": 78,
+                        "name": "侧压腿",
+                        "intro": "压到底侧压腿：左右各5次 （一只手摸到脚尖，另一只手保持平衡）。",
+                        "requirements": "重心尽量压低。",
+                        "motion_effect": null,
+                        "organization_format": "",
+                        "gif_url": "http://public.ktfootball.com/download/footlesson/侧压腿.gif",
+                        "video_url": "http://public.ktfootball.com/download/footlesson/侧压腿.mp4",
+                        "duration": 5,
+                        "step": 6
+                    },
+                    {
+                        "id": 79,
+                        "name": "手、脚踝运动",
+                        "intro": "脚腕、手腕    左右各转4次。",
+                        "requirements": "保持放松缓慢旋转。",
+                        "motion_effect": null,
+                        "organization_format": "",
+                        "gif_url": "http://public.ktfootball.com/download/footlesson/手、脚踝运动.gif",
+                        "video_url": "http://public.ktfootball.com/download/footlesson/手、脚踝运动.mp4",
+                        "duration": 5,
+                        "step": 6
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
