@@ -21,6 +21,7 @@ includes:
   - assessments
   - recesses
   - motions_and_skills
+  - statistics
   - games
   - clubs
   - club_games
