@@ -290,3 +290,55 @@ openid|OPENID|true|社交账户openid
   "data": "success"
 }
 ```
+
+## 重新绑定（发送验证码）
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/rebind/sms"
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/rebind/sms`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+mobile|18651206017|true|手机号码
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
+
+## 重新绑定（验证验证码）
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/rebind/verify"
+```
+
+### HTTP Request
+
+  `PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/users/rebind/verify`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+mobile|18651206017|true|手机号码
+code|123456|true|短信验证码
+mobile_old|13915011577|true|旧手机号
+
+
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
