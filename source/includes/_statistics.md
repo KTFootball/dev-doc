@@ -20,16 +20,17 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1?app_key=APPKEY"
 ## 获取技能等级统计
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/levels"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/levels"
 ```
 ### HTTP Request
 
-    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/levels`
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/levels`
 
 ### Query Parameters
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
+ID|学校ID
 
 > 返回内容
 
@@ -48,16 +49,17 @@ Parameter | Default | Required | Description
 ## 获取大课间统计
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/recesses"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/recesses"
 ```
 ### HTTP Request
 
-    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/recesses`
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/recesses`
 
 ### Query Parameters
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
+ID|学校ID
 
 > 返回内容
 
@@ -95,16 +97,17 @@ Parameter | Default | Required | Description
 ## 获取测评统计
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/assessments"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/assessments"
 ```
 ### HTTP Request
 
-    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/assessments`
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/assessments`
 
 ### Query Parameters
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
+ID|学校ID
 
 > 返回内容
 
@@ -142,16 +145,17 @@ Parameter | Default | Required | Description
 ## 获取赛事统计
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/rounds"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/rounds"
 ```
 ### HTTP Request
 
-    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/rounds`
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/rounds`
 
 ### Query Parameters
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
+ID|学校ID
 
 > 返回内容
 
