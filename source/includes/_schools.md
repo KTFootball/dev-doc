@@ -921,9 +921,6 @@ SID|学校ID
 }
 ```
 
-
-```
-
 ## 校园排行榜
 
 ```shell
@@ -933,7 +930,6 @@ curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks
 ### HTTP Request
 
   `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks`
-
 
 > 返回内容
 
