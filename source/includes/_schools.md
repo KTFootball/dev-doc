@@ -802,4 +802,70 @@ CID|教室ID
 }
 ```
 
+## 查询校园操作记录
 
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/opts"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/opts`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "created_at": "2017-08-01 10:51:43 +0800",
+            "content": "test"
+        },
+        {
+            "created_at": "2017-08-01 10:54:03 +0800",
+            "content": "test"
+        },
+        {
+            "created_at": "2017-08-01 10:54:47 +0800",
+            "content": "test"
+        }
+    ]
+}
+```
+
+## 创建操作记录
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/opts"
+```
+
+### HTTP Request
+
+`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/opts`
+
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+source|school|true|类型(school club)
+source_id|1|true|类型ID
+content|test|true|内容
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "created_at": "2017-08-01 10:51:43 +0800",
+            "content": "test"
+        }
+    ]
+}
+```
