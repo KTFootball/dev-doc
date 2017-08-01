@@ -869,3 +869,53 @@ content|test|true|内容
     ]
 }
 ```
+
+
+## 查询校园的测评记录
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments/ranks"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments/ranks`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+			{
+					"user": {
+							"id": 130,
+							"user_id": 2005,
+							"school_id": 3,
+							"user": {
+									"id": 2005,
+									"username": "k3t00007"
+							},
+							"realname": null,
+							"gender": 1,
+							"point": 0,
+							"ce": 1064,
+							"avatar": null,
+							"birthday": null,
+							"classroom": {
+									"id": 14,
+									"school": 3,
+									"grade": "4",
+									"cls": "四班"
+							}
+					},
+					"skill_combo": 5,
+					"total": 7167
+			}
+    ]
+}
+```
