@@ -869,3 +869,27 @@ content|test|true|内容
     ]
 }
 ```
+
+## 技能训练
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skill_excerises"
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skill_excerises`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+uid|1|true|用户ID
+sid|1|true|技能ID
+duration|10|true|持续时间
+
+> 返回内容
+
+```json
+
+```
