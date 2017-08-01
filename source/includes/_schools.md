@@ -871,7 +871,7 @@ content|test|true|内容
 ```
 
 
-## 查询校园的测评记录
+## 查询校园的测评记录，按照total从大到小排序
 
 ```shell
 curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments/ranks"
