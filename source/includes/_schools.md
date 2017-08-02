@@ -1201,4 +1201,80 @@ SID|学校ID
 }
 ```
 
+## 查询校园的测评记录的用户详情
 
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments/ranks/<UID>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments/ranks/<UID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+UID|用户ID
+
+> 返回内容
+
+```json
+
+{
+    "data": {
+        "profile": {
+            "id": 130,
+            "user_id": 2005,
+            "school_id": 3,
+            "user": {
+                "id": 2005,
+                "username": "k3t00007",
+                "ce": 1000
+            },
+            "realname": null,
+            "gender": 1,
+            "point": 0,
+            "ce": 1064,
+            "avatar": null,
+            "birthday": null,
+            "classroom": {
+                "id": 14,
+                "school": 3,
+                "grade": "4",
+                "cls": "四班"
+            }
+        },
+        "skill_count": 5,
+        "total": 7167,
+        "assessments": [
+            {
+                "assessment": {
+                    "skill": {
+                        "id": 1,
+                        "name": "双脚靠球",
+                        "category": "控球类",
+                        "level": 0
+                    },
+                    "count": 66,
+                    "created_at": "2017-07-19 12:00:09 +0800"
+                },
+                "times": 2
+            },
+            {
+                "assessment": {
+                    "skill": {
+                        "id": 3,
+                        "name": "脚背外侧运球",
+                        "category": "控球类",
+                        "level": 1
+                    },
+                    "count": 33,
+                    "created_at": "2017-07-19 11:51:35 +0800"
+                },
+                "times": 3
+            }
+        ]
+    }
+}
+```
