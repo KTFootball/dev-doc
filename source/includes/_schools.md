@@ -921,15 +921,208 @@ SID|学校ID
 }
 ```
 
-## 校园排行榜
+## 校园排行榜（全国学校）
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/schools"
 ```
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/schools`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "idx": 20,
+        "rank_info": {
+            "id": 3,
+            "name": "测试",
+            "users": 137,
+            "classrooms": 16,
+            "contribution": 0
+        },
+        "list": [
+            {
+                "id": 1,
+                "name": "测试学校",
+                "users": 1,
+                "classrooms": 3,
+                "contribution": 2
+            },
+            {
+                "id": 42,
+                "name": "       ",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 41,
+                "name": "熊猫乐园",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 21,
+                "name": "虹桥天地小学1",
+                "users": 0,
+                "classrooms": 8,
+                "contribution": 0
+            },
+            {
+                "id": 19,
+                "name": " 虹桥天地小学",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 18,
+                "name": "虹桥天地小学",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 17,
+                "name": "sdad",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 16,
+                "name": "ffff",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 15,
+                "name": "sss",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 14,
+                "name": "aaaaa",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 13,
+                "name": "aaaa",
+                "users": 0,
+                "classrooms": 2,
+                "contribution": 0
+            },
+            {
+                "id": 12,
+                "name": "aaa",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 11,
+                "name": "xixi",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 10,
+                "name": "复旦大学闵行校区",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 8,
+                "name": "哈哈哈哈",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 7,
+                "name": "123",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 6,
+                "name": "测试abcde",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 5,
+                "name": "测试abcd",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 4,
+                "name": "测试abc",
+                "users": 0,
+                "classrooms": 0,
+                "contribution": 0
+            },
+            {
+                "id": 3,
+                "name": "测试",
+                "users": 137,
+                "classrooms": 16,
+                "contribution": 0
+            },
+            {
+                "id": 2,
+                "name": "测试名",
+                "users": 0,
+                "classrooms": 1,
+                "contribution": 0
+            },
+            {
+                "id": 43,
+                "name": "     中国幼儿园园长",
+                "users": 0,
+                "classrooms": 11,
+                "contribution": 0
+            }
+        ]
+    }
+}
+```
+
+## 校园排行榜（本校学生）
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
 
 > 返回内容
 
@@ -937,138 +1130,75 @@ curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks
 {
     "data": [
         {
-            "id": 1,
-            "name": "测试学校",
-            "users": 1,
-            "classrooms": 3,
-            "contribution": 2
-        },
-        {
-            "id": 19,
-            "name": " 虹桥天地小学",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 18,
-            "name": "虹桥天地小学",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 17,
-            "name": "sdad",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 16,
-            "name": "ffff",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 15,
-            "name": "sss",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 14,
-            "name": "aaaaa",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 13,
-            "name": "aaaa",
-            "users": 0,
-            "classrooms": 2,
-            "contribution": 0
-        },
-        {
-            "id": 12,
-            "name": "aaa",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 11,
-            "name": "xixi",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 10,
-            "name": "复旦大学闵行校区",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 8,
-            "name": "哈哈哈哈",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 7,
-            "name": "123",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 6,
-            "name": "测试abcde",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 5,
-            "name": "测试abcd",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 4,
-            "name": "测试abc",
-            "users": 0,
-            "classrooms": 0,
-            "contribution": 0
-        },
-        {
-            "id": 3,
-            "name": "测试",
-            "users": 135,
-            "classrooms": 16,
-            "contribution": 0
-        },
-        {
             "id": 2,
-            "name": "测试名",
-            "users": 0,
-            "classrooms": 1,
-            "contribution": 0
-        },
-        {
-            "id": 21,
-            "name": "虹桥天地小学1",
-            "users": 0,
-            "classrooms": 8,
-            "contribution": 0
+            "user_id": 1,
+            "school_id": 1,
+            "user": {
+                "id": 1,
+                "username": "ufozhengli@163.com",
+                "ce": 1000
+            },
+            "realname": "布拿拿",
+            "gender": 1,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": "1992-07-28",
+            "classroom": {
+                "id": 2,
+                "school": 1,
+                "grade": "2",
+                "cls": "一班"
+            }
         }
     ]
 }
 ```
+
+## 校园排行榜（全国学生）
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 2,
+            "user_id": 1,
+            "school_id": 1,
+            "user": {
+                "id": 1,
+                "username": "ufozhengli@163.com",
+                "ce": 1000
+            },
+            "realname": "布拿拿",
+            "gender": 1,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": "1992-07-28",
+            "classroom": {
+                "id": 2,
+                "school": 1,
+                "grade": "2",
+                "cls": "一班"
+            }
+        }
+    ]
+}
+```
+
+

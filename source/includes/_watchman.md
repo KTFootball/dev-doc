@@ -101,7 +101,7 @@ Parameter | Description
 --------- | -----------
 SERVICE_NAME|服务名称
 
-### Query Parameters
+### Url Parameters
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 auth_token|YOUR_AUTH_TOKEN|true|获取凭证中返回的tk，有过期时间
