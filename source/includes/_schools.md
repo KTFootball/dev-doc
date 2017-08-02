@@ -1112,12 +1112,12 @@ SID|学校ID
 ## 校园排行榜（本校学生）
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/users"
 ```
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/users`
 
 ### Query Parameters
 Parameter | Description
@@ -1158,12 +1158,12 @@ SID|学校ID
 ## 校园排行榜（全国学生）
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/allusers"
 ```
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/ranks/<SID>/allusers`
 
 ### Query Parameters
 Parameter | Description
