@@ -169,3 +169,30 @@ ID|学校ID
     }
 }
 ```
+
+## 获取大课间统计
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<SID>/basic/recesses"
+```
+### HTTP Request
+
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/recesses`
+
+### Query Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+SID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "recess_record_count": 86,
+        "classroom_count": 23,
+        "user_count": 34
+    }
+}
+```
