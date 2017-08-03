@@ -1403,12 +1403,12 @@ SID|学校ID
 ## 查询校园所有的大课间记录
 
 ```shell
-curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/rounds"
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/recess_records"
 ```
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/rounds`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/recess_records`
 
 ### Query Parameters
 Parameter | Description
