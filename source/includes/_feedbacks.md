@@ -49,7 +49,7 @@ Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 uid|1|true|用户ID
 content|blah blah|true|反馈内容
-image_keys|qiniu_key,qiniu_key|true|七牛key用英文逗号隔开
+image_keys|qiniu_key,qiniu_key|false|七牛key用英文逗号隔开
 
 > 返回内容
 
