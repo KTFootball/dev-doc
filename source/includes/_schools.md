@@ -1278,3 +1278,124 @@ UID|用户ID
     }
 }
 ```
+
+## 查询校园的所有用户的测评记录
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/assessments`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+> 返回内容
+
+```json
+
+{
+    "data": [
+			{
+					"id": 159,
+					"count": 1,
+					"skill": {
+							"id": 1,
+							"name": "双脚靠球",
+							"sub_title": " 翩翩起舞",
+							"intro": "双脚交替跳动触球，锻炼了的控球技术，提升球感\r\n像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！",
+							"description": "训练说明：\r\n在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习",
+							"category": "控球类",
+							"level": 0,
+							"gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif",
+							"video_url": "http://public.ktfootball.com/download/still/双脚靠球.mp4",
+							"resources": {
+									"skill_id": 1,
+									"cartoon": {
+											"url": "http://public.ktfootball.com/download/px/03/双脚靠球教学漫画.zip",
+											"fsize": 1391
+									},
+									"story": {
+											"url": "http://public.ktfootball.com/download/px/03/双脚靠球漫画故事.zip",
+											"fsize": 537
+									},
+									"video": [
+											{
+													"url": "http://public.ktfootball.com/download/px/03/双脚靠球初级难度.zip",
+													"fsize": 4606,
+													"speed": 1,
+													"count": 60
+											},
+											{
+													"url": "http://public.ktfootball.com/download/px/03/双脚靠球中级难度.zip",
+													"fsize": 4606,
+													"speed": 0.6,
+													"count": 60
+											},
+											{
+													"url": "http://public.ktfootball.com/download/px/03/双脚靠球高级难度.zip",
+													"fsize": 4606,
+													"speed": 0.3,
+													"count": 60
+											}
+									]
+							}
+					},
+					"video": "",
+					"created_at": "2017-08-01 14:51:01 +0800"
+			},
+			{
+					"id": 160,
+					"count": 3,
+					"skill": {
+							"id": 1,
+							"name": "双脚靠球",
+							"sub_title": " 翩翩起舞",
+							"intro": "双脚交替跳动触球，锻炼了的控球技术，提升球感\r\n像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！",
+							"description": "训练说明：\r\n在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习",
+							"category": "控球类",
+							"level": 0,
+							"gif_url": "http://public.ktfootball.com/download/still/双脚靠球.gif",
+							"video_url": "http://public.ktfootball.com/download/still/双脚靠球.mp4",
+							"resources": {
+									"skill_id": 1,
+									"cartoon": {
+											"url": "http://public.ktfootball.com/download/px/03/双脚靠球教学漫画.zip",
+											"fsize": 1391
+									},
+									"story": {
+											"url": "http://public.ktfootball.com/download/px/03/双脚靠球漫画故事.zip",
+											"fsize": 537
+									},
+									"video": [
+											{
+													"url": "http://public.ktfootball.com/download/px/03/双脚靠球初级难度.zip",
+													"fsize": 4606,
+													"speed": 1,
+													"count": 60
+											},
+											{
+													"url": "http://public.ktfootball.com/download/px/03/双脚靠球中级难度.zip",
+													"fsize": 4606,
+													"speed": 0.6,
+													"count": 60
+											},
+											{
+													"url": "http://public.ktfootball.com/download/px/03/双脚靠球高级难度.zip",
+													"fsize": 4606,
+													"speed": 0.3,
+													"count": 60
+											}
+									]
+							}
+					},
+					"video": "",
+					"created_at": "2017-08-01 14:51:01 +0800"
+			}
+	]
+}
+```
