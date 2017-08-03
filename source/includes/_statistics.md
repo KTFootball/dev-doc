@@ -28,8 +28,8 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/leve
 
 ### Query Parameters
 
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
+Parameter | Description
+--------- | -----------
 ID|学校ID
 
 > 返回内容
@@ -57,8 +57,8 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/rece
 
 ### Query Parameters
 
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
+Parameter | Description
+--------- | -----------
 ID|学校ID
 
 > 返回内容
@@ -105,8 +105,8 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/asse
 
 ### Query Parameters
 
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
+Parameter | Description
+--------- | -----------
 ID|学校ID
 
 > 返回内容
@@ -153,8 +153,8 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/roun
 
 ### Query Parameters
 
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
+Parameter | Description
+--------- | -----------
 ID|学校ID
 
 > 返回内容
@@ -173,7 +173,7 @@ ID|学校ID
 ## 获取大课间统计
 
 ```shell
-curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<SID>/basic/recesses"
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/recesses"
 ```
 ### HTTP Request
 
@@ -181,9 +181,9 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<SID>/bas
 
 ### Query Parameters
 
-Parameter | Default | Required | Description
---------- | ------- | ---------| -----------
-SID|学校ID
+Parameter | Description
+--------- | -----------
+ID|学校ID
 
 > 返回内容
 
@@ -193,6 +193,89 @@ SID|学校ID
         "recess_record_count": 86,
         "classroom_count": 23,
         "user_count": 34
+    }
+}
+```
+
+## 获取技能教学统计
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/skills"
+```
+### HTTP Request
+
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/skills`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "assessment_count": 1,
+        "assessment_total": 1,
+        "assessment_totals_time": 1,
+        "assessment_average": 20
+    }
+}
+```
+
+
+## 获取足球课统计
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/courses"
+```
+### HTTP Request
+
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/courses`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "motion_set_count": 304,
+        "kindergarten_count": 64,
+        "primary_school_count": 240
+    }
+}
+```
+
+## 获取校园技能统计
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/assessments"
+```
+### HTTP Request
+
+    `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/statistics/<ID>/basic/assessments`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|学校ID
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "school_rank": 2,
+        "assessment_average": 20,
+        "assessment_count": 1
     }
 }
 ```
