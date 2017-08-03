@@ -14,6 +14,7 @@ toc_footers:
 includes:
   - watchman
   - feedbacks
+  - notifications
   - images
   - videos
   - apps
