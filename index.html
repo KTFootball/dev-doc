@@ -532,7 +532,7 @@
 <tr>
 <td>image_keys</td>
 <td>qiniu_key,qiniu_key</td>
-<td>true</td>
+<td>false</td>
 <td>七牛key用英文逗号隔开</td>
 </tr>
 </tbody></table>
@@ -572,6 +572,261 @@
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h1 id="part-6542d8d685f">消息</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务  </p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=APPKEY"</span>
+</code></pre>
+<h2 id="part-ada82bb60e55b038">获取用户所有消息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/notifications/users/&lt;UID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/notifications/users/&lt;UID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>UID</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>0</td>
+<td>true</td>
+<td>第几页</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>10</td>
+<td>true</td>
+<td>每页返回数量</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">402</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2005</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoyMDA1LCJleHAiOjE1MDE3MzQzMjQsImF1ZCI6MjAwNX0.f8rpf5JFIOhxYrkng8k4QNTylbNSMUwhHDD9OjK7Rnw"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k3t00007"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"kt_coin"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sign_in_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"您的对战视频已经上传"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"read"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-03 09:35:54 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">63</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2005</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoyMDA1LCJleHAiOjE1MDE3MzQzMjQsImF1ZCI6MjAwNX0.f8rpf5JFIOhxYrkng8k4QNTylbNSMUwhHDD9OjK7Rnw"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k3t00007"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"kt_coin"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sign_in_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"您的对战视频已经上传"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"read"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-03 09:35:25 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-ada82bb60e55b038">获取用户所有消息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/notifications/users/&lt;UID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/notifications/users/&lt;UID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>UID</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>0</td>
+<td>true</td>
+<td>第几页</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>10</td>
+<td>true</td>
+<td>每页返回数量</td>
+</tr>
+<tr>
+<td>read</td>
+<td>1</td>
+<td>true</td>
+<td>已读消息</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">402</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2005</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoyMDA1LCJleHAiOjE1MDE3MzQzMjQsImF1ZCI6MjAwNX0.f8rpf5JFIOhxYrkng8k4QNTylbNSMUwhHDD9OjK7Rnw"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k3t00007"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"kt_coin"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sign_in_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"您的对战视频已经上传"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"read"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-03 09:35:54 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">63</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2005</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"tk"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrdGZvb3RiYWxsIiwic3ViIjoyMDA1LCJleHAiOjE1MDE3MzQzMjQsImF1ZCI6MjAwNX0.f8rpf5JFIOhxYrkng8k4QNTylbNSMUwhHDD9OjK7Rnw"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k3t00007"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"mobile_verified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"kt_coin"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sign_in_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"您的对战视频已经上传"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"read"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-03 09:35:25 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-7b72af2ed1e0037b">把消息从未读更新为已读</h2>
+<pre class="highlight shell tab-shell"><code>curl -X PUT <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/notifications/&lt;NID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/notifications/&lt;NID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NID</td>
+<td>消息ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>read</td>
+<td>1</td>
+<td>true</td>
+<td>消息状态</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
 </span></code></pre>
           <h1 id="qiniu">图片 qiniu</h1>
 
@@ -2844,6 +3099,132 @@
             </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-de11168010ebb7e6">查询校园的所有用户的测评记录</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/assessments"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/schools/&lt;SID&gt;/assessments</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>SID</td>
+<td>学校ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">159</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">" 翩翩起舞"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚交替跳动触球，锻炼了的控球技术，提升球感</span><span class="se">\r\n</span><span class="s2">像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.mp4"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                            </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                                            </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">1391</span><span class="w">
+                                    </span><span class="p">},</span><span class="w">
+                                    </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                            </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                                            </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">537</span><span class="w">
+                                    </span><span class="p">},</span><span class="w">
+                                    </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                                            </span><span class="p">{</span><span class="w">
+                                                    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4606</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+                                            </span><span class="p">},</span><span class="w">
+                                            </span><span class="p">{</span><span class="w">
+                                                    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4606</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+                                            </span><span class="p">},</span><span class="w">
+                                            </span><span class="p">{</span><span class="w">
+                                                    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球高级难度.zip"</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4606</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+                                            </span><span class="p">}</span><span class="w">
+                                    </span><span class="p">]</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-01 14:51:01 +0800"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">160</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">" 翩翩起舞"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚交替跳动触球，锻炼了的控球技术，提升球感</span><span class="se">\r\n</span><span class="s2">像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.mp4"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                    </span><span class="s2">"skill_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                                    </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                            </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球教学漫画.zip"</span><span class="p">,</span><span class="w">
+                                            </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">1391</span><span class="w">
+                                    </span><span class="p">},</span><span class="w">
+                                    </span><span class="s2">"story"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                                            </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球漫画故事.zip"</span><span class="p">,</span><span class="w">
+                                            </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">537</span><span class="w">
+                                    </span><span class="p">},</span><span class="w">
+                                    </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                                            </span><span class="p">{</span><span class="w">
+                                                    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球初级难度.zip"</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4606</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+                                            </span><span class="p">},</span><span class="w">
+                                            </span><span class="p">{</span><span class="w">
+                                                    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球中级难度.zip"</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4606</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+                                            </span><span class="p">},</span><span class="w">
+                                            </span><span class="p">{</span><span class="w">
+                                                    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/px/03/双脚靠球高级难度.zip"</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"fsize"</span><span class="p">:</span><span class="w"> </span><span class="mi">4606</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"speed"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w">
+                                                    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="w">
+                                            </span><span class="p">}</span><span class="w">
+                                    </span><span class="p">]</span><span class="w">
+                            </span><span class="p">}</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-01 14:51:01 +0800"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h1 id="part-6542d7d0346">测评</h1>
