@@ -1399,3 +1399,287 @@ SID|学校ID
 	]
 }
 ```
+
+## 查询校园所有的大课间记录
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/rounds"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/rounds`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+
+
+> 返回内容
+
+```json
+
+{
+    "data": [
+			{
+            "id": 3,
+            "classroom": {
+                "id": 9,
+                "school": 3,
+                "grade": "2",
+                "cls": "精英班"
+            },
+            "recess": {
+                "id": 1,
+                "name": "幼儿园大课间"
+            },
+            "video_key": null,
+            "video": null
+        },
+        {
+            "id": 4,
+            "classroom": {
+                "id": 10,
+                "school": 3,
+                "grade": "2",
+                "cls": "一班"
+            },
+            "recess": {
+                "id": 1,
+                "name": "幼儿园大课间"
+            },
+            "video_key": null,
+            "video": null
+        },
+        {
+            "id": 5,
+            "classroom": {
+                "id": 9,
+                "school": 3,
+                "grade": "2",
+                "cls": "精英班"
+            },
+            "recess": {
+                "id": 1,
+                "name": "幼儿园大课间"
+            },
+            "video_key": null,
+            "video": null
+        }
+	]
+}
+```
+
+## 查询校园所有比赛的记录
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/rounds"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/rounds`
+
+### Url Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+### Query Parameters
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+type|1、2、3、其他数字|true|比赛类型(1v1, 2v2, 3v3, 其他)
+
+> 返回内容
+
+```json
+
+{
+    "data": [
+			{
+            "id": 565,
+            "type": "Round1v1",
+            "game_id": 109,
+            "game": {
+                "id": 109,
+                "name": "123456",
+                "address": "虹源盛世国际文化城",
+                "start_at": "2017-08-02 00:00:00 +0800",
+                "end_at": "2017-08-03 00:00:00 +0800",
+                "lat": 31.197181,
+                "lng": 121.312189,
+                "image_key": null,
+                "image_keys": null,
+                "image": null,
+                "images": [],
+                "host": {
+                    "id": 3,
+                    "name": "测试",
+                    "address": "虹桥万科中心",
+                    "ecard": 9774,
+                    "users": 150,
+                    "games": 5,
+                    "participants": 34,
+                    "rounds": 12
+                }
+            },
+            "cross": "2,1",
+            "goal": "1,1",
+            "foul": "1,2",
+            "side_a": [
+                {
+                    "id": 1551,
+                    "user_id": 2274,
+                    "profile": {
+                        "id": 273,
+                        "user_id": 2274,
+                        "school_id": 3,
+                        "user": {
+                            "id": 2274,
+                            "username": "k3t00150",
+                            "ce": 1000
+                        },
+                        "realname": null,
+                        "gender": 1,
+                        "point": 0,
+                        "ce": 1256,
+                        "avatar": null,
+                        "birthday": null,
+                        "classroom": {
+                            "id": 20,
+                            "school": 3,
+                            "grade": "1",
+                            "cls": "ads班"
+                        }
+                    },
+                    "kt": true
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 1552,
+                    "user_id": 2275,
+                    "profile": {
+                        "id": 274,
+                        "user_id": 2275,
+                        "school_id": 3,
+                        "user": {
+                            "id": 2275,
+                            "username": "k3t00151",
+                            "ce": 1000
+                        },
+                        "realname": null,
+                        "gender": 1,
+                        "point": 0,
+                        "ce": 552,
+                        "avatar": null,
+                        "birthday": "2017-08-02",
+                        "classroom": null
+                    },
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": "llQHw_0v770TBmmHFh9YYiDIsRml",
+            "duration": 24,
+            "scores": "4,3",
+            "video_url": "http://oqe9ssuil.bkt.clouddn.com/llQHw_0v770TBmmHFh9YYiDIsRml-zip?e=1501735886&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:SlG9tAUVNKz_1y4vXVIfGO8KEgs=",
+            "images_url": [],
+            "created_at": "2017-08-02 16:10:49 +0800"
+        },
+        {
+            "id": 564,
+            "type": "Round1v1",
+            "game_id": 109,
+            "game": {
+                "id": 109,
+                "name": "123456",
+                "address": "虹源盛世国际文化城",
+                "start_at": "2017-08-02 00:00:00 +0800",
+                "end_at": "2017-08-03 00:00:00 +0800",
+                "lat": 31.197181,
+                "lng": 121.312189,
+                "image_key": null,
+                "image_keys": null,
+                "image": null,
+                "images": [],
+                "host": {
+                    "id": 3,
+                    "name": "测试",
+                    "address": "虹桥万科中心",
+                    "ecard": 9774,
+                    "users": 150,
+                    "games": 5,
+                    "participants": 34,
+                    "rounds": 12
+                }
+            },
+            "cross": "1,0",
+            "goal": "0,0",
+            "foul": "0,0",
+            "side_a": [
+                {
+                    "id": 1549,
+                    "user_id": 2274,
+                    "profile": {
+                        "id": 273,
+                        "user_id": 2274,
+                        "school_id": 3,
+                        "user": {
+                            "id": 2274,
+                            "username": "k3t00150",
+                            "ce": 1000
+                        },
+                        "realname": null,
+                        "gender": 1,
+                        "point": 0,
+                        "ce": 1256,
+                        "avatar": null,
+                        "birthday": null,
+                        "classroom": {
+                            "id": 20,
+                            "school": 3,
+                            "grade": "1",
+                            "cls": "ads班"
+                        }
+                    },
+                    "kt": true
+                }
+            ],
+            "side_b": [
+                {
+                    "id": 1550,
+                    "user_id": 2275,
+                    "profile": {
+                        "id": 274,
+                        "user_id": 2275,
+                        "school_id": 3,
+                        "user": {
+                            "id": 2275,
+                            "username": "k3t00151",
+                            "ce": 1000
+                        },
+                        "realname": null,
+                        "gender": 1,
+                        "point": 0,
+                        "ce": 552,
+                        "avatar": null,
+                        "birthday": "2017-08-02",
+                        "classroom": null
+                    },
+                    "kt": false
+                }
+            ],
+            "image_keys": null,
+            "video_key": "FuSVRgrd9Zfja_ai1g4W7a1wZ1Pm",
+            "duration": 14,
+            "scores": "1,0",
+            "video_url": "http://oqe9ssuil.bkt.clouddn.com/FuSVRgrd9Zfja_ai1g4W7a1wZ1Pm-zip?e=1501735887&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:DOU05uExOiUbcIhA4y4LkoTtUT8=",
+            "images_url": [],
+            "created_at": "2017-08-02 14:19:40 +0800"
+        }
+	]
+}
+```
