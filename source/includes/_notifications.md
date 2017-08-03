@@ -69,3 +69,33 @@ limit|10|true|每页返回数量
     ]
 }
 ```
+
+## 把消息从未读更新为已读
+
+```shell
+curl -X PUT "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/notifications/<NID>"
+```
+
+### HTTP Request
+
+	`PUT https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/notifications/<NID>`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+NID|消息ID
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+read|1|true|消息状态
+
+> 返回内容
+
+```json
+{
+    "data": "success"
+}
+
+```
