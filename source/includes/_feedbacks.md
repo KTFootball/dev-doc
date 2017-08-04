@@ -91,3 +91,75 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/feedbacks/videos"
     ]
 }
 ```
+
+## 获取用户的分享信息
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/shares/users/<UID>"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/shares/users/<UID>`
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "daily": 0,
+        "daily_done": 0,
+        "video": 0,
+        "friend": 0
+    }
+}
+```
+
+## 分享成功提交此接口
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/shares"
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/shares`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+uid|1|true|用户ID
+category|daily|true|分类(daily, daily_done, video, friend)
+
+> 返回内容
+
+```json
+{
+    "data": "success"
+}
+
+## 领取奖励
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/shares/awards"
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/shares/awards`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+uid|1|true|用户ID
+category|daily|true|分类(daily, daily_done, video, friend)
+
+> 返回内容
+
+```json
+{
+    "data": "success"
+}
+```
