@@ -138,6 +138,7 @@ category|daily|true|分类(daily, daily_done, video, friend)
 {
     "data": "success"
 }
+···
 
 ## 领取奖励
 
