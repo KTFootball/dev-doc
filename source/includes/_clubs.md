@@ -1059,3 +1059,82 @@ curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/rounds/excite
 ```json
 同Rounds其他接口
 ```
+
+## 获取俱乐部的所有管理者
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/managers"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/clubs/<ID>/managers`
+
+### Query Parameters
+
+Parameter | Description
+--------- | -----------
+ID|俱乐部ID
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 2,
+            "user": {
+                "username": "18565352164"
+            },
+            "club": {
+                "id": 1,
+                "name": "新华联试营业",
+                "address": "新华联",
+                "ecard": 9807,
+                "users": 51,
+                "named_users": 3,
+                "games": 10,
+                "participants": 52,
+                "rounds": 29
+            },
+            "contribution": null
+        },
+        {
+            "id": 3,
+            "user": {
+                "username": "15221935978"
+            },
+            "club": {
+                "id": 1,
+                "name": "新华联试营业",
+                "address": "新华联",
+                "ecard": 9807,
+                "users": 51,
+                "named_users": 3,
+                "games": 10,
+                "participants": 52,
+                "rounds": 29
+            },
+            "contribution": null
+        },
+        {
+            "id": 4,
+            "user": {
+                "username": "18917315511"
+            },
+            "club": {
+                "id": 1,
+                "name": "新华联试营业",
+                "address": "新华联",
+                "ecard": 9807,
+                "users": 51,
+                "named_users": 3,
+                "games": 10,
+                "participants": 52,
+                "rounds": 29
+            },
+            "contribution": null
+        }
+    ]
+}
+```

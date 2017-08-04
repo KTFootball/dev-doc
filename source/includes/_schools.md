@@ -1683,3 +1683,66 @@ type|1、2、3、其他数字|true|比赛类型(1v1, 2v2, 3v3, 其他)
 	]
 }
 ```
+
+
+
+## 查询校园所有老师
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/teachers"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/schools/<SID>/teachers`
+
+### Query Parameters
+Parameter | Description
+--------- | -----------
+SID|学校ID
+
+
+
+> 返回内容
+
+```json
+
+{
+    "data": [
+        {
+            "id": 3,
+            "user": {
+                "username": "18565352164"
+            },
+            "school": {
+                "id": 3,
+                "name": "测试",
+                "address": "虹桥万科中心",
+                "ecard": 9773,
+                "users": 151,
+                "games": 5,
+                "participants": 34,
+                "rounds": 12
+            },
+            "contribution": 0
+        },
+        {
+            "id": 5,
+            "user": {
+                "username": "18301964301"
+            },
+            "school": {
+                "id": 3,
+                "name": "测试",
+                "address": "虹桥万科中心",
+                "ecard": 9773,
+                "users": 151,
+                "games": 5,
+                "participants": 34,
+                "rounds": 12
+            },
+            "contribution": 0
+        }
+    ]
+}
+```
