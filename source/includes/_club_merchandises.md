@@ -92,7 +92,7 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises"
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
-c_t_id|0,1,2,3|true|商品类型（同上）
+ctid|0,1,2,3|true|商品类型（同上）
 
 > 返回内容
 
