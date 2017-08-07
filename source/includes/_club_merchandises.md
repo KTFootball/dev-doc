@@ -76,3 +76,63 @@ target_id|0,1,2,3|true|商品类型
     ]
 }
 ```
+
+
+## 获取包含单场参赛卡的俱乐部列表
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises`
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+c_t_id|0,1,2,3|true|商品类型（同上）
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "新华联试营业",
+            "address": "新华联",
+            "ecard": 9807,
+            "images": [
+                "http://kt-public.tempot.com/club.png",
+                "http://kt-public.tempot.com/club-sky1.png",
+                "http://kt-public.tempot.com/club-sky2.png",
+                "http://kt-public.tempot.com/club-sky3.png"
+            ],
+            "users": 51,
+            "named_users": 3,
+            "games": 10,
+            "participants": 52,
+            "rounds": 29
+        },
+        {
+            "id": 2,
+            "name": "测试",
+            "address": "虹桥万科中心虹桥万科中心虹桥万科中心虹桥万科中心虹桥万科中心",
+            "ecard": 439,
+            "images": [
+                "http://kt-public.tempot.com/club.png",
+                "http://kt-public.tempot.com/club-sky1.png",
+                "http://kt-public.tempot.com/club-sky2.png",
+                "http://kt-public.tempot.com/club-sky3.png"
+            ],
+            "users": 103,
+            "named_users": 2,
+            "games": 4,
+            "participants": 76,
+            "rounds": 39
+        }
+    ]
+}
+```
