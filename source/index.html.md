@@ -28,6 +28,7 @@ includes:
   - clubs
   - club_games
   - club_queues
+  - club_merchandises
   - errors
 
 search: true
