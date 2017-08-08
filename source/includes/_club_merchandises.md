@@ -145,7 +145,7 @@ curl -XPOST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/exchange`
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/exchange`
 
 ### FormData(x-www-form-urlencoded)
 
