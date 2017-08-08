@@ -1746,3 +1746,45 @@ SID|学校ID
     ]
 }
 ```
+
+## 创建操作记录
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skill_excerises"
+```
+
+### HTTP Request
+
+`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/skill_excerises`
+
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+sid|1|true|用户ID
+uid|1|true|技能ID
+duration|90|true|时长
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "id": 2,
+        "user_id": 1,
+        "user": {
+            "id": 1,
+            "username": "ufozhengli@163.com",
+            "ce": 1000
+        },
+        "skill_id": 1,
+        "skill": {
+            "id": 1,
+            "name": "双脚靠球",
+            "category": "控球类",
+            "level": 0
+        }
+    }
+}
+```
