@@ -136,3 +136,29 @@ ctid|0,1,2,3|true|商品类型（同上）
     ]
 }
 ```
+
+## 兑换单次卡
+
+```shell
+curl -XPOST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/exchange"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/merchandises/exchange`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+uid|1|true|用户ID
+cid|1|true|俱乐部ID
+
+
+> 返回内容
+
+```json
+{
+"data": "success"
+}
+```
