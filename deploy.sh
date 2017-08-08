@@ -17,7 +17,7 @@ Options:
                            commit's message.
 "
 
-bundle exec middleman build --clean
+# bundle exec middleman build --clean
 
 parse_args() {
   # Set args from a local environment file.
