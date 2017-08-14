@@ -164,3 +164,25 @@ category|daily|true|分类(daily, daily_done, video, friend)
     "data": "success"
 }
 ```
+
+## FAQ列表
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/feedbacks/faqs"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/feedbacks/faqs`
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+category|blah|true|反馈类型（不填默认返回所有的faq）
+
+> 返回内容
+
+```json
+
+```
