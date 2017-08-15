@@ -217,10 +217,9 @@ ID|学校ID
 ```json
 {
     "data": {
-        "assessment_count": 1,
-        "assessment_total": 1,
-        "assessment_totals_time": 1,
-        "assessment_average": 20
+        "skill_excerises_total": 74,
+        "skill_excerise_count": 1,
+        "skill_excerise_totals_time_minute": 93
     }
 }
 ```
