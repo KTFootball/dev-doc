@@ -1788,3 +1788,3773 @@ duration|90|true|时长
     }
 }
 ```
+
+## 测评排行榜
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/ranks/assessments/skills/<SID>"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/ranks/assessments/skills/<SID>`
+
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+SID|1|true|技能ID
+
+
+> 返回内容
+
+```json
+{
+    "data": [
+        {
+            "id": 269,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 2455
+        },
+        {
+            "id": 166,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 215,
+                "user_id": 2203,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2203,
+                    "uid": 2203,
+                    "username": "k3t00092",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k3t00092",
+                "gender": 2,
+                "point": 0,
+                "ce": 1000,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fh6LD6eZUbP3mPzUrHRxYsG6OdM2?e=1503563417&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:TVxdIwG9l1JXffzin7wHbCNHvyU=",
+                "birthday": "2003-09-30",
+                "classroom": {
+                    "id": 11,
+                    "school": 3,
+                    "grade": "2",
+                    "cls": "二班"
+                }
+            },
+            "count": 999
+        },
+        {
+            "id": 293,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2077,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2077,
+                    "uid": 2077,
+                    "username": "k3t00032",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 888
+        },
+        {
+            "id": 132,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2001,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2001,
+                    "uid": 2001,
+                    "username": "k3t00003",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 666
+        },
+        {
+            "id": 215,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 156,
+                "user_id": 2078,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2078,
+                    "uid": 2078,
+                    "username": "k3t00033",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "dasdadsss",
+                "gender": 1,
+                "point": 0,
+                "ce": 696,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 123
+        },
+        {
+            "id": 236,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 329,
+                "user_id": 2288,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2288,
+                    "uid": 2288,
+                    "username": "oys4MwQNkm3Uy5bjVhG5g7bq6bfU",
+                    "source_name": "轩",
+                    "source_avatar": "http://wx.qlogo.cn/mmopen/6tdM4FTia18YlaftR6CXkyVStf221WuGWln82Xicxicc7iaZankT4Oywpvak3qCUichk5IbIT9joJglQXMtYYWaVCnpX7zxBmwIXib/0",
+                    "ce": 1064
+                },
+                "realname": "小花",
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-24",
+                "classroom": {
+                    "id": 51,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "1班"
+                }
+            },
+            "count": 120
+        },
+        {
+            "id": 281,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 156,
+                "user_id": 2078,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2078,
+                    "uid": 2078,
+                    "username": "k3t00033",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "dasdadsss",
+                "gender": 1,
+                "point": 0,
+                "ce": 696,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 100
+        },
+        {
+            "id": 239,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2000,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2000,
+                    "uid": 2000,
+                    "username": "k3t00002",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 99
+        },
+        {
+            "id": 177,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2077,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2077,
+                    "uid": 2077,
+                    "username": "k3t00032",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 99
+        },
+        {
+            "id": 273,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2136,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2136,
+                    "uid": 2136,
+                    "username": "k3t00049",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 99
+        },
+        {
+            "id": 156,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 195,
+                "user_id": 2159,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2159,
+                    "uid": 2159,
+                    "username": "k3t00072",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 91
+        },
+        {
+            "id": 279,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 90
+        },
+        {
+            "id": 153,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 194,
+                "user_id": 2158,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2158,
+                    "uid": 2158,
+                    "username": "k3t00071",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 90
+        },
+        {
+            "id": 167,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 90
+        },
+        {
+            "id": 181,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 139,
+                "user_id": 2020,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2020,
+                    "uid": 2020,
+                    "username": "k3t00016",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "这就对了",
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fn6cqJ23LhsdUf8ID77oKcU8NBlG?e=1503563418&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:q1F7Yt6lIX0Gq4atSR8C6OLNRsA=",
+                "birthday": null,
+                "classroom": {
+                    "id": 21,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "35班"
+                }
+            },
+            "count": 89
+        },
+        {
+            "id": 72,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 131,
+                "user_id": 2006,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2006,
+                    "uid": 2006,
+                    "username": "k3t00008",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 848,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 88
+        },
+        {
+            "id": 73,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 132,
+                "user_id": 2007,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2007,
+                    "uid": 2007,
+                    "username": "k3t00009",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "没有名字",
+                "gender": 2,
+                "point": 0,
+                "ce": 824,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 18,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "日天班"
+                }
+            },
+            "count": 88
+        },
+        {
+            "id": 76,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 131,
+                "user_id": 2006,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2006,
+                    "uid": 2006,
+                    "username": "k3t00008",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 848,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 88
+        },
+        {
+            "id": 77,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 132,
+                "user_id": 2007,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2007,
+                    "uid": 2007,
+                    "username": "k3t00009",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "没有名字",
+                "gender": 2,
+                "point": 0,
+                "ce": 824,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 18,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "日天班"
+                }
+            },
+            "count": 88
+        },
+        {
+            "id": 176,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 88
+        },
+        {
+            "id": 212,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2077,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2077,
+                    "uid": 2077,
+                    "username": "k3t00032",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 88
+        },
+        {
+            "id": 74,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 129,
+                "user_id": 2004,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2004,
+                    "uid": 2004,
+                    "username": "k3t00006",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k好好好",
+                "gender": 1,
+                "point": 0,
+                "ce": 1064,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 9,
+                    "school": 3,
+                    "grade": "2",
+                    "cls": "精英班"
+                }
+            },
+            "count": 85
+        },
+        {
+            "id": 83,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 135,
+                "user_id": 2010,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2010,
+                    "uid": 2010,
+                    "username": "k3t00012",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 920,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 85
+        },
+        {
+            "id": 178,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 277,
+                "user_id": 2278,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2278,
+                    "uid": 2278,
+                    "username": "k3t00154",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 85
+        },
+        {
+            "id": 187,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2000,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2000,
+                    "uid": 2000,
+                    "username": "k3t00002",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 80
+        },
+        {
+            "id": 280,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2077,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2077,
+                    "uid": 2077,
+                    "username": "k3t00032",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 78
+        },
+        {
+            "id": 297,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 77
+        },
+        {
+            "id": 229,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 135,
+                "user_id": 2010,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2010,
+                    "uid": 2010,
+                    "username": "k3t00012",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 920,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 69
+        },
+        {
+            "id": 210,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 67
+        },
+        {
+            "id": 71,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2005,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2005,
+                    "uid": 2005,
+                    "username": "k3t00007",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 66
+        },
+        {
+            "id": 75,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2005,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2005,
+                    "uid": 2005,
+                    "username": "k3t00007",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 66
+        },
+        {
+            "id": 81,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 134,
+                "user_id": 2009,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2009,
+                    "uid": 2009,
+                    "username": "k3t00011",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "张",
+                "gender": 2,
+                "point": 0,
+                "ce": 984,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/FvpkKL6eEu736vaUFHBJ01zgFjye?e=1503563419&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:VLCUpqmxwi8-uk3Oh3G0oqwv340=",
+                "birthday": null,
+                "classroom": {
+                    "id": 18,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "日天班"
+                }
+            },
+            "count": 66
+        },
+        {
+            "id": 175,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 66
+        },
+        {
+            "id": 296,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 277,
+                "user_id": 2278,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2278,
+                    "uid": 2278,
+                    "username": "k3t00154",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 66
+        },
+        {
+            "id": 232,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 165,
+                "user_id": 2127,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2127,
+                    "uid": 2127,
+                    "username": "k3t00042",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 1064,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 65
+        },
+        {
+            "id": 233,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 166,
+                "user_id": 2130,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2130,
+                    "uid": 2130,
+                    "username": "k3t00043",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 1064,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 65
+        },
+        {
+            "id": 228,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 128,
+                "user_id": 2003,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2003,
+                    "uid": 2003,
+                    "username": "k3t00005",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 952
+                },
+                "realname": "于大大",
+                "gender": 1,
+                "point": 0,
+                "ce": -248,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fs1uqQe5meoPGg8V5xVk-oxOxiJT?e=1503563420&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:rj3m7uHrp5hNGpwEouOLRtxKf9A=",
+                "birthday": "2017-08-04",
+                "classroom": {
+                    "id": 117,
+                    "school": 3,
+                    "grade": "12",
+                    "cls": "日天班"
+                }
+            },
+            "count": 65
+        },
+        {
+            "id": 158,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 179,
+                "user_id": 2143,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2143,
+                    "uid": 2143,
+                    "username": "k3t00056",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 920,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 65
+        },
+        {
+            "id": 171,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 277,
+                "user_id": 2278,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2278,
+                    "uid": 2278,
+                    "username": "k3t00154",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 65
+        },
+        {
+            "id": 70,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 129,
+                "user_id": 2004,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2004,
+                    "uid": 2004,
+                    "username": "k3t00006",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k好好好",
+                "gender": 1,
+                "point": 0,
+                "ce": 1064,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 9,
+                    "school": 3,
+                    "grade": "2",
+                    "cls": "精英班"
+                }
+            },
+            "count": 55
+        },
+        {
+            "id": 78,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 128,
+                "user_id": 2003,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2003,
+                    "uid": 2003,
+                    "username": "k3t00005",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 952
+                },
+                "realname": "于大大",
+                "gender": 1,
+                "point": 0,
+                "ce": -248,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fs1uqQe5meoPGg8V5xVk-oxOxiJT?e=1503563420&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:rj3m7uHrp5hNGpwEouOLRtxKf9A=",
+                "birthday": "2017-08-04",
+                "classroom": {
+                    "id": 117,
+                    "school": 3,
+                    "grade": "12",
+                    "cls": "日天班"
+                }
+            },
+            "count": 55
+        },
+        {
+            "id": 79,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2001,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2001,
+                    "uid": 2001,
+                    "username": "k3t00003",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 55
+        },
+        {
+            "id": 91,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2000,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2000,
+                    "uid": 2000,
+                    "username": "k3t00002",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 55
+        },
+        {
+            "id": 295,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 55
+        },
+        {
+            "id": 137,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 194,
+                "user_id": 2158,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2158,
+                    "uid": 2158,
+                    "username": "k3t00071",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 55
+        },
+        {
+            "id": 294,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 156,
+                "user_id": 2078,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2078,
+                    "uid": 2078,
+                    "username": "k3t00033",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "dasdadsss",
+                "gender": 1,
+                "point": 0,
+                "ce": 696,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 55
+        },
+        {
+            "id": 180,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 156,
+                "user_id": 2078,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2078,
+                    "uid": 2078,
+                    "username": "k3t00033",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "dasdadsss",
+                "gender": 1,
+                "point": 0,
+                "ce": 696,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 55
+        },
+        {
+            "id": 201,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 156,
+                "user_id": 2078,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2078,
+                    "uid": 2078,
+                    "username": "k3t00033",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "dasdadsss",
+                "gender": 1,
+                "point": 0,
+                "ce": 696,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 55
+        },
+        {
+            "id": 284,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 50
+        },
+        {
+            "id": 155,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 167,
+                "user_id": 2131,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2131,
+                    "uid": 2131,
+                    "username": "k3t00044",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "hahaha",
+                "gender": 1,
+                "point": 0,
+                "ce": 1064,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 21,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "35班"
+                }
+            },
+            "count": 45
+        },
+        {
+            "id": 209,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 45
+        },
+        {
+            "id": 222,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 124,
+                "user_id": 1999,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 1999,
+                    "uid": 1999,
+                    "username": "k3t00001",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 588
+                },
+                "realname": "很健康",
+                "gender": 1,
+                "point": 0,
+                "ce": 1516,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/FsHXBRWSZa3mSULwH-our7aYpe79?e=1503563421&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:qP9jzJokYoZeT2o3tlit9vnvfI8=",
+                "birthday": null,
+                "classroom": {
+                    "id": 14,
+                    "school": 3,
+                    "grade": "4",
+                    "cls": "四班"
+                }
+            },
+            "count": 38
+        },
+        {
+            "id": 230,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 161,
+                "user_id": 2083,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2083,
+                    "uid": 2083,
+                    "username": "k3t00038",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "乔羽",
+                "gender": 1,
+                "point": 0,
+                "ce": 968,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 13,
+                    "school": 3,
+                    "grade": "3",
+                    "cls": "四班"
+                }
+            },
+            "count": 36
+        },
+        {
+            "id": 116,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2000,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2000,
+                    "uid": 2000,
+                    "username": "k3t00002",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 36
+        },
+        {
+            "id": 195,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 36
+        },
+        {
+            "id": 197,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 36
+        },
+        {
+            "id": 169,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 35
+        },
+        {
+            "id": 292,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 33
+        },
+        {
+            "id": 179,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 33
+        },
+        {
+            "id": 211,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 33
+        },
+        {
+            "id": 90,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 128,
+                "user_id": 2003,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2003,
+                    "uid": 2003,
+                    "username": "k3t00005",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 952
+                },
+                "realname": "于大大",
+                "gender": 1,
+                "point": 0,
+                "ce": -248,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fs1uqQe5meoPGg8V5xVk-oxOxiJT?e=1503563421&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:XmhuIsOZzsMu-OZiNfNiKt1PfhU=",
+                "birthday": "2017-08-04",
+                "classroom": {
+                    "id": 117,
+                    "school": 3,
+                    "grade": "12",
+                    "cls": "日天班"
+                }
+            },
+            "count": 32
+        },
+        {
+            "id": 282,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 30
+        },
+        {
+            "id": 202,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 284,
+                "user_id": 2285,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2285,
+                    "uid": 2285,
+                    "username": "k3t00161",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "2017-08-30",
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 30
+        },
+        {
+            "id": 214,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 26
+        },
+        {
+            "id": 248,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2081,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2081,
+                    "uid": 2081,
+                    "username": "k3t00036",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 25
+        },
+        {
+            "id": 134,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 138,
+                "user_id": 2019,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2019,
+                    "uid": 2019,
+                    "username": "k3t00015",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k3t00015",
+                "gender": 1,
+                "point": 0,
+                "ce": 840,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fo81j8t1v9aE8M6xjC7mwHsTZ-rs?e=1503563422&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:Ykrd0fF7ZGahx04Oyez81HAnXa4=",
+                "birthday": null,
+                "classroom": {
+                    "id": 18,
+                    "school": 3,
+                    "grade": "15",
+                    "cls": "日天班"
+                }
+            },
+            "count": 25
+        },
+        {
+            "id": 301,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 215,
+                "user_id": 2203,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2203,
+                    "uid": 2203,
+                    "username": "k3t00092",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k3t00092",
+                "gender": 2,
+                "point": 0,
+                "ce": 1000,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fh6LD6eZUbP3mPzUrHRxYsG6OdM2?e=1503563422&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:1WMtM5rYaFMXoU3vtTEWuNG6sso=",
+                "birthday": "2003-09-30",
+                "classroom": {
+                    "id": 11,
+                    "school": 3,
+                    "grade": "2",
+                    "cls": "二班"
+                }
+            },
+            "count": 25
+        },
+        {
+            "id": 219,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 25
+        },
+        {
+            "id": 172,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 25
+        },
+        {
+            "id": 196,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 25
+        },
+        {
+            "id": 199,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 277,
+                "user_id": 2278,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2278,
+                    "uid": 2278,
+                    "username": "k3t00154",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 25
+        },
+        {
+            "id": 206,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 277,
+                "user_id": 2278,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2278,
+                    "uid": 2278,
+                    "username": "k3t00154",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 25
+        },
+        {
+            "id": 300,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 129,
+                "user_id": 2004,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2004,
+                    "uid": 2004,
+                    "username": "k3t00006",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k好好好",
+                "gender": 1,
+                "point": 0,
+                "ce": 1064,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 9,
+                    "school": 3,
+                    "grade": "2",
+                    "cls": "精英班"
+                }
+            },
+            "count": 23
+        },
+        {
+            "id": 198,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2077,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2077,
+                    "uid": 2077,
+                    "username": "k3t00032",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 23
+        },
+        {
+            "id": 80,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2001,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2001,
+                    "uid": 2001,
+                    "username": "k3t00003",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 22
+        },
+        {
+            "id": 82,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2008,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2008,
+                    "uid": 2008,
+                    "username": "k3t00010",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 22
+        },
+        {
+            "id": 247,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2136,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2136,
+                    "uid": 2136,
+                    "username": "k3t00049",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 22
+        },
+        {
+            "id": 213,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 277,
+                "user_id": 2278,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2278,
+                    "uid": 2278,
+                    "username": "k3t00154",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 22
+        },
+        {
+            "id": 217,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2005,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2005,
+                    "uid": 2005,
+                    "username": "k3t00007",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 20
+        },
+        {
+            "id": 185,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 20
+        },
+        {
+            "id": 204,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 273,
+                "user_id": 2274,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2274,
+                    "uid": 2274,
+                    "username": "k3t00150",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1256,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 18
+        },
+        {
+            "id": 208,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 156,
+                "user_id": 2078,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2078,
+                    "uid": 2078,
+                    "username": "k3t00033",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "dasdadsss",
+                "gender": 1,
+                "point": 0,
+                "ce": 696,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 17
+        },
+        {
+            "id": 130,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2049,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2049,
+                    "uid": 2049,
+                    "username": "k3t00019",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 16
+        },
+        {
+            "id": 146,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2160,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2160,
+                    "uid": 2160,
+                    "username": "k3t00073",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 16
+        },
+        {
+            "id": 205,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2077,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2077,
+                    "uid": 2077,
+                    "username": "k3t00032",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 16
+        },
+        {
+            "id": 223,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 235,
+                "user_id": 2223,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2223,
+                    "uid": 2223,
+                    "username": "k3t00112",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "k3t00112",
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 10,
+                    "school": 3,
+                    "grade": "2",
+                    "cls": "一班"
+                }
+            },
+            "count": 15
+        },
+        {
+            "id": 143,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 128,
+                "user_id": 2003,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2003,
+                    "uid": 2003,
+                    "username": "k3t00005",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 952
+                },
+                "realname": "于大大",
+                "gender": 1,
+                "point": 0,
+                "ce": -248,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fs1uqQe5meoPGg8V5xVk-oxOxiJT?e=1503563423&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:MAqUOgPbg9o66sJ_HxdRUke2Jz4=",
+                "birthday": "2017-08-04",
+                "classroom": {
+                    "id": 117,
+                    "school": 3,
+                    "grade": "12",
+                    "cls": "日天班"
+                }
+            },
+            "count": 15
+        },
+        {
+            "id": 144,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 194,
+                "user_id": 2158,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2158,
+                    "uid": 2158,
+                    "username": "k3t00071",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 15
+        },
+        {
+            "id": 145,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 195,
+                "user_id": 2159,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2159,
+                    "uid": 2159,
+                    "username": "k3t00072",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 15
+        },
+        {
+            "id": 224,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 15
+        },
+        {
+            "id": 203,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 152,
+                "user_id": 2074,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2074,
+                    "uid": 2074,
+                    "username": "k3t00029",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "asdad",
+                "gender": 0,
+                "point": 0,
+                "ce": 264,
+                "avatar": null,
+                "birthday": null,
+                "classroom": {
+                    "id": 20,
+                    "school": 3,
+                    "grade": "1",
+                    "cls": "ads班"
+                }
+            },
+            "count": 15
+        },
+        {
+            "id": 216,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2005,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2005,
+                    "uid": 2005,
+                    "username": "k3t00007",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 15
+        },
+        {
+            "id": 141,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2049,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2049,
+                    "uid": 2049,
+                    "username": "k3t00019",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 13
+        },
+        {
+            "id": 142,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": 128,
+                "user_id": 2003,
+                "school_id": 3,
+                "school": {
+                    "id": 3,
+                    "name": "测试"
+                },
+                "user": {
+                    "id": 2003,
+                    "uid": 2003,
+                    "username": "k3t00005",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 952
+                },
+                "realname": "于大大",
+                "gender": 1,
+                "point": 0,
+                "ce": -248,
+                "avatar": "http://oqurrrspm.bkt.clouddn.com/Fs1uqQe5meoPGg8V5xVk-oxOxiJT?e=1503563423&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:MAqUOgPbg9o66sJ_HxdRUke2Jz4=",
+                "birthday": "2017-08-04",
+                "classroom": {
+                    "id": 117,
+                    "school": 3,
+                    "grade": "12",
+                    "cls": "日天班"
+                }
+            },
+            "count": 12
+        },
+        {
+            "id": 147,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 12
+        },
+        {
+            "id": 149,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 12
+        },
+        {
+            "id": 151,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 12
+        },
+        {
+            "id": 152,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2049,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2049,
+                    "uid": 2049,
+                    "username": "k3t00019",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 12
+        },
+        {
+            "id": 200,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 12
+        },
+        {
+            "id": 207,
+            "skill": {
+                "id": 1,
+                "name": "双脚靠球",
+                "category": "控球类",
+                "level": 0
+            },
+            "profile": {
+                "id": null,
+                "user_id": 2050,
+                "school_id": null,
+                "school": null,
+                "user": {
+                    "id": 2050,
+                    "uid": 2050,
+                    "username": "k3t00020",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": null,
+                "gender": null,
+                "point": null,
+                "ce": null,
+                "avatar": null,
+                "birthday": null,
+                "classroom": null
+            },
+            "count": 12
+        }
+    ]
+}
+```
+
+## 测评排行榜详情
+
+```shell
+curl -X GET "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/ranks/assessments/<ID>"
+```
+
+### HTTP Request
+
+`GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/ranks/assessments/<ID>`
+
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+ID|1|true|测评ID
+
+
+> 返回内容
+
+```json
+{
+    "data": {
+        "id": 1,
+        "count": 20,
+        "profile": {
+            "id": 2,
+            "user_id": 1,
+            "school_id": 1,
+            "school": {
+                "id": 1,
+                "name": "ttttsfsfddd"
+            },
+            "user": {
+                "id": 1,
+                "uid": 1,
+                "username": "ufozhengli@163.com",
+                "source_name": null,
+                "source_avatar": null,
+                "ce": 1000
+            },
+            "realname": "布拿拿",
+            "gender": 1,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": "1992-07-28",
+            "classroom": {
+                "id": 2,
+                "school": 1,
+                "grade": "2",
+                "cls": "一班"
+            }
+        },
+        "skill": {
+            "id": 23,
+            "name": "外脚背停球变向",
+            "category": "控球类",
+            "level": 1
+        },
+        "video_key": null,
+        "video": null,
+        "created_at": "2017-06-14 11:33:45 +0800"
+    },
+    "extra": {
+        "country": {
+            "id": 1,
+            "count": 20,
+            "profile": {
+                "id": 2,
+                "user_id": 1,
+                "school_id": 1,
+                "school": {
+                    "id": 1,
+                    "name": "ttttsfsfddd"
+                },
+                "user": {
+                    "id": 1,
+                    "uid": 1,
+                    "username": "ufozhengli@163.com",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "布拿拿",
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "1992-07-28",
+                "classroom": {
+                    "id": 2,
+                    "school": 1,
+                    "grade": "2",
+                    "cls": "一班"
+                }
+            },
+            "skill": {
+                "id": 23,
+                "name": "外脚背停球变向",
+                "category": "控球类",
+                "level": 1
+            },
+            "video_key": null,
+            "video": null,
+            "created_at": "2017-06-14 11:33:45 +0800"
+        },
+        "school": {
+            "id": 1,
+            "count": 20,
+            "profile": {
+                "id": 2,
+                "user_id": 1,
+                "school_id": 1,
+                "school": {
+                    "id": 1,
+                    "name": "ttttsfsfddd"
+                },
+                "user": {
+                    "id": 1,
+                    "uid": 1,
+                    "username": "ufozhengli@163.com",
+                    "source_name": null,
+                    "source_avatar": null,
+                    "ce": 1000
+                },
+                "realname": "布拿拿",
+                "gender": 1,
+                "point": 0,
+                "ce": 1000,
+                "avatar": null,
+                "birthday": "1992-07-28",
+                "classroom": {
+                    "id": 2,
+                    "school": 1,
+                    "grade": "2",
+                    "cls": "一班"
+                }
+            },
+            "skill": {
+                "id": 23,
+                "name": "外脚背停球变向",
+                "category": "控球类",
+                "level": 1
+            },
+            "video_key": null,
+            "video": null,
+            "created_at": "2017-06-14 11:33:45 +0800"
+        }
+    }
+}
+```
