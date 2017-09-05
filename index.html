@@ -8382,6 +8382,77 @@
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+<h2 id="part-6e15261d52c295b7">获取技能排行榜</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET hhttps://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/assessments/&lt;ID&gt;</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>1</td>
+<td>true</td>
+<td>测评ID</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">66</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">330</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2512</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"测试"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2512</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">2512</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oys4MwbUc1d5AUi19pwoF36QaWCI"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joey"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://wx.qlogo.cn/mmopen/vi_32/3qvKhm752ZOk8w6nosDic2yRaAXJkLBxPDFZESrYOx4aPsGZuGibsYLhhFBI3811MWyDk2jGYATpVz0MB13buyVQ/0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">840</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QQ"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-08-28"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">69</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"grade"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cls"</span><span class="p">:</span><span class="w"> </span><span class="s2">"asd班"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"skill"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"靠球过人"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"video_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lsp77UDRIE-yfXK4TZfF8dbqMLyx"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"video"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqe9ssuil.bkt.clouddn.com/lsp77UDRIE-yfXK4TZfF8dbqMLyx-zip?e=1504580022&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:xLU6cyJs9wronkXbQq1Y2FJ3vII="</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-05 09:53:00 +0800"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-3786cdde0cf57fe">大课间</h1>
 
 <h2 id="part-2cae504bf1357d03">服务简介</h2>
