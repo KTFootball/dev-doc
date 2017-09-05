@@ -761,3 +761,71 @@ key|xxxx|true|七牛上传视频Key
     }
 }
 ```
+
+## 获取技能排行榜
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/<ID>"
+```
+### HTTP Request
+
+    `GET hhttps://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/assessments/<ID>`
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+ID|1|true|测评ID
+
+```json
+{
+    "data": {
+        "id": 1,
+        "count": 66,
+        "profile": {
+            "id": 330,
+            "user_id": 2512,
+            "school_id": 3,
+            "school": {
+                "id": 3,
+                "name": "测试"
+            },
+            "user": {
+                "id": 2512,
+                "uid": 2512,
+                "username": "oys4MwbUc1d5AUi19pwoF36QaWCI",
+                "source_name": "Joey",
+                "source_avatar": "http://wx.qlogo.cn/mmopen/vi_32/3qvKhm752ZOk8w6nosDic2yRaAXJkLBxPDFZESrYOx4aPsGZuGibsYLhhFBI3811MWyDk2jGYATpVz0MB13buyVQ/0",
+                "ce": 840
+            },
+            "realname": "QQ",
+            "gender": 0,
+            "point": 0,
+            "ce": 1000,
+            "avatar": null,
+            "birthday": "2017-08-28",
+            "classroom": {
+                "id": 69,
+                "school": 3,
+                "grade": "1",
+                "cls": "asd班"
+            }
+        },
+        "skill": {
+            "id": 18,
+            "name": "靠球过人",
+            "category": "控球类",
+            "level": 0,
+            "cartoon": null
+        },
+        "video_key": "lsp77UDRIE-yfXK4TZfF8dbqMLyx",
+        "video": "http://oqe9ssuil.bkt.clouddn.com/lsp77UDRIE-yfXK4TZfF8dbqMLyx-zip?e=1504580022&token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:xLU6cyJs9wronkXbQq1Y2FJ3vII=",
+        "created_at": "2017-09-05 09:53:00 +0800",
+        "rank": "S"
+    }
+}
+```
+
+
+
+
