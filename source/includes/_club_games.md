@@ -40,6 +40,9 @@ start_at|2017-06-06|false|开始时间
 end_at|2017-06-07|false|结束时间
 image_key|xxxxx|false|七牛上传图片key
 image_keys|xxxxx,xxxxx,xxxxx|false|七牛上传图片key逗号隔开
+kt|1|false|KT用户的ID
+score_time|1,4,5|false|进球时间（单位秒）
+kt_time|1|false|KT时间（单位秒）
 
 > 返回内容
 

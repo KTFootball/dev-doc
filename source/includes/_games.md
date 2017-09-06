@@ -1128,6 +1128,8 @@ duration|30|false|赛事持续时间，单位秒
 video_key|xxxx|false|赛事视频的key
 image_keys|fxbx,fdes,fegst|false|赛事图片的image keys 七牛上传返回
 kt|1|false|KT用户的ID
+score_time|1,4,5|false|进球时间（单位秒）
+kt_time|1|false|KT时间（单位秒）
 
 
 > 返回内容
