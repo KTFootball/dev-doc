@@ -186,3 +186,20 @@ category|blah|true|反馈类型（不填默认返回所有的faq）
 ```json
 
 ```
+
+## 公告列表
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/announcements"
+```
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/announcements`
+
+
+> 返回内容
+
+```json
+
+```
