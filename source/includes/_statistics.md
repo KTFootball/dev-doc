@@ -36,12 +36,22 @@ ID|学校ID
 
 ```json
 {
-    "users": 1,
-    "assessments": 1,
+    "users": 17,
+    "assessments": 251,
     "ranks": {
-        "low": 0,
-        "medium": 1,
-        "high": 0
+        "low": 67,
+        "medium": 20,
+        "high": 29,
+        "super": 135,
+        "raw": {
+            "S": 135,
+            "C": 42,
+            "C+": 25,
+            "B+": 11,
+            "A+": 6,
+            "A": 23,
+            "B": 9
+        }
     }
 }
 ```
