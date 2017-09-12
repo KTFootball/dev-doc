@@ -710,6 +710,42 @@
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="w">
 </span></code></pre>
+<h2 id="part-cee32f0e0d30490d">用户操作记录</h2>
+<pre class="highlight shell tab-shell"><code>curl -XPOST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/actions"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1/actions</code></p>
+
+<h3 id="form-data">Form Data</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>action</td>
+<td>button/submit</td>
+<td>true</td>
+<td>点击事件tag</td>
+</tr>
+<tr>
+<td>uid</td>
+<td>1</td>
+<td>true</td>
+<td>点击事件用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-6542d8d685f">消息</h1>
 
 <h2 id="part-2cae504bf1357d03">服务简介</h2>
