@@ -203,3 +203,27 @@ curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/announcements"
 ```json
 
 ```
+
+## 用户操作记录
+
+```shell
+curl -XPOST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/actions"
+```
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1/actions`
+
+
+### Form Data
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+action|button/submit|true|点击事件tag
+uid|1|true|点击事件用户ID
+
+> 返回内容
+
+```json
+{"data": "success"}
+```
