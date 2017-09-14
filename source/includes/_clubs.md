@@ -507,7 +507,7 @@ Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 avatar_key|xxxxxxxxxxxx|false|头像key
 course_id|1|false|班级id
-gender|0|false|性别 0 男 1 女
+gender|1|false|性别 1 男 0 女
 realname|布拿拿|false|姓名
 birthday|1992-07-28|false|生日
 
