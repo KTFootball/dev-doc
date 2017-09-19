@@ -7610,6 +7610,55 @@
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+<h2 id="part-c387216ad06a7999">批量创建班级</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/schools/&lt;ID&gt;/batch"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/schools/&lt;ID&gt;/batch</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>1</td>
+<td>true</td>
+<td>学校ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>grades</td>
+<td>0,1,2</td>
+<td>true</td>
+<td>多个年级（逗号隔开）</td>
+</tr>
+<tr>
+<td>counts</td>
+<td>5,5,5</td>
+<td>true</td>
+<td>年级对应的班级数量（逗号隔开）</td>
+</tr>
+</tbody></table>
+
           <h1 id="part-6542d7d0346">测评</h1>
 
 <h2 id="part-2cae504bf1357d03">服务简介</h2>
