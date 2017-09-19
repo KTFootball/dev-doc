@@ -5558,3 +5558,27 @@ ID|1|true|测评ID
     }
 }
 ```
+
+## 批量创建班级
+
+```shell
+curl -X POST "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v2/schools/<ID>/batch"
+```
+
+### HTTP Request
+
+`POST https://watchman.ktfootball.com/<SERVICE_NAME>/api/v2/schools/<ID>/batch`
+
+
+### Url Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+ID|1|true|学校ID
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+grades|0,1,2|true|多个年级（逗号隔开）
+counts|5,5,5|true|年级对应的班级数量（逗号隔开）
