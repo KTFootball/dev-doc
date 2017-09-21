@@ -29,6 +29,7 @@ includes:
   - club_games
   - club_queues
   - club_merchandises
+  - wechat_v1.3
   - errors
 
 search: true
