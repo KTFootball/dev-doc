@@ -17068,6 +17068,360 @@
 </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <h1 id="1-3">微信1.3</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">kt-club</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-club-stg</code> stg模式使用的服务<br>
+<code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务<br>
+<code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务</p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上 app_key 可以拼接在url中，或者HEAD中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=&lt;APPKEY&gt;"</span>
+curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1"</span> -H <span class="s1">'APP_KEY: &lt;APPKEY&gt;'</span>”
+</code></pre>
+<h2 id="banner">首页banner</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky/api/v1/users/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">2040</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"rank"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"assessments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"best"</span><span class="p">:</span><span class="w"> </span><span class="s2">"B"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-61f0146207b44fe8">技能包列表</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/kt-club/api/v1/packages</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"零基础"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="mi">6</span><span class="p">,</span><span class="w">
+                </span><span class="mi">7</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"基础一"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="mi">8</span><span class="p">,</span><span class="w">
+                </span><span class="mi">11</span><span class="p">,</span><span class="w">
+                </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                </span><span class="mi">12</span><span class="p">,</span><span class="w">
+                </span><span class="mi">13</span><span class="p">,</span><span class="w">
+                </span><span class="mi">14</span><span class="p">,</span><span class="w">
+                </span><span class="mi">15</span><span class="p">,</span><span class="w">
+                </span><span class="mi">16</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"基础二"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="mi">17</span><span class="p">,</span><span class="w">
+                </span><span class="mi">18</span><span class="p">,</span><span class="w">
+                </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="mi">19</span><span class="p">,</span><span class="w">
+                </span><span class="mi">20</span><span class="p">,</span><span class="w">
+                </span><span class="mi">21</span><span class="p">,</span><span class="w">
+                </span><span class="mi">22</span><span class="p">,</span><span class="w">
+                </span><span class="mi">23</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-61f01462117db29e">技能包详情</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/kt-club/api/v1/packages/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>套餐ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"零基础"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚靠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">" 翩翩起舞"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"双脚交替跳动触球，锻炼了的控球技术，提升球感</span><span class="se">\r\n</span><span class="s2">像跳舞一样轻松，愉快，有节奏感，让你的动作很有范儿！"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/双脚靠球.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"原地双脚靠球，记录30秒内脚内侧靠球次数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出2*2区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚触到球算一次"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第三集_双脚靠球.mp4"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚内侧踢球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一击即中"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚与球接触面积大，出球准确平衡，且易于撑握，主要是短距离的传球和射门的时候比较常用。</span><span class="se">\r\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，一块可以反弹的墙壁，距离墙壁3米进行训练"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"传球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧踢球.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚内侧踢球.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"记录30秒内区域内按照标准完成该动作的次数；不停球；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出3*3区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"每次踢球要在区域外触球才算一次，区域内触球不算；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第四集_脚内侧踢球.mp4"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚背外侧运球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"行云流水"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"外脚背带球节奏显快，最具有观赏性，而且传球隐蔽，利于各方向传球、斜线带球、控制球护球、假动作和过人。</span><span class="se">\r\n</span><span class="s2">不要低头看球，注意速度的变化，不断变换方向和速度的曲线带球才是足球比赛中最重要的技能！"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/footlesson/脚背外侧运球.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/footlesson/脚背外侧运球.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"记录30秒内区域内按照标准完成该动作的次数；不停球；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出3*3区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"每次踢球要在区域外触球才算一次，区域内触球不算；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第五集_外脚背带球.mp4"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚底踩球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"活蹦乱跳"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"在练习中逐渐熟悉了球性，并且对球的感觉也有了提高，双脚左右交替踩球的动作技术可以将自身的协调性和平衡能力得到提高</span><span class="se">\r\n</span><span class="s2">如果你可以熟练掌握，就不容易丢掉控球权。"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚底踩球.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/脚底踩球.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"原地脚底踩球，记录30秒内脚底踩球次数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出2*2区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"脚触到球算一次"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第一集_脚底踩球.mp4"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"正脚背颠球"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"无拘无束"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"颠球是提高足球基本功的重要方法!要学好它,务必要苦练,全身放松,集中注意力,坚持,坚持,再坚持!</span><span class="se">\r\n</span><span class="s2">颠球会培养你的球感，如果你变得很厉害，你就可以带球去任何地方"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/正脚背颠球.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/正脚背颠球.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"记录30秒内区域内按照标准完成该动作的次数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出3*3区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"如果掉地，可以累计数量；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第二集_正脚背颠球.mp4"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"踩单车"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"变幻莫测"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"踩单车更强调于良好节奏感，其中又包括控奏与变奏，前者支持你做出连续的踏板动作，后者建立在前者之上，用于支持球场上的突发情况和多次使用。</span><span class="se">\r\n</span><span class="s2">"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块2*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩单车.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/踩单车.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"记录30秒内区域内按照标准完成该动作的次数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出3*3区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"每个动作要做到标志帽算一次，未到标志帽不计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第六集_踩单车练习.mp4"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"内晃外拨"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"sub_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"风云突变"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"内晃外拨，动作可以迷惑对手，是你更好的带球过人。</span><span class="se">\r\n</span><span class="s2">像雷一样进入，闪电一般改变方向！很快的突破变向有可能创造一个新的局面和机会"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"训练说明：</span><span class="se">\r\n</span><span class="s2">在训练前，请准备一个足球，以及一块3*2m的小场地，以保证能够完成动作练习"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"控球类"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"level"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"gif_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/内晃外拨.gif"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://public.ktfootball.com/download/still/内晃外拨.mp4"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"resources"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requirements"</span><span class="p">:</span><span class="w"> </span><span class="s2">"记录30秒内区域内按照标准完成该动作的次数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="s2">"一名队员&amp;教练帮忙计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="s2">"标志牌摆出3*3区域；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"每个动作要做到标志帽算一次，未到标志帽不计数；"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cartoon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://ktfootball-video.oss-cn-shanghai.aliyuncs.com/第七集_脚背内侧.mp4"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-2db01320f83b8d56">用户购买的技能包</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/kt-club/api/v1/users/&lt;ID&gt;/skill_package_records</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1929</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1929</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oys4MwYQ6pfOBw4vDUlyy0ixnDA8"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wei"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://wx.qlogo.cn/mmopen/vi_32/nd7TwgqOEc49O16frRLmXj43AqWc7viaOFKic4hk9Y7gDJtznwiaNL24McNdjzIHbAgmtSWurkV9vzwM4VxXCvuBg/0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">2040</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"skill_package"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"零基础"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="mi">4</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">6</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">7</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1929</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1929</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oys4MwYQ6pfOBw4vDUlyy0ixnDA8"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wei"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://wx.qlogo.cn/mmopen/vi_32/nd7TwgqOEc49O16frRLmXj43AqWc7viaOFKic4hk9Y7gDJtznwiaNL24McNdjzIHbAgmtSWurkV9vzwM4VxXCvuBg/0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">2040</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"skill_package"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"基础一"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"skills"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="mi">8</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">11</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">12</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">13</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">14</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">15</span><span class="p">,</span><span class="w">
+                    </span><span class="mi">16</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
