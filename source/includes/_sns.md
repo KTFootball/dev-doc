@@ -159,11 +159,47 @@ content|blah blah|true|用户所提交内容
 }
 ```
 
+## 删除评论
+
+### HTTP Request
+
+  `DELETE https://watchman.ktfootball.com/<SERVICE>/api/v1/comments/<ID>`
+
+> 返回内容
+
+```json
+{
+    "data": "success"
+}
+```
+
 ## 点赞
 
 ### HTTP Request
 
   `POST https://watchman.ktfootball.com/<SERVICE>/api/v1/likes`
+
+### FormData(x-www-form-urlencoded)
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+type|assessment|true|评论类型，可选assessment,round,promotion
+tid|1|true|该类型所对应的ID
+uid|1929|true|用户ID
+
+> 返回内容
+
+```json
+{
+    "data": "success"
+}
+```
+
+## 取消点赞
+
+### HTTP Request
+
+  `DELETE https://watchman.ktfootball.com/<SERVICE>/api/v1/likes`
 
 ### FormData(x-www-form-urlencoded)
 
