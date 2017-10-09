@@ -30,6 +30,7 @@ includes:
   - club_queues
   - club_merchandises
   - wechat_v1.3
+  - sns
   - errors
 
 search: true
