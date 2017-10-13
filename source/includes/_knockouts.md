@@ -17,3 +17,27 @@ SERVICE_NAME:
 curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1?app_key=<APPKEY>"
 curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v1" -H 'APP_KEY: <APPKEY>'”
 ```
+
+## 获取淘汰赛列表
+
+
+### HTTP Request
+
+  `GET https://watchman.ktfootball.com/<SERVICE>/api/v2/games/<ID>/knockouts`
+
+### Url Parameters
+
+Parameter | Description
+--------- | -----------
+ID|赛事ID
+
+### Query Parameters
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+group|16|true|16，8，4，2（1/16, 1/8, 1/4, 1/2）
+
+> 返回内容
+
+```json
+```
