@@ -31,6 +31,7 @@ includes:
   - club_merchandises
   - wechat_v1.3
   - sns
+  - knockouts
   - errors
 
 search: true
