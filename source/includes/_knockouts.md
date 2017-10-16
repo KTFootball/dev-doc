@@ -680,6 +680,9 @@ group|2|true|2,4,8,16中选择一个，当前小组赛中所属的类型半决�
 }
 ```
 
+
+## 更新淘汰赛
+
 ### HTTP Request
 
   `PUT https://watchman.ktfootball.com/<SERVICE>/api/v2/knockouts/<ID>`
@@ -703,6 +706,8 @@ winner|side_a|true|胜利的队伍，side_a或者side_b
 
 ```
 
+## 删除淘汰赛
+
 ### HTTP Request
 
   `DELETE https://watchman.ktfootball.com/<SERVICE>/api/v2/knockouts/<ID>`
@@ -712,6 +717,27 @@ winner|side_a|true|胜利的队伍，side_a或者side_b
 Parameter | Description
 --------- | -----------
 ID|赛事ID
+
+> 返回内容
+
+```json
+{
+  "data": "success"
+}
+```
+
+## 批量创建淘汰赛
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE>/api/v2/knockouts/next`
+
+### JSON Params
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+gid|1|true赛事ID
+teams|[['1','2'],['3','4']]|true|参赛的队伍（2v2 可以传 [['1,5','2,6'],['3,7','4,8']]）
 
 > 返回内容
 
