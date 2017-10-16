@@ -17759,6 +17759,857 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <h1 id="part-3786edd56f73859">淘汰赛</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">kt-school</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-school-stg</code> stg模式使用的服务</p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上 app_key 可以拼接在url中，或者HEAD中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=&lt;APPKEY&gt;"</span>
+curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1"</span> -H <span class="s1">'APP_KEY: &lt;APPKEY&gt;'</span>”
+</code></pre>
+<h2 id="part-dde4d7c6213cb805">获取淘汰赛列表</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/games/&lt;ID&gt;/knockouts</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>赛事ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>group</td>
+<td>16</td>
+<td>true</td>
+<td>16，8，4，2（1/16, 1/8, &frac14;, 1/2）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">440</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1959</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1959</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">1959</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oys4MwXx3aw3RsDci33WgUElFHtI"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joey"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eonlL4X4g9QLJQO65LPbicEAFUxWQpx0IA5az3zwrLZgbKa9SqUyPvkh7Qx8Po0WAROgCIHBv8FyOA/0"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1060</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joey"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">441</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3004</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3004</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3004</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00001"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小一"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-25"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"round"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"game"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"哇咔咔"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"start_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-15 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"end_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-16 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FtQ9GBB8CszPnExNfoZajNOYNUz0,FhQYUHuWs9RC2QhjV9-Nm_f2ti_A,Fo144idorw9nspGX9xqDADBthPWC,FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:_yrA_DlqAU_njdaesrpxSyHpXHg="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FtQ9GBB8CszPnExNfoZajNOYNUz0?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:kQLZBjUeUZnNnT4mWrOGZOaVpGQ="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FhQYUHuWs9RC2QhjV9-Nm_f2ti_A?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:Vh291u6NBFpVKxwplfBh8S9g24Y="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fo144idorw9nspGX9xqDADBthPWC?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:5MNxn9MfaIXDbQ2ZEsRuwaRMvEg="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:_yrA_DlqAU_njdaesrpxSyHpXHg="</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"host"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"虹桥火车站"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ecard"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"games"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"participants"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"portable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"knockout"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">442</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3005</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3005</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3005</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00002"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小二"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">443</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3006</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3006</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3006</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00003"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小三"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"round"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"game"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"哇咔咔"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"start_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-15 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"end_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-16 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FtQ9GBB8CszPnExNfoZajNOYNUz0,FhQYUHuWs9RC2QhjV9-Nm_f2ti_A,Fo144idorw9nspGX9xqDADBthPWC,FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:_yrA_DlqAU_njdaesrpxSyHpXHg="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FtQ9GBB8CszPnExNfoZajNOYNUz0?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:kQLZBjUeUZnNnT4mWrOGZOaVpGQ="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FhQYUHuWs9RC2QhjV9-Nm_f2ti_A?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:Vh291u6NBFpVKxwplfBh8S9g24Y="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fo144idorw9nspGX9xqDADBthPWC?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:5MNxn9MfaIXDbQ2ZEsRuwaRMvEg="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121186&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:_yrA_DlqAU_njdaesrpxSyHpXHg="</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"host"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"虹桥火车站"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ecard"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"games"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"participants"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"portable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"knockout"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">444</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3007</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3007</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3007</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00004"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小四"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">445</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3008</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3008</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3008</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00005"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小五"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"round"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"game"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"哇咔咔"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"start_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-15 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"end_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-16 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FtQ9GBB8CszPnExNfoZajNOYNUz0,FhQYUHuWs9RC2QhjV9-Nm_f2ti_A,Fo144idorw9nspGX9xqDADBthPWC,FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:kaWRjM_QZbvkCNPqPhAN4CeuL5g="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FtQ9GBB8CszPnExNfoZajNOYNUz0?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:Ejtw3uxcRAv_ZH7FdhAwCz3971o="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FhQYUHuWs9RC2QhjV9-Nm_f2ti_A?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:vhfbdZc5pUiASijB8gjbfN-N7X8="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fo144idorw9nspGX9xqDADBthPWC?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:bJuQxFoAj8P4P8kVeiUvTFuHn3Q="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:kaWRjM_QZbvkCNPqPhAN4CeuL5g="</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"host"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"虹桥火车站"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ecard"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"games"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"participants"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"portable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"knockout"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">446</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00006"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小六"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">447</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00007"</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                            </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                        </span><span class="p">},</span><span class="w">
+                        </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小七"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"round"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"game"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"哇咔咔"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"start_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-15 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"end_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-16 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FtQ9GBB8CszPnExNfoZajNOYNUz0,FhQYUHuWs9RC2QhjV9-Nm_f2ti_A,Fo144idorw9nspGX9xqDADBthPWC,FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:kaWRjM_QZbvkCNPqPhAN4CeuL5g="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FtQ9GBB8CszPnExNfoZajNOYNUz0?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:Ejtw3uxcRAv_ZH7FdhAwCz3971o="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FhQYUHuWs9RC2QhjV9-Nm_f2ti_A?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:vhfbdZc5pUiASijB8gjbfN-N7X8="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fo144idorw9nspGX9xqDADBthPWC?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:bJuQxFoAj8P4P8kVeiUvTFuHn3Q="</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121187&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:kaWRjM_QZbvkCNPqPhAN4CeuL5g="</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"host"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"虹桥火车站"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ecard"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"games"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"participants"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"portable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"knockout"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-dde4d7c62b061abb">获取淘汰赛详情</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/knockouts/&lt;ID&gt;</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>淘汰赛ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">446</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00006"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小六"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">447</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00007"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小七"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"round"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"game"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"哇咔咔"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"start_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-15 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"end_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-16 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"image_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FtQ9GBB8CszPnExNfoZajNOYNUz0,FhQYUHuWs9RC2QhjV9-Nm_f2ti_A,Fo144idorw9nspGX9xqDADBthPWC,FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:4YUqQhk91Gp4uQWWKAl1GMr0-xs="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FtQ9GBB8CszPnExNfoZajNOYNUz0?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:37OkKSw_XBSsm5tbfmhdufSryjU="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FhQYUHuWs9RC2QhjV9-Nm_f2ti_A?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:6XTKIXRJchD2QNGZe615JuipGxI="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fo144idorw9nspGX9xqDADBthPWC?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:jgeYs6CcpJ6mBN83hgWzBGmhGbc="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:4YUqQhk91Gp4uQWWKAl1GMr0-xs="</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"host"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"虹桥火车站"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ecard"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"games"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"participants"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"portable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"knockout"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-11d3b5f4f18d6248">创建单个淘汰赛</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/knockouts</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>gid</td>
+<td>1</td>
+<td>true</td>
+<td>赛事的ID</td>
+</tr>
+<tr>
+<td>side_a</td>
+<td>1,2</td>
+<td>true</td>
+<td>side a</td>
+</tr>
+<tr>
+<td>side_b</td>
+<td>3,4</td>
+<td>true</td>
+<td>side b</td>
+</tr>
+<tr>
+<td>group</td>
+<td>2</td>
+<td>true</td>
+<td>2,4,8,16中选择一个，当前小组赛中所属的类型半决赛，决赛等</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"side_a"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">446</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3009</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00006"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小六"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"side_b"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">447</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"school"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"uid"</span><span class="p">:</span><span class="w"> </span><span class="mi">3010</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"k10t00007"</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"source_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                        </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="s2">"realname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小七"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"gender"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"point"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"ce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"birthday"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"classroom"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"winner"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"round"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"game"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"哇咔咔"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"玉兰园"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"start_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-15 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"end_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-09-16 00:00:00 +0800"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"lat"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"lng"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"image_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"image_keys"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FtQ9GBB8CszPnExNfoZajNOYNUz0,FhQYUHuWs9RC2QhjV9-Nm_f2ti_A,Fo144idorw9nspGX9xqDADBthPWC,FgZitQ8lcLkoo3YczkP_rBgY6EH9"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:4YUqQhk91Gp4uQWWKAl1GMr0-xs="</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FtQ9GBB8CszPnExNfoZajNOYNUz0?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:37OkKSw_XBSsm5tbfmhdufSryjU="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FhQYUHuWs9RC2QhjV9-Nm_f2ti_A?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:6XTKIXRJchD2QNGZe615JuipGxI="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/Fo144idorw9nspGX9xqDADBthPWC?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:jgeYs6CcpJ6mBN83hgWzBGmhGbc="</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"http://oqurrrspm.bkt.clouddn.com/FgZitQ8lcLkoo3YczkP_rBgY6EH9?e=1508121315&amp;token=2XprF4r3g5ksaGp6GQoWgeurBTB08DLr7HpUjKcp:4YUqQhk91Gp4uQWWKAl1GMr0-xs="</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"host"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"复旦大学闵行校区"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"虹桥火车站"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"ecard"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"games"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"participants"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"rounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"portable"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"knockout"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-cdce7c58451dee9a">更新淘汰赛</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">PUT https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/knockouts/&lt;ID&gt;</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>淘汰赛ID</td>
+</tr>
+</tbody></table>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>rid</td>
+<td>1</td>
+<td>true赛事回合ID</td>
+<td></td>
+</tr>
+<tr>
+<td>winner</td>
+<td>side_a</td>
+<td>true</td>
+<td>胜利的队伍，side_a或者side_b</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span></code></pre>
+<h2 id="part-d970acc6fb16e62c">删除淘汰赛</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/knockouts/&lt;ID&gt;</code></p>
+
+<h3 id="url-parameters">Url Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>赛事ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="part-fc7a13b2552e7262">批量创建淘汰赛</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/knockouts/next</code></p>
+
+<h3 id="json-params">JSON Params</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>gid</td>
+<td>1</td>
+<td>true赛事ID</td>
+<td></td>
+</tr>
+<tr>
+<td>teams</td>
+<td>[[&lsquo;1&rsquo;,&lsquo;2&rsquo;],[&lsquo;3&rsquo;,&lsquo;4&rsquo;]]</td>
+<td>true</td>
+<td>参赛的队伍（2v2 可以传 [[&lsquo;1,5&rsquo;,&lsquo;2,6&rsquo;],[&lsquo;3,7&rsquo;,&lsquo;4,8&rsquo;]]）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
