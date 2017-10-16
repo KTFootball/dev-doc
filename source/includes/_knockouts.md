@@ -699,6 +699,7 @@ Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
 rid|1|true赛事回合ID
 winner|side_a|true|胜利的队伍，side_a或者side_b
+sibling|1|false|round 1，round 2 如果更新当前knockout的round id 为1 那么sibling 传2，如果是2，就不需要传了。就是列表中单数的项目需要传递，双数则不需要
 
 > 返回内容
 
