@@ -18616,6 +18616,58 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+<h2 id="part-c82f3c959a67fe97">比赛弃权（）</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE&gt;/api/v2/rounds</code></p>
+
+<h3 id="form-data">Form Data</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>1v1</td>
+<td>true</td>
+<td>比赛类型 1v1 2v2 3v3</td>
+</tr>
+<tr>
+<td>gid</td>
+<td>7</td>
+<td>true</td>
+<td>赛事ID</td>
+</tr>
+<tr>
+<td>side_a</td>
+<td>1,2</td>
+<td>true</td>
+<td>左侧队伍</td>
+</tr>
+<tr>
+<td>side_b</td>
+<td>3,4</td>
+<td>true</td>
+<td>右侧队伍</td>
+</tr>
+<tr>
+<td>drop</td>
+<td>1</td>
+<td>true</td>
+<td>弃权(0左方，1右方)</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code></code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
