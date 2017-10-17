@@ -747,3 +747,24 @@ teams|[['1','2'],['3','4']]|true|参赛的队伍（2v2 可以传 [['1,5','2,6'],
   "data": "success"
 }
 ```
+
+## 比赛弃权（）
+
+### HTTP Request
+
+  `POST https://watchman.ktfootball.com/<SERVICE>/api/v2/rounds`
+
+### Form Data
+
+Parameter | Default | Required | Description
+--------- | ------- | ---------| -----------
+type|1v1|true|比赛类型 1v1 2v2 3v3
+gid|7|true|赛事ID
+side_a|1,2|true|左侧队伍
+side_b|3,4|true|右侧队伍
+drop|1|true|弃权(0左方，1右方)
+
+> 返回内容
+
+```json
+```
