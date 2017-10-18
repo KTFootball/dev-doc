@@ -748,7 +748,7 @@ teams|[['1','2'],['3','4']]|true|参赛的队伍（2v2 可以传 [['1,5','2,6'],
 }
 ```
 
-## 比赛弃权（）
+## 比赛弃权
 
 ### HTTP Request
 
@@ -758,7 +758,7 @@ teams|[['1','2'],['3','4']]|true|参赛的队伍（2v2 可以传 [['1,5','2,6'],
 
 Parameter | Default | Required | Description
 --------- | ------- | ---------| -----------
-type|1v1|true|比赛类型 1v1 2v2 3v3
+type|0|true|比赛类型 0:1v1 1: 2v2 2: 3v3
 gid|7|true|赛事ID
 side_a|1,2|true|左侧队伍
 side_b|3,4|true|右侧队伍
