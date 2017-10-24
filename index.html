@@ -18668,6 +18668,159 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
 <p>返回内容</p>
 </blockquote>
 <pre class="highlight json tab-json"><code></code></pre>
+          <h1 id="banner">运营Banner</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务</p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上 app_key 可以拼接在url中，或者HEAD中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=&lt;APPKEY&gt;"</span>
+curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1"</span> -H <span class="s1">'APP_KEY: &lt;APPKEY&gt;'</span>”
+</code></pre>
+<h2 id="banner">首页banner</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky/api/v2/bannerss</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span></code></pre>
+<h2 id="banner">首页banner(单个)</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/bucky/api/v2/banners/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>BannerID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span></code></pre>
+<h2 id="banner">删除首页banner(单个)</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">DELETE https://watchman.ktfootball.com/bucky/api/v2/banners/&lt;ID&gt;</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>BannerID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<h2 id="banner">创建首页banner(单个)</h2>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/bucky/api/v2/banners</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>url</td>
+<td>www.baidu.com</td>
+<td>×</td>
+<td>跳转的链接</td>
+</tr>
+<tr>
+<td>title</td>
+<td>这里是标题</td>
+<td>√</td>
+<td>显示的标题</td>
+</tr>
+<tr>
+<td>content</td>
+<td>这里是具体内容</td>
+<td>×</td>
+<td>显示的具体内容</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>img url</td>
+<td>√</td>
+<td>封面图</td>
+</tr>
+<tr>
+<td>platform</td>
+<td>平台</td>
+<td>√</td>
+<td>Android,iOS,Web等等</td>
+</tr>
+<tr>
+<td>version</td>
+<td>版本</td>
+<td>√</td>
+<td>1.0</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span></code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
