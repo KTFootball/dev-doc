@@ -2,14 +2,8 @@
 
 ## 服务简介
 
-SERVICE_NAME:  
-
 `kt-club` prod模式使用的服务  
 `kt-club-stg` stg模式使用的服务  
-`kt-school` prod模式使用的服务  
-`kt-school-stg` stg模式使用的服务  
-`bucky` prod模式使用的服务  
-`bucky-stg` stg模式使用的服务
 
 所有的API请求通过`https://watchman.ktfootball.com/<SERVICE_NAME>`访问。
 
