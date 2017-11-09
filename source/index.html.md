@@ -32,6 +32,7 @@ includes:
   - wechat_v1.3
   - sns
   - knockouts
+  - club_knockouts
   - banners
   - errors
 
