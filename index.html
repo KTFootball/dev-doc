@@ -18828,6 +18828,23 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="w">
 </span></code></pre>
+          <h1 id="part-6ef355b74213616e">俱乐部无人赛相关接口</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">kt-club</code> prod模式使用的服务<br>
+<code class="prettyprint">kt-club-stg</code> stg模式使用的服务  </p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上 app_key 可以拼接在url中，或者HEAD中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=&lt;APPKEY&gt;"</span>
+curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1"</span> -H <span class="s1">'APP_KEY: &lt;APPKEY&gt;'</span>”
+</code></pre>
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
