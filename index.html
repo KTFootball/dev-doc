@@ -19063,11 +19063,11 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
 <p>返回内容</p>
 </blockquote>
 <pre class="highlight json tab-json"><code></code></pre>
-<h2 id="part-ff13f716683aa823">获取赛事下无人赛的队伍</h2>
+<h2 id="part-be1534c8698f88c6">获取个人在本场赛事下的队伍</h2>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/users/vacant_teams/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/users/&lt;ID&gt;/vacant_teams/&lt;GID&gt;</code></p>
 
 <h3 id="url-parameters">Url Parameters</h3>
 
@@ -19079,6 +19079,10 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
 </thead><tbody>
 <tr>
 <td>ID</td>
+<td>用户ID</td>
+</tr>
+<tr>
+<td>GID</td>
 <td>赛事ID</td>
 </tr>
 </tbody></table>
