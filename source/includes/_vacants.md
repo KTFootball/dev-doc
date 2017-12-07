@@ -129,16 +129,17 @@ type|1v1|true|队伍的类型，可选1v1 2v2 3v3
 ```json
 ```
 
-## 获取赛事下无人赛的队伍
+## 获取个人在本场赛事下的队伍
 
 ### HTTP Request
 
-  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v2/users/vacant_teams/<ID>`
+  `GET https://watchman.ktfootball.com/<SERVICE_NAME>/api/v2/users/<ID>/vacant_teams/<GID>`
 
 ### Url Parameters
 Parameter | Description
 --------- | -----------
-ID|赛事ID
+ID|用户ID
+GID|赛事ID
 
 > 返回内容
 
