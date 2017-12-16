@@ -122,7 +122,7 @@ Parameter | Default | Required | Description
 ready|0|true|0 还没好 1 准备好了
 page|0|true|第几页
 limit|10|true|每页返回数量
-type|1v1|true|队伍的类型，可选1v1 2v2 3v3
+type|1v1|1|队伍的类型，可选0 (3v3) 1(1v1 2v2)
 
 > 返回内容
 
