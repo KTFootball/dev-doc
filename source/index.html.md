@@ -35,6 +35,7 @@ includes:
   - club_knockouts
   - banners
   - vacants
+  - activities
   - errors
 
 search: true
