@@ -19091,6 +19091,87 @@ curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/
 <p>返回内容</p>
 </blockquote>
 <pre class="highlight json tab-json"><code></code></pre>
+          <h1 id="part-6542d303f1a">球赞</h1>
+
+<h2 id="part-2cae504bf1357d03">服务简介</h2>
+
+<p>SERVICE_NAME:  </p>
+
+<p><code class="prettyprint">bucky</code> prod模式使用的服务<br>
+<code class="prettyprint">bucky-stg</code> stg模式使用的服务</p>
+
+<p>所有的API请求通过<code class="prettyprint">https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;</code>访问。</p>
+
+<aside class="success">
+所有请求请带上 app_key 可以拼接在url中，或者HEAD中
+</aside>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1?app_key=&lt;APPKEY&gt;"</span>
+curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v1"</span> -H <span class="s1">'APP_KEY: &lt;APPKEY&gt;'</span>”
+</code></pre>
+<h2 id="part-1b5f0488b36cc3d0">创建活动队长</h2>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/activities"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/activities</code></p>
+
+<h3 id="formdata-x-www-form-urlencoded">FormData(x-www-form-urlencoded)</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>act-1</td>
+<td>true</td>
+<td>赛事内容 默认act-1</td>
+</tr>
+<tr>
+<td>uid</td>
+<td>1929</td>
+<td>true</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+<pre class="highlight json tab-json"><code></code></pre>
+<h2 id="part-c41ff0ba42250f46">获取用户相关的活动信息</h2>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/activities"</span>
+</code></pre>
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://watchman.ktfootball.com/&lt;SERVICE_NAME&gt;/api/v2/activities</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>活动名称 默认 act-1</td>
+</tr>
+<tr>
+<td>uid</td>
+<td>用户ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>返回内容</p>
+</blockquote>
+
           <h1 id="part-2e9f77bf3c97631b">错误信息</h1>
 
 <p>守望者使用下列的错误代码</p>
