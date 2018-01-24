@@ -288,3 +288,25 @@ ID|学校ID
     }
 }
 ```
+
+# 俱乐部统计
+
+## 服务简介
+
+SERVICE_NAME:  
+
+`kt-club` prod模式使用的服务  
+`kt-club-stg` stg模式使用的服务  
+
+所有的API请求通过`https://watchman.ktfootball.com/<SERVICE_NAME>`访问。
+
+<aside class="success">
+所有请求请带上app_key拼接在url中
+</aside>
+
+```shell
+curl "https://watchman.ktfootball.com/<SERVICE_NAME>/api/v2?app_key=APPKEY"
+```
+
+
+
